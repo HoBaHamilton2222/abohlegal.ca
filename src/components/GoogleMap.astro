@@ -1,0 +1,50 @@
+---
+const mapUrl = 'https://www.google.com/maps?q=4437+53+Avenue+St+Paul+AB+T0A+3A2&output=embed';
+const mapsLink = 'https://www.google.com/maps/search/4437+53+Avenue+St+Paul+AB+T0A+3A2';
+---
+
+<section class="px-6 py-12 md:py-16">
+  <div class="max-w-6xl mx-auto">
+    <div class="relative rounded-lg border border-gray-200 overflow-hidden">
+      <!-- Fallback (shown while iframe loads) -->
+      <div id="map-fallback" class="bg-navy text-white flex flex-col items-center justify-center h-[250px] md:h-[300px] p-6 text-center">
+        <p class="font-heading text-lg font-bold mb-2">4437 53 Avenue</p>
+        <p class="text-gray-300 mb-4">St. Paul, AB T0A 3A2</p>
+        <a
+          href={mapsLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gold font-bold hover:underline"
+        >
+          Open in Google Maps &rarr;
+        </a>
+      </div>
+      <!-- Iframe -->
+      <iframe
+        id="google-map-iframe"
+        src={mapUrl}
+        width="100%"
+        height="300"
+        style="border:0; display:none;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="ABOH LEGAL office location on Google Maps"
+        class="h-[250px] md:h-[300px] w-full"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const iframe = document.getElementById('google-map-iframe') as HTMLIFrameElement | null;
+    const fallback = document.getElementById('map-fallback');
+    if (!iframe || !fallback) return;
+
+    iframe.addEventListener('load', () => {
+      fallback.style.display = 'none';
+      iframe.style.display = 'block';
+    });
+  });
+</script>
