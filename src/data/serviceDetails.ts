@@ -11,6 +11,7 @@ export interface ServiceDetail {
   approach: string;
   relatedSlugs: string[];
   ctaText: string;
+  heroImage: string;
 }
 
 export const serviceDetails: ServiceDetail[] = [
@@ -38,6 +39,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>Wherever possible, we pursue negotiated resolutions that save time, money, and emotional energy. When negotiation is not possible, we are prepared to advocate firmly for you in court. Our goal is always to help you move forward with confidence and stability.</p>`,
     relatedSlugs: ['wills-estates', 'estate-litigation', 'immigration'],
     ctaText: 'Going through a family law matter? Let us help you find a path forward.',
+    heroImage: '/images/stock/family-hands.jpg',
   },
   {
     slug: 'wills-estates',
@@ -60,6 +62,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>Whether you are creating your first will or updating an existing estate plan after a major life change, we make the process straightforward and accessible.</p>`,
     relatedSlugs: ['estate-litigation', 'family-law'],
     ctaText: 'Ready to protect your family\'s future? Let\'s get your estate plan in order.',
+    heroImage: '/images/stock/last-will-testament.jpg',
   },
   {
     slug: 'estate-litigation',
@@ -83,6 +86,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>We pursue efficient resolution through negotiation and mediation where appropriate, but we do not hesitate to bring matters before the court when a fair resolution cannot be reached. Our clients can count on thorough preparation and strong advocacy.</p>`,
     relatedSlugs: ['wills-estates', 'civil-litigation', 'family-law'],
     ctaText: 'Dealing with an estate dispute? Contact us for clear, decisive guidance.',
+    heroImage: '/images/stock/parliament-building.jpg',
   },
   {
     slug: 'employment-law',
@@ -107,6 +111,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>For employees, that often means negotiating a fair severance package or pursuing a wrongful dismissal claim. For employers, it means proactive advice on contracts, policies, and terminations that reduce legal risk. In all cases, we aim for practical solutions that let our clients move forward.</p>`,
     relatedSlugs: ['civil-litigation', 'business-commercial'],
     ctaText: 'Facing a workplace legal issue? We can help you navigate it.',
+    heroImage: '/images/stock/women-working.jpg',
   },
   {
     slug: 'business-commercial',
@@ -131,6 +136,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>When disputes arise, we work to resolve them efficiently through negotiation, mediation, or litigation if necessary. Our goal is always to help you protect your business and get back to what you do best.</p>`,
     relatedSlugs: ['civil-litigation', 'employment-law'],
     ctaText: 'Need legal support for your business? Let\'s talk about how we can help.',
+    heroImage: '/images/stock/city-skyscrapers.jpg',
   },
   {
     slug: 'civil-litigation',
@@ -154,6 +160,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>We pursue settlement where it makes sense and litigate aggressively when it does not. Every step we take is focused on achieving the best practical result for you, efficiently and without unnecessary delay.</p>`,
     relatedSlugs: ['employment-law', 'personal-injury', 'business-commercial'],
     ctaText: 'Have a legal dispute? Contact us for a straightforward assessment of your options.',
+    heroImage: '/images/stock/supreme-court.jpg',
   },
   {
     slug: 'personal-injury',
@@ -177,6 +184,7 @@ export const serviceDetails: ServiceDetail[] = [
 <p>Many of our personal injury matters are handled on a contingency fee basis, meaning you do not pay legal fees unless we recover compensation for you. We discuss all fee arrangements openly at your first consultation.</p>`,
     relatedSlugs: ['civil-litigation', 'employment-law'],
     ctaText: 'Injured and unsure what to do next? We are here to help.',
+    heroImage: '/images/stock/car-accident.jpg',
   },
   {
     slug: 'immigration',
@@ -202,5 +210,6 @@ export const serviceDetails: ServiceDetail[] = [
 <p>From your initial consultation to the final decision, we keep you informed at every step. We explain the process in plain language, set realistic expectations about timelines, and respond promptly to your questions. Our goal is to make a complex process feel manageable.</p>`,
     relatedSlugs: ['family-law', 'employment-law'],
     ctaText: 'Looking to build your future in Canada? Let us help you navigate the path.',
+    heroImage: '/images/stock/canadian-passports.jpg',
   },
 ];

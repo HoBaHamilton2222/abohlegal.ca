@@ -2,46 +2,42 @@
 interface Props {
   title: string;
   subtitle?: string;
-  label?: string;
   backgroundImage?: string;
 }
 
-const { title, subtitle, label, backgroundImage } = Astro.props;
+const { title, subtitle, backgroundImage } = Astro.props;
 ---
 
 {backgroundImage ? (
-  <section class="relative min-h-[350px] md:min-h-[400px] flex items-center px-6 overflow-hidden">
-    <img
-      src={backgroundImage}
-      alt=""
-      class="absolute inset-0 w-full h-full object-cover object-center"
-      aria-hidden="true"
-    />
-    <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/50"></div>
-    <div class="relative max-w-4xl mx-auto text-center py-16 md:py-24 lg:py-32">
-      {label && (
-        <p class="text-gold uppercase text-xs md:text-sm font-bold tracking-[3px] mb-4">
-          {label}
-        </p>
-      )}
-      <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-        {title}
-      </h1>
-      {subtitle && (
-        <p class="text-gray-300 text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
-          {subtitle}
-        </p>
-      )}
+  <!-- Mode A: Split layout - text left, image right -->
+  <section class="flex flex-col md:flex-row min-h-[400px] md:min-h-[450px] overflow-hidden">
+    <!-- Left: Navy text side -->
+    <div class="w-full md:w-1/2 bg-navy flex items-center px-8 md:px-12 lg:px-16 py-16 md:py-0">
+      <div class="hero-text-animate max-w-lg mx-auto md:mx-0">
+        <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+          {title}
+        </h1>
+        {subtitle && (
+          <p class="text-gray-300 text-base md:text-lg lg:text-xl leading-relaxed">
+            {subtitle}
+          </p>
+        )}
+      </div>
+    </div>
+    <!-- Right: Image side (no overlay) -->
+    <div class="w-full md:w-1/2 min-h-[260px] md:min-h-0 overflow-hidden">
+      <img
+        src={backgroundImage}
+        alt=""
+        class="w-full h-full object-cover object-center"
+        aria-hidden="true"
+      />
     </div>
   </section>
 ) : (
+  <!-- Mode B: Simple navy gradient, centered -->
   <section class="bg-gradient-to-b from-navy to-[#122d42] py-16 md:py-24 lg:py-32 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      {label && (
-        <p class="text-gold uppercase text-xs md:text-sm font-bold tracking-[3px] mb-4">
-          {label}
-        </p>
-      )}
+    <div class="max-w-4xl mx-auto text-center hero-text-animate">
       <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
         {title}
       </h1>
@@ -53,3 +49,18 @@ const { title, subtitle, label, backgroundImage } = Astro.props;
     </div>
   </section>
 )}
+
+<style>
+  .hero-text-animate {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: heroFadeIn 0.6s ease forwards;
+  }
+
+  @keyframes heroFadeIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>

@@ -6,14 +6,13 @@ import headshot from '../assets/headshot.jpg';
 ---
 
 <BaseLayout
-  title="About Prince O. Aboh | ABOH LEGAL"
+  title="About Prince Aboh | ABOH LEGAL"
   description="Meet Prince Aboh, a family law litigator serving Alberta from St. Paul. Trained in Nigeria, licensed in Alberta, committed to your community."
 >
   <!-- Section 1: Hero -->
   <Hero
-    label="About"
-    title="Prince O. Aboh"
-    subtitle="Barrister & Solicitor, Founder"
+    title="Prince Aboh"
+    subtitle="Barrister & Solicitor"
     backgroundImage="/images/stock/prairie-road.jpg"
   />
 
@@ -22,13 +21,16 @@ import headshot from '../assets/headshot.jpg';
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       <!-- Photo -->
       <div class="flex justify-center">
-        <img
-          src={headshot.src}
-          alt="Prince O. Aboh, Barrister and Solicitor"
-          class="rounded-lg max-w-[350px] w-full object-cover"
-          width="350"
-          height="450"
-        />
+        <div class="relative inline-block">
+          <img
+            src={headshot.src}
+            alt="Prince Aboh, Barrister and Solicitor"
+            class="rounded-sm max-w-[350px] w-full object-cover aspect-[3/4] shadow-xl border border-gray-200"
+            style="border-bottom: 4px solid #c9a84c;"
+            width="350"
+            height="467"
+          />
+        </div>
       </div>
       <!-- Narrative -->
       <div>
@@ -38,19 +40,13 @@ import headshot from '../assets/headshot.jpg';
         </h2>
         <div class="space-y-5 text-body-text text-base md:text-lg leading-relaxed">
           <p>
-            My legal career began thousands of kilometres from the prairies. After earning my LL.B (Hons) from the University of Maiduguri, I was called to the Nigerian Bar in 2014 and began practising corporate and commercial litigation at a reputable firm in Lagos. I later moved in-house, serving as legal counsel for organizations spanning the energy, finance and insurance, and non-profit sectors. Those years taught me how to navigate complexity, manage competing interests, and always keep the client's objectives at the centre of every decision.
+            Called to the Nigerian Bar in 2014, Prince began his legal career in corporate and commercial litigation in Lagos, then transitioned to in-house counsel roles across the energy, finance, and non-profit sectors. Those years built a foundation in navigating complexity and keeping client objectives at the centre of every decision.
           </p>
           <p>
-            In late 2020, I immigrated to Canada with a clear goal: to build a new chapter of my legal career on Canadian soil. I pursued my Alberta law licence through the National Committee on Accreditation, earning my Certificate of Qualification from the Federation of Law Societies of Canada. During that time, I volunteered with the Elizabeth Fry Society as a courthouse volunteer in Calgary, helping visitors navigate the courthouse and access information. That experience deepened my commitment to making the justice system more approachable.
+            Prince immigrated to Canada in 2020 and earned his NCA Certificate of Qualification from the Federation of Law Societies of Canada. He volunteered with the Elizabeth Fry Society in Calgary, helping people navigate the courthouse system. After articling at a respected boutique litigation firm in Calgary, he was called to the Alberta Bar in 2024.
           </p>
           <p>
-            In 2023, I began articles with a respected boutique litigation firm in Calgary, where I gained broad exposure across multiple practice areas. Working closely with senior partners, I took on significant responsibility on files and developed a thorough understanding of Alberta legal practice: its procedures, its people, and its expectations.
-          </p>
-          <p>
-            Called to the Alberta Bar in 2024, I had by then discovered St. Paul during visits to the region. The community was charming, welcoming, and refreshingly different from the pace of Calgary. My family and I relocated to St. Paul in 2025, choosing to build both a home and a practice rooted in the community we now call our own.
-          </p>
-          <p>
-            Recognizing the scarcity of legal resources in northeast Alberta, I opened ABOH LEGAL to directly serve local families and individuals, providing the kind of thoughtful, accessible counsel that every community deserves.
+            St. Paul caught his attention during visits to the region. The community was welcoming, grounded, and different from the pace of Calgary in all the right ways. Prince relocated with his family in 2025 and opened ABOH LEGAL to serve the region directly, bringing the kind of thoughtful, accessible legal counsel every community deserves.
           </p>
         </div>
       </div>
@@ -60,7 +56,6 @@ import headshot from '../assets/headshot.jpg';
   <!-- Section 3: Credentials -->
   <section class="bg-white py-16 md:py-20 px-6">
     <div class="max-w-4xl mx-auto">
-      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2 text-center">Credentials</p>
       <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
         Education & Memberships
       </h2>
@@ -102,7 +97,6 @@ import headshot from '../assets/headshot.jpg';
   <!-- Section 4: How I Work -->
   <section class="bg-[#f9f8f6] py-16 md:py-20 px-6">
     <div class="max-w-5xl mx-auto">
-      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2 text-center">My Approach</p>
       <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
         How I Work
       </h2>

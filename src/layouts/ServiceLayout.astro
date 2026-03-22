@@ -16,6 +16,7 @@ interface Props {
   relatedServices: Array<{ name: string; slug: string; shortDesc: string }>;
   ctaText: string;
   metaTitle: string;
+  heroImage?: string;
 }
 
 const {
@@ -29,11 +30,12 @@ const {
   relatedServices,
   ctaText,
   metaTitle,
+  heroImage,
 } = Astro.props;
 ---
 
 <BaseLayout title={metaTitle} description={description}>
-  <Hero label={label} title={title} />
+  <Hero title={title} backgroundImage={heroImage} />
 
   <!-- Full Description -->
   <section class="bg-white py-12 md:py-16 px-6">
