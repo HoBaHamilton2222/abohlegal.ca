@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found | ABOH LEGAL"
+  description="The page you're looking for doesn't exist."
+>
+  <section class="bg-navy py-24 md:py-36 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-gold text-8xl md:text-9xl font-bold font-heading mb-4 select-none" aria-hidden="true">404</p>
+      <h1 class="font-heading text-white text-3xl md:text-4xl font-bold mb-4">Page Not Found</h1>
+      <p class="text-gray-400 text-base md:text-lg mb-10 leading-relaxed">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="flex flex-col items-center gap-4">
+        <a
+          href="/"
+          class="inline-block bg-gold text-navy font-bold px-8 py-3 rounded hover:bg-opacity-90 transition-colors text-sm md:text-base uppercase tracking-wider"
+        >
+          Go to Home Page
+        </a>
+        <a href="/contact" class="text-white underline hover:text-gold transition-colors text-sm md:text-base">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

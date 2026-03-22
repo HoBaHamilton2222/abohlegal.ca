@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
+import { faqsByCategory } from '../data/faqs';
+
+const categoryTitles: Record<string, string> = {
+  'family-law': 'Family Law',
+  'wills-estates': 'Wills & Estates',
+  'estate-litigation': 'Estate Litigation',
+  'employment-law': 'Employment Law',
+  'business-commercial': 'Business & Commercial Law',
+  'civil-litigation': 'Civil Litigation',
+  'personal-injury': 'Personal Injury',
+  'immigration': 'Immigration',
+};
+---
+
+<BaseLayout
+  title="Frequently Asked Questions | ABOH LEGAL"
+  description="Common questions about family law, wills, estates, employment law, and more. Answers from ABOH LEGAL in St. Paul, Alberta."
+>
+  <Hero label="Help Centre" title="Frequently Asked Questions" />
+
+  <section class="bg-white py-16 md:py-20 px-6">
+    <div class="max-w-3xl mx-auto space-y-14">
+      {Object.entries(faqsByCategory).map(([slug, faqs]) => (
+        <div>
+          <h2 class="font-heading text-navy text-xl md:text-2xl font-bold mb-6 pl-4 border-l-4 border-gold">
+            {categoryTitles[slug] || slug}
+          </h2>
+          <div>
+            {faqs.map((faq) => (
+              <FAQAccordion question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CTABanner
+    heading="Still have questions?"
+    body="We're here to help. Book a consultation to discuss your specific situation."
+    buttonText="Contact Us"
+    buttonHref="/contact"
+  />
+</BaseLayout>
