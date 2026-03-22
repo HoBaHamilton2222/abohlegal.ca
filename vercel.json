@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/services/real-estate", "destination": "/services", "permanent": true }
+  ]
+}
