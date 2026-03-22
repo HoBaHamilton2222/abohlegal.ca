@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const categories = [
+  'All', 'Family Law', 'Wills & Estates', 'Estate Litigation',
+  'Employment Law', 'Business & Commercial', 'Civil Litigation',
+  'Personal Injury', 'Immigration', 'General',
+];
+---
+
+<BaseLayout
+  title="Legal Updates & Resources | ABOH LEGAL"
+  description="Legal updates, guides, and resources for Alberta families. Family law, estates, employment, and more from ABOH LEGAL in St. Paul."
+>
+  <!-- Hero -->
+  <section class="bg-navy py-16 md:py-20 px-6 text-center">
+    <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">Resources</p>
+    <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold">
+      Legal Updates & Resources
+    </h1>
+  </section>
+
+  <!-- Category Filter + Posts -->
+  <section class="py-16 md:py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap gap-2 mb-12 justify-center" id="category-tabs">
+        {categories.map((cat) => (
+          <button
+            data-filter={cat}
+            class:list={[
+              'category-tab px-4 py-2 text-sm font-semibold rounded transition-colors duration-200',
+              cat === 'All'
+                ? 'bg-gold text-navy'
+                : 'bg-gray-100 text-muted-text hover:bg-gray-200',
+            ]}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {posts.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-grid">
+          {posts.map((post) => (
+            <div data-category={post.data.category} class="blog-card-wrapper">
+              <BlogCard
+                title={post.data.title}
+                date={post.data.date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+                category={post.data.category}
+                excerpt={post.data.excerpt}
+                slug={post.id}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-muted-text text-lg mb-6">
+            Check back soon for legal updates and resources relevant to Alberta families and individuals.
+          </p>
+          <a
+            href="/contact"
+            class="inline-block bg-gold text-navy font-bold px-8 py-3 rounded hover:bg-opacity-90 transition-colors text-sm uppercase tracking-wider"
+          >
+            Contact Us
+          </a>
+        </div>
+      )}
+
+      <!-- Empty state for filtering (hidden by default) -->
+      <div id="no-results" class="text-center py-12 hidden">
+        <p class="text-muted-text text-lg">No posts found in this category. Try selecting a different category above.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll<HTMLButtonElement>('.category-tab');
+      const cards = document.querySelectorAll<HTMLElement>('.blog-card-wrapper');
+      const noResults = document.getElementById('no-results');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const filter = tab.dataset.filter;
+
+          // Update active tab styles
+          tabs.forEach((t) => {
+            t.classList.remove('bg-gold', 'text-navy');
+            t.classList.add('bg-gray-100', 'text-muted-text');
+          });
+          tab.classList.remove('bg-gray-100', 'text-muted-text');
+          tab.classList.add('bg-gold', 'text-navy');
+
+          // Filter cards
+          let visibleCount = 0;
+          cards.forEach((card) => {
+            if (filter === 'All' || card.dataset.category === filter) {
+              card.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Show/hide no results message
+          if (noResults) {
+            noResults.classList.toggle('hidden', visibleCount > 0);
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>

@@ -1,22 +1,10 @@
 ---
-/**
- * BlogPreview.astro
- *
- * Future integration: This component will fetch from the blog content collection
- * using `getCollection('blog')` and display the 3 most recent posts in a
- * 3-column grid of BlogCard components.
- *
- * For now, no blog posts exist so this component renders nothing.
- *
- * Example future usage:
- *   import { getCollection } from 'astro:content';
- *   import BlogCard from './BlogCard.astro';
- *   const posts = (await getCollection('blog'))
- *     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
- *     .slice(0, 3);
- */
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
 
-const posts: any[] = [];
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sorted = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const posts = sorted.slice(0, 3);
 ---
 
 {posts.length > 0 && (
@@ -26,9 +14,33 @@ const posts: any[] = [];
       <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
         Recent Legal Updates
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* BlogCard components will be mapped here when posts exist */}
-      </div>
+      {posts.length < 3 ? (
+        <div class="flex justify-center gap-8">
+          {posts.map((post) => (
+            <div class="w-full max-w-sm">
+              <BlogCard
+                title={post.data.title}
+                date={post.data.date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+                category={post.data.category}
+                excerpt={post.data.excerpt}
+                slug={post.id}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {posts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              date={post.data.date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+              category={post.data.category}
+              excerpt={post.data.excerpt}
+              slug={post.id}
+            />
+          ))}
+        </div>
+      )}
     </div>
   </section>
 )}
