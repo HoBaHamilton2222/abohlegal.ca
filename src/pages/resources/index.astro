@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
 import BlogCard from '../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
 
@@ -18,12 +19,7 @@ const categories = [
   description="Legal updates, guides, and resources for Alberta families. Family law, estates, employment, and more from ABOH LEGAL in St. Paul."
 >
   <!-- Hero -->
-  <section class="bg-navy py-16 md:py-20 px-6 text-center">
-    <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">Resources</p>
-    <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold">
-      Legal Updates & Resources
-    </h1>
-  </section>
+  <Hero label="Resources" title="Legal Updates & Resources" backgroundImage="/images/stock/law-library.jpg" />
 
   <!-- Category Filter + Posts -->
   <section class="py-16 md:py-20 px-6">
