@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  label?: string;
+}
+
+const { title, subtitle, label } = Astro.props;
+---
+
+<section class="bg-gradient-to-b from-navy to-[#122d42] py-16 md:py-24 lg:py-32 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    {label && (
+      <p class="text-gold uppercase text-xs md:text-sm font-bold tracking-[3px] mb-4">
+        {label}
+      </p>
+    )}
+    <h1 class="font-heading text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+      {title}
+    </h1>
+    {subtitle && (
+      <p class="text-gray-300 text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
+        {subtitle}
+      </p>
+    )}
+  </div>
+</section>

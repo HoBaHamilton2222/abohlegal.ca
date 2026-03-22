@@ -1,0 +1,152 @@
+---
+import { siteConfig } from '../data/siteConfig';
+
+const services = [
+  { label: 'Family Law', href: '/services/family-law' },
+  { label: 'Wills & Estates', href: '/services/wills-estates' },
+  { label: 'Estate Litigation', href: '/services/estate-litigation' },
+  { label: 'Employment Law', href: '/services/employment-law' },
+];
+
+const more = [
+  { label: 'Business & Commercial', href: '/services/business-commercial' },
+  { label: 'Civil Litigation', href: '/services/civil-litigation' },
+  { label: 'Personal Injury', href: '/services/personal-injury' },
+  { label: 'Immigration', href: '/services/immigration' },
+];
+
+const quickLinks = [
+  { label: 'About', href: '/about' },
+  { label: 'Resources', href: '/resources' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'Privacy Policy', href: '/privacy' },
+];
+---
+
+<footer class="bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Column 1: Brand & Contact -->
+      <div>
+        <p class="text-white font-bold uppercase tracking-[3px] text-lg mb-3">
+          {siteConfig.name}
+        </p>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">
+          Client-centred legal counsel serving Alberta from St. Paul.
+        </p>
+        <a href={siteConfig.phoneHref} class="block text-gold hover:text-white transition-colors text-sm mb-2">
+          {siteConfig.phone}
+        </a>
+        <a href={`mailto:${siteConfig.email}`} class="block text-gold hover:text-white transition-colors text-sm">
+          {siteConfig.email}
+        </a>
+      </div>
+
+      <!-- Column 2: Services -->
+      <div class="footer-accordion">
+        <button
+          class="footer-accordion-toggle flex items-center justify-between w-full md:cursor-default"
+          aria-expanded="false"
+        >
+          <h3 class="text-gold text-xs font-bold uppercase tracking-wider">Services</h3>
+          <span class="footer-accordion-icon md:hidden text-gold text-xl leading-none">+</span>
+        </button>
+        <ul class="footer-accordion-panel hidden md:block mt-3 space-y-2">
+          {services.map((link) => (
+            <li>
+              <a href={link.href} class="text-gray-400 hover:text-white transition-colors text-sm">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 3: More -->
+      <div class="footer-accordion">
+        <button
+          class="footer-accordion-toggle flex items-center justify-between w-full md:cursor-default"
+          aria-expanded="false"
+        >
+          <h3 class="text-gold text-xs font-bold uppercase tracking-wider">More</h3>
+          <span class="footer-accordion-icon md:hidden text-gold text-xl leading-none">+</span>
+        </button>
+        <ul class="footer-accordion-panel hidden md:block mt-3 space-y-2">
+          {more.map((link) => (
+            <li>
+              <a href={link.href} class="text-gray-400 hover:text-white transition-colors text-sm">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 4: Quick Links -->
+      <div class="footer-accordion">
+        <button
+          class="footer-accordion-toggle flex items-center justify-between w-full md:cursor-default"
+          aria-expanded="false"
+        >
+          <h3 class="text-gold text-xs font-bold uppercase tracking-wider">Quick Links</h3>
+          <span class="footer-accordion-icon md:hidden text-gold text-xl leading-none">+</span>
+        </button>
+        <ul class="footer-accordion-panel hidden md:block mt-3 space-y-2">
+          {quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-gray-400 hover:text-white transition-colors text-sm">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center">
+      <p class="text-gray-500 text-xs">
+        &copy; 2026 ABOH LEGAL. All rights reserved. |
+        <a href="/terms" class="hover:text-gray-300 transition-colors">Terms of Use</a> |
+        <a href="/privacy" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggles = document.querySelectorAll('.footer-accordion-toggle');
+
+    toggles.forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        // Only run accordion on mobile (below md breakpoint = 768px)
+        if (window.innerWidth >= 768) return;
+
+        const panel = toggle.nextElementSibling as HTMLElement;
+        const icon = toggle.querySelector('.footer-accordion-icon') as HTMLElement;
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+        // Close all other panels
+        toggles.forEach((otherToggle) => {
+          if (otherToggle !== toggle) {
+            otherToggle.setAttribute('aria-expanded', 'false');
+            const otherPanel = otherToggle.nextElementSibling as HTMLElement;
+            const otherIcon = otherToggle.querySelector('.footer-accordion-icon') as HTMLElement;
+            if (otherPanel) otherPanel.classList.add('hidden');
+            if (otherIcon) otherIcon.textContent = '+';
+          }
+        });
+
+        // Toggle current panel
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        if (panel) panel.classList.toggle('hidden');
+        if (icon) icon.textContent = isOpen ? '+' : '−';
+      });
+    });
+  });
+</script>

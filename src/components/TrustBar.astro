@@ -1,0 +1,17 @@
+---
+const items = [
+  'Legal Aid Accepted',
+  'Serving Alberta Province-Wide',
+  'In-Person, Phone & Video Consultations',
+];
+---
+
+<section class="bg-gold py-4 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+    {items.map((item) => (
+      <span class="text-navy font-bold text-sm md:text-base whitespace-nowrap">
+        ✓ {item}
+      </span>
+    ))}
+  </div>
+</section>
