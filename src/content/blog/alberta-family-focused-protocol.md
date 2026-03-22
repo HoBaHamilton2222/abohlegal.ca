@@ -7,7 +7,7 @@ author: "Prince O. Aboh"
 draft: false
 ---
 
-On January 2, 2026, Alberta introduced the Family Focused Protocol (FFP), a significant change to how family law matters are handled in the Court of King's Bench. If you are considering a family law action — whether it involves divorce, parenting, child support, or spousal support — the FFP will affect how your case begins and moves through the court system.
+On January 2, 2026, Alberta introduced the Family Focused Protocol (FFP), a significant change to how family law matters are handled in the Court of King's Bench. If you are considering a family law action, whether it involves divorce, parenting, child support, or spousal support, the FFP will affect how your case begins and moves through the court system.
 
 ## What Is the Family Focused Protocol?
 
@@ -15,7 +15,7 @@ The FFP is a set of mandatory procedures designed to reduce conflict, encourage 
 
 ## Key Requirements Under the FFP
 
-**Mandatory Triage:** When a family law matter is filed, it is assessed early on by the court to determine the appropriate pathway. Cases are streamed based on complexity — some may be directed to simplified processes while others proceed on the standard litigation track.
+**Mandatory Triage:** When a family law matter is filed, it is assessed early on by the court to determine the appropriate pathway. Cases are streamed based on complexity. Some may be directed to simplified processes while others proceed on the standard litigation track.
 
 **Family Information Session:** Parties are generally required to attend a family information session before their matter can move forward. This session provides an overview of the court process, available dispute resolution options, and resources to support families through separation.
 

@@ -7,11 +7,10 @@ import BlogPreview from '../components/BlogPreview.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { services } from '../data/services';
 import { siteConfig } from '../data/siteConfig';
-import headshot from '../assets/headshot.jpg';
 ---
 
 <BaseLayout
-  title="ABOH LEGAL — Family Law, Estates & More | St. Paul, Alberta"
+  title="ABOH LEGAL | Family Law, Estates & More | St. Paul, Alberta"
   description="Client-centred legal counsel for families, homeowners, newcomers, and small businesses across Alberta. Book a consultation with Prince Aboh."
 >
   <!-- Section 1: Split Hero -->
@@ -48,9 +47,9 @@ import headshot from '../assets/headshot.jpg';
       <!-- Right column -->
       <div class="flex justify-center lg:justify-end">
         <img
-          src={headshot.src}
-          alt="Prince Aboh — Barrister and Solicitor"
-          class="rounded-lg border-2 border-gold/50 max-w-xs md:max-w-sm w-full object-cover"
+          src="/images/hero-illustration.svg"
+          alt="Scales of justice and courthouse illustration"
+          class="max-w-xs md:max-w-sm w-full"
           width="400"
           height="500"
         />
@@ -78,28 +77,17 @@ import headshot from '../assets/headshot.jpg';
 
   <!-- Section 4: About Preview -->
   <section class="bg-light-bg py-16 md:py-20 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="flex justify-center">
-        <img
-          src={headshot.src}
-          alt="Prince Aboh"
-          class="rounded-lg max-w-xs md:max-w-sm w-full object-cover"
-          width="400"
-          height="500"
-        />
-      </div>
-      <div>
-        <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">About Prince Aboh</p>
-        <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-          A litigator who listens first
-        </h2>
-        <p class="text-body-text text-base md:text-lg leading-relaxed mb-6">
-          Trained in Lagos. Licensed in Alberta. Rooted in St. Paul. Prince brings a global perspective and a personal touch to every matter — from complex custody disputes to straightforward estate planning.
-        </p>
-        <a href="/about" class="text-gold font-bold hover:underline">
-          Read more &rarr;
-        </a>
-      </div>
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">About Prince Aboh</p>
+      <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+        A litigator who listens first
+      </h2>
+      <p class="text-body-text text-base md:text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+        Trained in Lagos. Licensed in Alberta. Rooted in St. Paul. Prince brings a global perspective and a personal touch to every file, from complex custody disputes to straightforward estate planning.
+      </p>
+      <a href="/about" class="text-gold font-bold hover:underline">
+        Read more &rarr;
+      </a>
     </div>
   </section>
 
@@ -112,7 +100,7 @@ import headshot from '../assets/headshot.jpg';
   <!-- Section 7: CTA Banner -->
   <CTABanner
     heading="Ready to discuss your situation?"
-    body="Book a consultation — in person, by phone, or by video."
+    body="Book a consultation: in person, by phone, or by video."
     buttonText="Schedule Now"
     buttonHref="/contact"
   />

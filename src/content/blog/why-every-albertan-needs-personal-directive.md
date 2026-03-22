@@ -7,7 +7,7 @@ author: "Prince O. Aboh"
 draft: false
 ---
 
-Most Albertans have heard of a will, but far fewer have a personal directive in place. A personal directive is one of the most important legal documents you can create — and one of the most overlooked. If you were ever unable to make decisions for yourself due to illness, injury, or cognitive decline, a personal directive ensures that someone you trust can act on your behalf according to your wishes.
+Most Albertans have heard of a will, but far fewer have a personal directive in place. A personal directive is one of the most important legal documents you can create, and one of the most overlooked. If you were ever unable to make decisions for yourself due to illness, injury, or cognitive decline, a personal directive ensures that someone you trust can act on your behalf according to your wishes.
 
 ## What Is a Personal Directive?
 
@@ -23,7 +23,7 @@ A personal directive avoids all of that. It gives your chosen agent immediate au
 
 ## Who Should Have One?
 
-Every adult Albertan over the age of 18 should have a personal directive. Incapacity does not only affect the elderly — accidents, strokes, and sudden medical events can happen at any age. Having a personal directive in place means you are prepared, regardless of what life brings.
+Every adult Albertan over the age of 18 should have a personal directive. Incapacity does not only affect the elderly. Accidents, strokes, and sudden medical events can happen at any age. Having a personal directive in place means you are prepared, regardless of what life brings.
 
 ## How to Get Started
 

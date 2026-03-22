@@ -2,7 +2,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'family-law': [
     {
       question: 'How long does a divorce take in Alberta?',
-      answer: 'An uncontested divorce in Alberta typically takes three to four months from the date the application is filed. If the divorce is contested — meaning the parties disagree on custody, support, or property division — it can take a year or longer depending on the complexity of the issues and whether the matter goes to trial.',
+      answer: 'An uncontested divorce in Alberta typically takes three to four months from the date the application is filed. If the divorce is contested, meaning the parties disagree on custody, support, or property division, it can take a year or longer depending on the complexity of the issues and whether the matter goes to trial.',
     },
     {
       question: 'Do I need a lawyer for a custody dispute?',
@@ -24,11 +24,11 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'wills-estates': [
     {
       question: 'Do I really need a will?',
-      answer: 'Yes. If you die without a will in Alberta, the Wills and Succession Act dictates how your estate is distributed — and the result may not match your wishes. A will lets you choose your beneficiaries, name a guardian for minor children, and appoint a personal representative you trust to manage your estate.',
+      answer: 'Yes. If you die without a will in Alberta, the Wills and Succession Act dictates how your estate is distributed, and the result may not match your wishes. A will lets you choose your beneficiaries, name a guardian for minor children, and appoint a personal representative you trust to manage your estate.',
     },
     {
       question: 'What is an enduring power of attorney?',
-      answer: 'An enduring power of attorney is a legal document that allows someone you trust to manage your financial and legal affairs if you become unable to do so yourself. Unlike a regular power of attorney, it continues — or "endures" — even after you lose mental capacity. It must be prepared while you still have the capacity to understand its effect.',
+      answer: 'An enduring power of attorney is a legal document that allows someone you trust to manage your financial and legal affairs if you become unable to do so yourself. Unlike a regular power of attorney, it continues, or "endures," even after you lose mental capacity. It must be prepared while you still have the capacity to understand its effect.',
     },
     {
       question: 'What is a personal directive?',
@@ -36,7 +36,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'How often should I update my will?',
-      answer: 'You should review your will every three to five years or whenever a major life event occurs — such as marriage, divorce, the birth of a child, a significant change in assets, or the death of a named beneficiary or executor. In Alberta, marriage does not automatically revoke a will, but divorce does revoke gifts to a former spouse.',
+      answer: 'You should review your will every three to five years or whenever a major life event occurs, such as marriage, divorce, the birth of a child, a significant change in assets, or the death of a named beneficiary or executor. In Alberta, marriage does not automatically revoke a will, but divorce does revoke gifts to a former spouse.',
     },
   ],
   'estate-litigation': [
@@ -46,7 +46,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'What is a dependant\'s relief claim?',
-      answer: 'Under Alberta\'s Wills and Succession Act, certain family members — including spouses, adult interdependent partners, and minor children — can apply to the court for maintenance from an estate if the deceased did not make adequate provision for them. The court considers the claimant\'s needs, the size of the estate, and the deceased\'s obligations.',
+      answer: 'Under Alberta\'s Wills and Succession Act, certain family members, including spouses, adult interdependent partners, and minor children, can apply to the court for maintenance from an estate if the deceased did not make adequate provision for them. The court considers the claimant\'s needs, the size of the estate, and the deceased\'s obligations.',
     },
     {
       question: 'When would I need a guardianship or trusteeship order?',
@@ -54,7 +54,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'What can I do if an executor is mismanaging the estate?',
-      answer: 'If you believe an executor is not fulfilling their duties — such as failing to distribute assets, misusing estate funds, or not providing accounting — you can apply to the court to compel an accounting, remove the executor, or seek a replacement. Acting promptly is important to protect the estate.',
+      answer: 'If you believe an executor is not fulfilling their duties, such as failing to distribute assets, misusing estate funds, or not providing accounting, you can apply to the court to compel an accounting, remove the executor, or seek a replacement. Acting promptly is important to protect the estate.',
     },
   ],
   'employment-law': [
@@ -90,7 +90,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'What is the difference between a sole proprietorship and a corporation?',
-      answer: 'A sole proprietorship is the simplest business structure — you and the business are legally the same, meaning you are personally liable for all debts and obligations. A corporation is a separate legal entity that provides liability protection and potential tax advantages but involves more administrative requirements and costs to set up and maintain.',
+      answer: 'A sole proprietorship is the simplest business structure. You and the business are legally the same, meaning you are personally liable for all debts and obligations. A corporation is a separate legal entity that provides liability protection and potential tax advantages but involves more administrative requirements and costs to set up and maintain.',
     },
   ],
   'civil-litigation': [
@@ -114,7 +114,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'personal-injury': [
     {
       question: 'How long do I have to file a personal injury claim in Alberta?',
-      answer: 'Under the Limitations Act, you generally have two years from the date of the injury — or from when you first knew or ought to have known about the injury — to file a claim. For motor vehicle accidents, you must also notify your own insurer promptly. Delays can affect your right to compensation, so seek legal advice as soon as possible.',
+      answer: 'Under the Limitations Act, you generally have two years from the date of the injury, or from when you first knew or ought to have known about the injury, to file a claim. For motor vehicle accidents, you must also notify your own insurer promptly. Delays can affect your right to compensation, so seek legal advice as soon as possible.',
     },
     {
       question: 'What compensation can I receive for a personal injury?',

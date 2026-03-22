@@ -22,7 +22,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: 'Family Law',
     metaTitle: 'Family Law Lawyer St. Paul Alberta | ABOH LEGAL',
     metaDescription: 'Experienced family law lawyer in St. Paul, Alberta. Divorce, custody, child support, spousal support, protection orders, and separation agreements. Compassionate and effective representation.',
-    fullDesc: 'Family matters are among the most personal and stressful legal challenges you can face. At Aboh Legal, we help families across northeastern Alberta navigate divorce, custody disputes, support issues, and protection orders with compassion, clear communication, and a commitment to practical solutions that protect what matters most — your children and your future.',
+    fullDesc: 'Family matters are among the most personal and stressful legal challenges you can face. At Aboh Legal, we help families across northeastern Alberta navigate divorce, custody disputes, support issues, and protection orders with compassion, clear communication, and a commitment to practical solutions that protect what matters most: your children and your future.',
     whatWeHandle: [
       'Divorce and separation',
       'Custody and parenting arrangements',
@@ -33,7 +33,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Property division',
       'Guardianship applications',
     ],
-    approach: `<p>We understand that every family situation is unique. Our approach begins with listening — taking the time to understand your circumstances, your priorities, and your concerns. From there, we develop a strategy tailored to your goals.</p>
+    approach: `<p>We understand that every family situation is unique. Our approach begins with listening, taking the time to understand your circumstances, your priorities, and your concerns. From there, we develop a strategy tailored to your goals.</p>
 <p>Alberta family law is governed by the <em>Family Law Act</em>, the <em>Divorce Act</em>, and the <em>Family Property Act</em>. We guide you through these frameworks in plain language so you always know where you stand and what to expect.</p>
 <p>Wherever possible, we pursue negotiated resolutions that save time, money, and emotional energy. When negotiation is not possible, we are prepared to advocate firmly for you in court. Our goal is always to help you move forward with confidence and stability.</p>`,
     relatedSlugs: ['wills-estates', 'estate-litigation', 'immigration'],
@@ -55,7 +55,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Estate planning',
       'Beneficiary designations',
     ],
-    approach: `<p>Estate planning does not have to be complicated. We take a practical, step-by-step approach — starting with a conversation about your family, your assets, and your wishes. We then prepare documents that are clear, legally sound, and tailored to your situation.</p>
+    approach: `<p>Estate planning does not have to be complicated. We take a practical, step-by-step approach, starting with a conversation about your family, your assets, and your wishes. We then prepare documents that are clear, legally sound, and tailored to your situation.</p>
 <p>Alberta\'s <em>Wills and Succession Act</em> sets out specific requirements for valid wills and other estate documents. We ensure your documents meet these requirements and are structured to minimize the risk of future disputes or confusion.</p>
 <p>Whether you are creating your first will or updating an existing estate plan after a major life change, we make the process straightforward and accessible.</p>`,
     relatedSlugs: ['estate-litigation', 'family-law'],
@@ -78,7 +78,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Adult trusteeship applications',
       'Estate accounting disputes',
     ],
-    approach: `<p>Estate disputes require both legal precision and sensitivity. We begin every matter by thoroughly reviewing the relevant documents — the will, trust instruments, financial records, and any correspondence — to build a clear picture of the facts and the legal issues at play.</p>
+    approach: `<p>Estate disputes require both legal precision and sensitivity. We begin every matter by thoroughly reviewing the relevant documents, including the will, trust instruments, financial records, and any correspondence, to build a clear picture of the facts and the legal issues at play.</p>
 <p>Alberta\'s <em>Wills and Succession Act</em> and the <em>Adult Guardianship and Trusteeship Act</em> provide the framework for these claims. We ensure our clients understand their rights and the realistic outcomes before any steps are taken.</p>
 <p>We pursue efficient resolution through negotiation and mediation where appropriate, but we do not hesitate to bring matters before the court when a fair resolution cannot be reached. Our clients can count on thorough preparation and strong advocacy.</p>`,
     relatedSlugs: ['wills-estates', 'civil-litigation', 'family-law'],
@@ -116,7 +116,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: 'Business & Commercial Law',
     metaTitle: 'Business & Commercial Lawyer St. Paul Alberta | ABOH LEGAL',
     metaDescription: 'Business and commercial lawyer in St. Paul, Alberta. Incorporations, shareholder agreements, contracts, commercial leases, and business disputes. Practical legal solutions for Alberta businesses.',
-    fullDesc: 'Running a business involves legal decisions at every stage — from formation and contracts to growth and disputes. At Aboh Legal, we provide practical, straightforward legal advice to businesses across northeastern Alberta, helping you build a solid foundation and manage risk effectively.',
+    fullDesc: 'Running a business involves legal decisions at every stage, from formation and contracts to growth and disputes. At Aboh Legal, we provide practical, straightforward legal advice to businesses across northeastern Alberta, helping you build a solid foundation and manage risk effectively.',
     whatWeHandle: [
       'Incorporations',
       'Shareholder agreements',
@@ -128,7 +128,7 @@ export const serviceDetails: ServiceDetail[] = [
     ],
     approach: `<p>We take a practical, business-minded approach to commercial law. We know that legal advice is only useful if it makes sense in the real-world context of your business. That means we focus on clear, enforceable agreements and proactive strategies that protect your interests without unnecessary complexity.</p>
 <p>Whether you are incorporating a new company under the <em>Alberta Business Corporations Act</em>, drafting a shareholder agreement, or reviewing a commercial lease, we ensure every document is tailored to your specific needs and compliant with Alberta law.</p>
-<p>When disputes arise, we work to resolve them efficiently — through negotiation, mediation, or litigation if necessary. Our goal is always to help you protect your business and get back to what you do best.</p>`,
+<p>When disputes arise, we work to resolve them efficiently through negotiation, mediation, or litigation if necessary. Our goal is always to help you protect your business and get back to what you do best.</p>`,
     relatedSlugs: ['civil-litigation', 'employment-law'],
     ctaText: 'Need legal support for your business? Let\'s talk about how we can help.',
   },
@@ -151,7 +151,7 @@ export const serviceDetails: ServiceDetail[] = [
     ],
     approach: `<p>Effective litigation starts with thorough preparation. We carefully assess the facts, the law, and the practical realities of each case before recommending a course of action. You will know the strengths and risks of your case from the outset.</p>
 <p>Alberta\'s court system includes Provincial Court for claims up to $100,000 and the Court of King\'s Bench for larger or more complex matters. We are experienced in both forums and will advise on the most appropriate and cost-effective path for your dispute.</p>
-<p>We pursue settlement where it makes sense and litigate aggressively when it does not. Every step we take is focused on achieving the best practical result for you — efficiently and without unnecessary delay.</p>`,
+<p>We pursue settlement where it makes sense and litigate aggressively when it does not. Every step we take is focused on achieving the best practical result for you, efficiently and without unnecessary delay.</p>`,
     relatedSlugs: ['employment-law', 'personal-injury', 'business-commercial'],
     ctaText: 'Have a legal dispute? Contact us for a straightforward assessment of your options.',
   },
@@ -163,7 +163,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: 'Personal Injury',
     metaTitle: 'Personal Injury Lawyer St. Paul Alberta | ABOH LEGAL',
     metaDescription: 'Personal injury lawyer in St. Paul, Alberta. Motor vehicle accidents, slip and fall, insurance claims, and catastrophic injury. Compassionate advocacy to get you the compensation you deserve.',
-    fullDesc: 'An unexpected injury can change your life in an instant — affecting your health, your ability to work, and your family\'s well-being. At Aboh Legal, we help injured Albertans pursue the compensation they need to recover and move forward, handling the legal process so you can focus on healing.',
+    fullDesc: 'An unexpected injury can change your life in an instant, affecting your health, your ability to work, and your family\'s well-being. At Aboh Legal, we help injured Albertans pursue the compensation they need to recover and move forward, handling the legal process so you can focus on healing.',
     whatWeHandle: [
       'Motor vehicle collisions',
       'Slip and fall injuries',
@@ -172,7 +172,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Minor injury cap disputes',
       'Catastrophic injury claims',
     ],
-    approach: `<p>We understand that dealing with an injury is overwhelming. Our first priority is to make sure you are getting the medical care and support you need. From there, we handle the legal process — gathering evidence, dealing with insurance companies, and building a strong case for full and fair compensation.</p>
+    approach: `<p>We understand that dealing with an injury is overwhelming. Our first priority is to make sure you are getting the medical care and support you need. From there, we handle the legal process: gathering evidence, dealing with insurance companies, and building a strong case for full and fair compensation.</p>
 <p>Alberta personal injury law is shaped by the <em>Insurance Act</em>, the <em>Minor Injury Regulation</em>, and the <em>Occupiers\' Liability Act</em>, among other statutes. We know these frameworks inside and out, and we use that knowledge to pursue every dollar of compensation you are entitled to.</p>
 <p>Many of our personal injury matters are handled on a contingency fee basis, meaning you do not pay legal fees unless we recover compensation for you. We discuss all fee arrangements openly at your first consultation.</p>`,
     relatedSlugs: ['civil-litigation', 'employment-law'],
@@ -197,7 +197,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Temporary resident visas',
       'Refugee claims',
     ],
-    approach: `<p>Immigration matters are deeply personal — they affect your ability to live, work, and build a future in Canada with the people you love. We treat every file with the care and attention it deserves, because we understand what is at stake.</p>
+    approach: `<p>Immigration matters are deeply personal. They affect your ability to live, work, and build a future in Canada with the people you love. We treat every file with the care and attention it deserves, because we understand what is at stake.</p>
 <p>Canada\'s <em>Immigration and Refugee Protection Act</em> and its regulations govern the full range of immigration programs. We stay current with policy changes, processing updates, and program requirements so that your application is complete, accurate, and positioned for success.</p>
 <p>From your initial consultation to the final decision, we keep you informed at every step. We explain the process in plain language, set realistic expectations about timelines, and respond promptly to your questions. Our goal is to make a complex process feel manageable.</p>`,
     relatedSlugs: ['family-law', 'employment-law'],

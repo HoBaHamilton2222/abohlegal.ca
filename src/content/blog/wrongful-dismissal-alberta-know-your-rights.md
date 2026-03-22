@@ -11,7 +11,7 @@ Losing your job is stressful, and the circumstances surrounding a termination ca
 
 ## What Is Wrongful Dismissal?
 
-In Alberta, most employees work without a fixed-term contract. When an employer terminates an employee without cause, the law requires the employer to provide reasonable notice of the termination — or pay the employee instead of giving that notice. Wrongful dismissal occurs when an employer fails to provide adequate notice or compensation upon termination.
+In Alberta, most employees work without a fixed-term contract. When an employer terminates an employee without cause, the law requires the employer to provide reasonable notice of the termination, or pay the employee instead of giving that notice. Wrongful dismissal occurs when an employer fails to provide adequate notice or compensation upon termination.
 
 It is important to understand that an employer generally has the right to terminate an employee without cause. The legal issue is not whether the employer *can* let you go, but whether they have provided sufficient notice or severance when doing so.
 
@@ -24,7 +24,7 @@ Reasonable notice is not a fixed number. Courts consider several factors, often 
 - **Character of employment:** Senior or specialized positions typically attract longer notice periods.
 - **Availability of similar employment:** If comparable jobs are scarce, notice periods may be longer.
 
-The minimum standards under the *Alberta Employment Standards Code* are just that — minimums. Common law entitlements to reasonable notice are almost always greater, sometimes significantly so.
+The minimum standards under the *Alberta Employment Standards Code* are just that: minimums. Common law entitlements to reasonable notice are almost always greater, sometimes significantly so.
 
 ## What Should You Do If You Are Terminated?
 
