@@ -10,8 +10,39 @@ interface Props {
   schemaData?: string;
 }
 
-const { title, description, ogImage = '/images/og-default.jpg', schemaData } = Astro.props;
+const { title, description, ogImage = '/images/og-image.svg', schemaData } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const defaultSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Attorney"],
+  "name": "ABOH LEGAL",
+  "description": "Client-centred legal counsel for families, homeowners, newcomers, and small businesses across Alberta.",
+  "url": "https://www.abohlegal.ca",
+  "telephone": "+18254610107",
+  "email": "info@abohlegal.ca",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4437 53 Avenue",
+    "addressLocality": "St. Paul",
+    "addressRegion": "AB",
+    "postalCode": "T0A 3A2",
+    "addressCountry": "CA"
+  },
+  "openingHours": "Mo-Fr 08:00-17:00",
+  "founder": {
+    "@type": "Person",
+    "name": "Prince O. Aboh",
+    "jobTitle": "Barrister & Solicitor"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Alberta"
+  },
+  "priceRange": "$$"
+});
+
+const schemaJson = schemaData || defaultSchema;
 ---
 
 <!DOCTYPE html>
@@ -36,7 +67,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:type" content="website" />
 
     <!-- Structured Data -->
-    {schemaData && <script type="application/ld+json" set:html={schemaData} />}
+    <script type="application/ld+json" set:html={schemaJson} />
 
     <!-- Plausible Analytics (uncomment when account is set up)
     <script defer data-domain="abohlegal.ca" src="https://plausible.io/js/script.js"></script>
