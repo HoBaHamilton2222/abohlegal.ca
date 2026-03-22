@@ -1,0 +1,38 @@
+---
+import ServiceLayout from '../../layouts/ServiceLayout.astro';
+import { serviceDetails } from '../../data/serviceDetails';
+import { faqsByCategory } from '../../data/faqs';
+
+export function getStaticPaths() {
+  return serviceDetails.map((service) => ({
+    params: { slug: service.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const service = serviceDetails.find((s) => s.slug === slug);
+
+if (!service) {
+  return Astro.redirect('/404');
+}
+
+const faqs = faqsByCategory[service.slug] || [];
+
+const relatedServices = service.relatedSlugs
+  .map((relSlug) => serviceDetails.find((s) => s.slug === relSlug))
+  .filter((s): s is NonNullable<typeof s> => s !== undefined)
+  .map((s) => ({ name: s.name, slug: s.slug, shortDesc: s.shortDesc }));
+---
+
+<ServiceLayout
+  title={service.title}
+  description={service.metaDescription}
+  label={service.label}
+  fullDesc={service.fullDesc}
+  whatWeHandle={service.whatWeHandle}
+  approach={service.approach}
+  faqs={faqs}
+  relatedServices={relatedServices}
+  ctaText={service.ctaText}
+  metaTitle={service.metaTitle}
+/>

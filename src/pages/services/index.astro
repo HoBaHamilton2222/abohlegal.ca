@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import { serviceDetails } from '../../data/serviceDetails';
+---
+
+<BaseLayout
+  title="Our Services | ABOH LEGAL"
+  description="ABOH LEGAL offers family law, wills & estates, employment law, civil litigation, and more. Serving Alberta from St. Paul."
+>
+  <Hero label="Our Practice" title="Legal Services" />
+
+  <section class="bg-white py-12 md:py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-body-text text-base md:text-lg leading-relaxed text-center mb-12 max-w-2xl mx-auto">
+        Aboh Legal provides a broad range of legal services to individuals, families, and businesses across northeastern Alberta. Select a practice area below to learn more about how we can help.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {serviceDetails.map((service) => (
+          <ServiceCard
+            name={service.name}
+            slug={service.slug}
+            description={service.shortDesc}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
