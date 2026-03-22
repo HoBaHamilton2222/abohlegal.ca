@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import CTABanner from '../components/CTABanner.astro';
+import headshot from '../assets/headshot.jpg';
+---
+
+<BaseLayout
+  title="About Prince O. Aboh | ABOH LEGAL"
+  description="Meet Prince Aboh — a family law litigator serving Alberta from St. Paul. Trained in Nigeria, licensed in Alberta, committed to your community."
+>
+  <!-- Section 1: Hero -->
+  <Hero
+    label="About"
+    title="Prince O. Aboh"
+    subtitle="Barrister & Solicitor, Founder"
+  />
+
+  <!-- Section 2: Story -->
+  <section class="bg-[#f9f8f6] py-16 md:py-20 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <!-- Photo -->
+      <div class="flex justify-center">
+        <img
+          src={headshot.src}
+          alt="Prince O. Aboh — Barrister and Solicitor"
+          class="rounded-lg max-w-[350px] w-full object-cover"
+          width="350"
+          height="450"
+        />
+      </div>
+      <!-- Narrative -->
+      <div>
+        <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">My Story</p>
+        <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-6">
+          From Lagos to St. Paul
+        </h2>
+        <div class="space-y-5 text-body-text text-base md:text-lg leading-relaxed">
+          <p>
+            My legal career began thousands of kilometres from the prairies. After earning my LL.B (Hons) from the University of Maiduguri, I was called to the Nigerian Bar in 2014 and began practising corporate and commercial litigation at a reputable firm in Lagos. I later moved in-house, serving as legal counsel for organizations spanning the energy, finance and insurance, and non-profit sectors. Those years taught me how to navigate complexity, manage competing interests, and always keep the client's objectives at the centre of every decision.
+          </p>
+          <p>
+            In late 2020, I immigrated to Canada with a clear goal: to build a new chapter of my legal career on Canadian soil. I pursued my Alberta law licence through the National Committee on Accreditation, earning my Certificate of Qualification from the Federation of Law Societies of Canada. During that time, I volunteered with the Elizabeth Fry Society as a courthouse volunteer in Calgary, helping visitors navigate the courthouse and access information — an experience that deepened my commitment to making the justice system more approachable.
+          </p>
+          <p>
+            In 2023, I began articles with a respected boutique litigation firm in Calgary, where I gained broad exposure across multiple practice areas. Working closely with senior partners, I took on significant responsibility on files and developed a thorough understanding of Alberta legal practice — its procedures, its people, and its expectations.
+          </p>
+          <p>
+            Called to the Alberta Bar in 2024, I had by then discovered St. Paul during visits to the region. The community was charming, welcoming, and refreshingly different from the pace of Calgary. My family and I relocated to St. Paul in 2025, choosing to build both a home and a practice rooted in the community we now call our own.
+          </p>
+          <p>
+            Recognizing the scarcity of legal resources in northeast Alberta, I opened ABOH LEGAL to directly serve local families and individuals — providing the kind of thoughtful, accessible counsel that every community deserves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Credentials -->
+  <section class="bg-white py-16 md:py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2 text-center">Credentials</p>
+      <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
+        Education & Memberships
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Education -->
+        <div>
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-6">Education</h3>
+          <ul class="space-y-4">
+            <li class="border-l-4 border-gold pl-4">
+              <p class="font-bold text-navy">LL.B (Hons)</p>
+              <p class="text-muted-text text-sm">University of Maiduguri, 2013</p>
+            </li>
+            <li class="border-l-4 border-gold pl-4">
+              <p class="font-bold text-navy">Nigerian Law School</p>
+              <p class="text-muted-text text-sm">2014</p>
+            </li>
+            <li class="border-l-4 border-gold pl-4">
+              <p class="font-bold text-navy">NCA Certificate of Qualification</p>
+              <p class="text-muted-text text-sm">Federation of Law Societies of Canada, 2022</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Professional Memberships -->
+        <div>
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-6">Professional Memberships</h3>
+          <ul class="space-y-4">
+            <li class="border-l-4 border-gold pl-4">
+              <p class="font-bold text-navy">Law Society of Alberta</p>
+            </li>
+            <li class="border-l-4 border-gold pl-4">
+              <p class="font-bold text-navy">Canadian Bar Association</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: How I Work -->
+  <section class="bg-[#f9f8f6] py-16 md:py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2 text-center">My Approach</p>
+      <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
+        How I Work
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Always Available -->
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">Always Available</h3>
+          <p class="text-body-text leading-relaxed">
+            I believe in responsive communication. When you're going through a difficult time, waiting days for a callback isn't acceptable. I make myself available — even on short notice — because your matter is urgent to you, and that makes it urgent to me.
+          </p>
+        </div>
+        <!-- Fearless Advocacy -->
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">Fearless Advocacy</h3>
+          <p class="text-body-text leading-relaxed">
+            Every client's matter deserves full commitment, regardless of its size or complexity. I prepare thoroughly, advocate vigorously, and never shy away from the difficult conversations or positions that serve your interests.
+          </p>
+        </div>
+        <!-- A Lawyer Who Listens -->
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">A Lawyer Who Listens</h3>
+          <p class="text-body-text leading-relaxed">
+            Before I can advise, I need to understand. I take the time to listen — truly listen — to what you're going through. The best legal strategy starts with understanding not just the facts, but the person behind them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA Banner -->
+  <CTABanner
+    heading="Ready to discuss your situation?"
+    body="Book a consultation — in person, by phone, or by video."
+    buttonText="Schedule a Consultation"
+    buttonHref="/contact"
+  />
+</BaseLayout>
