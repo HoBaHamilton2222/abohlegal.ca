@@ -1,136 +1,184 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
-import CTABanner from '../components/CTABanner.astro';
+import { Image } from 'astro:assets';
 import headshot from '../assets/headshot.jpg';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "About" }
+  ]
+});
+
+const personSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.abohlegal.ca/about#person",
+  "name": "Prince Aboh",
+  "jobTitle": "Barrister & Solicitor",
+  "url": "https://www.abohlegal.ca/about",
+  "worksFor": { "@id": "https://www.abohlegal.ca/#organization" },
+  "alumniOf": [
+    { "@type": "EducationalOrganization", "name": "University of Maiduguri" },
+    { "@type": "EducationalOrganization", "name": "Nigerian Law School" }
+  ],
+  "memberOf": [
+    { "@type": "Organization", "name": "Law Society of Alberta" },
+    { "@type": "Organization", "name": "Canadian Bar Association" },
+    { "@type": "Organization", "name": "Association of Family and Conciliation Courts" },
+    { "@type": "Organization", "name": "The Advocates' Society" }
+  ],
+  "knowsAbout": ["Family Law", "Immigration Law", "Employment Law", "Civil Litigation", "Wills and Estates", "Estate Litigation"]
+});
 ---
 
 <BaseLayout
-  title="About Prince Aboh | ABOH LEGAL"
-  description="Meet Prince Aboh, a family law litigator serving Alberta from St. Paul. Trained in Nigeria, licensed in Alberta, committed to your community."
+  title="About Prince Aboh | Family Lawyer St. Paul, Alberta | ABOH LEGAL"
+  description="Meet Prince Aboh, a litigator and solicitor serving Alberta from St. Paul. Trained in Nigeria, licensed in Alberta, committed to your community."
 >
-  <!-- Section 1: Hero -->
-  <Hero
-    title="Prince Aboh"
-    subtitle="Barrister & Solicitor"
-    backgroundImage="/images/stock/prairie-road.jpg"
-  />
+  <script slot="head" type="application/ld+json" set:html={personSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
 
-  <!-- Section 2: Story -->
-  <section class="bg-[#f9f8f6] py-16 md:py-20 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-      <!-- Photo -->
-      <div class="flex justify-center">
-        <div class="relative inline-block">
-          <img
-            src={headshot.src}
-            alt="Prince Aboh, Barrister and Solicitor"
-            class="rounded-sm max-w-[350px] w-full object-cover aspect-[3/4] shadow-xl border border-gray-200"
-            style="border-bottom: 4px solid #c9a84c;"
-            width="350"
-            height="467"
-          />
-        </div>
+  <!-- Section 1: Portrait + Credentials side by side -->
+  <section class="bg-white pt-16 md:pt-24 pb-10 md:pb-14 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr] gap-10 lg:gap-14 items-stretch">
+      <!-- Portrait -->
+      <div class="relative overflow-hidden rounded-lg mx-auto md:mx-0 max-w-[320px] md:max-w-none">
+        <Image
+          src={headshot}
+          alt="Prince Aboh, Barrister and Solicitor"
+          class="w-full h-full object-cover object-[center_15%] rounded-lg"
+          widths={[380, 640]}
+          sizes="(max-width: 768px) 320px, 380px"
+          format="webp"
+          quality={85}
+          loading="eager"
+          fetchpriority="high"
+        />
       </div>
-      <!-- Narrative -->
-      <div>
-        <p class="text-gold text-xs font-bold uppercase tracking-widest mb-2">My Story</p>
-        <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-6">
-          From Lagos to St. Paul
-        </h2>
-        <div class="space-y-5 text-body-text text-base md:text-lg leading-relaxed">
-          <p>
-            Called to the Nigerian Bar in 2014, Prince began his legal career in corporate and commercial litigation in Lagos, then transitioned to in-house counsel roles across the energy, finance, and non-profit sectors. Those years built a foundation in navigating complexity and keeping client objectives at the centre of every decision.
-          </p>
-          <p>
-            Prince immigrated to Canada in 2020 and earned his NCA Certificate of Qualification from the Federation of Law Societies of Canada. He volunteered with the Elizabeth Fry Society in Calgary, helping people navigate the courthouse system. After articling at a respected boutique litigation firm in Calgary, he was called to the Alberta Bar in 2024.
-          </p>
-          <p>
-            St. Paul caught his attention during visits to the region. The community was welcoming, grounded, and different from the pace of Calgary in all the right ways. Prince relocated with his family in 2025 and opened ABOH LEGAL to serve the region directly, bringing the kind of thoughtful, accessible legal counsel every community deserves.
-          </p>
-        </div>
+      <!-- Name + Credentials -->
+      <div class="flex flex-col justify-center">
+        <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1] text-navy mb-8">
+          Prince Aboh<span class="font-normal text-navy/55 text-base md:text-lg lg:text-xl ml-2 align-baseline">LL.B., B.L.</span>
+        </h1>
+
+        <dl class="divide-y divide-navy/10 border-t border-b border-navy/10">
+          <div class="grid grid-cols-[110px_1fr] md:grid-cols-[140px_1fr] gap-4 py-4">
+            <dt class="text-gold text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase pt-0.5">Education</dt>
+            <dd class="text-body-text text-sm leading-relaxed space-y-0.5">
+              <div>LL.B., University of Maiduguri</div>
+              <div>B.L., Nigerian Law School</div>
+              <div>NCA Certificate of Qualification</div>
+            </dd>
+          </div>
+          <div class="grid grid-cols-[110px_1fr] md:grid-cols-[140px_1fr] gap-4 py-4">
+            <dt class="text-gold text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase pt-0.5">Admissions</dt>
+            <dd class="text-body-text text-sm leading-relaxed space-y-0.5">
+              <div>Law Society of Alberta, 2024</div>
+              <div>Nigerian Bar Association, 2014</div>
+            </dd>
+          </div>
+          <div class="grid grid-cols-[110px_1fr] md:grid-cols-[140px_1fr] gap-4 py-4">
+            <dt class="text-gold text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase pt-0.5">Memberships</dt>
+            <dd class="text-body-text text-sm leading-relaxed space-y-0.5">
+              <div>Canadian Bar Association</div>
+              <div>Association of Family and Conciliation Courts</div>
+              <div>The Advocates' Society</div>
+              <div>Calgary Region Immigrant Employment Council</div>
+            </dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <!-- Section 3: Credentials -->
-  <section class="bg-white py-16 md:py-20 px-6">
+  <!-- Section 2: Profile -->
+  <section class="bg-light-bg pt-12 md:pt-16 pb-10 md:pb-14 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
-        Education & Memberships
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Education -->
-        <div>
-          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-6">Education</h3>
-          <ul class="space-y-4">
-            <li class="border-l-4 border-gold pl-4">
-              <p class="font-bold text-navy">LL.B (Hons)</p>
-              <p class="text-muted-text text-sm">University of Maiduguri, 2013</p>
-            </li>
-            <li class="border-l-4 border-gold pl-4">
-              <p class="font-bold text-navy">Nigerian Law School</p>
-              <p class="text-muted-text text-sm">2014</p>
-            </li>
-            <li class="border-l-4 border-gold pl-4">
-              <p class="font-bold text-navy">NCA Certificate of Qualification</p>
-              <p class="text-muted-text text-sm">Federation of Law Societies of Canada, 2022</p>
-            </li>
-          </ul>
-        </div>
-        <!-- Professional Memberships -->
-        <div>
-          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-6">Professional Memberships</h3>
-          <ul class="space-y-4">
-            <li class="border-l-4 border-gold pl-4">
-              <p class="font-bold text-navy">Law Society of Alberta</p>
-            </li>
-            <li class="border-l-4 border-gold pl-4">
-              <p class="font-bold text-navy">Canadian Bar Association</p>
-            </li>
-          </ul>
-        </div>
+      <div class="space-y-10 text-body-text text-base md:text-lg leading-relaxed text-justify">
+        <section class="space-y-4">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold tracking-tight">Practice</h3>
+          <p>
+            Prince serves individuals and families across Alberta from his base in St. Paul. His practice focuses on <a href="/services/family-law" class="text-gold hover:underline">family law</a>, <a href="/services/immigration" class="text-gold hover:underline">immigration law</a>, <a href="/services/employment-law" class="text-gold hover:underline">employment law</a>, and general litigation. He combines foreign legal training with Canadian legal experience to help clients navigate high-stakes decisions with clarity.
+          </p>
+          <p>
+            In 2025, Prince relocated with his family to St. Paul, drawn by its welcoming community. He established ABOH LEGAL to provide accessible legal services across the Lakeland region. He appears regularly before the Court of King's Bench and the Alberta Court of Justice at the St. Paul, Vermilion, Lloydminster, Cold Lake, Wainwright and Bonnyville court locations.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold tracking-tight">Background</h3>
+          <p>
+            Prince began his legal career in Lagos, Nigeria, where he practised commercial litigation before moving into in-house counsel roles across the energy, insurance, and non-profit sectors. That early breadth of exposure gave him a perspective he carries into every file.
+          </p>
+          <p>
+            After immigrating to Canada, Prince completed his Canadian legal qualifications through the NCA in 2022 before commencing articles with a respected boutique litigation firm in Calgary in 2023, gaining further practice exposure in medical negligence work, <a href="/services/employment-law" class="text-gold hover:underline">employment law</a>, and <a href="/services/civil-litigation" class="text-gold hover:underline">commercial litigation</a>. He was called to the Alberta bar in 2024.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold tracking-tight">Community</h3>
+          <p>
+            Prince volunteered with the Elizabeth Fry Society in Calgary, assisting courthouse visitors with navigating processes. He has also contributed his time through the Court of King's Bench Amicus Program, supporting self-represented litigants in docket court, and as a mentor with the Calgary Region Immigrant Employment Council, helping newcomers establish themselves in Canada.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h3 class="font-heading text-navy text-lg md:text-xl font-bold tracking-tight">Outside the Office</h3>
+          <p>
+            When Prince is not working, he enjoys exploring new tech gadgets or listening to Hillsong worship music. Global politics and football are guaranteed conversation starters. He values time in nature and spends his downtime hiking, gaming, and travelling.
+          </p>
+        </section>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4 text-center">
+        <a
+          href="/contact"
+          class="inline-block bg-gold text-navy font-bold px-8 py-3 rounded hover:bg-[#d4aa5a] transition-colors text-sm uppercase tracking-wider"
+        >
+          Schedule a Consultation
+        </a>
+        <a
+          href="tel:+18254610107"
+          class="inline-block border-2 border-navy text-navy font-bold px-8 py-3 rounded hover:bg-navy/5 transition-colors text-sm uppercase tracking-wider"
+        >
+          &#9742; (825) 461-0107
+        </a>
+      </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 4: How I Work -->
-  <section class="bg-[#f9f8f6] py-16 md:py-20 px-6">
+  <!-- Section 3: What to Expect -->
+  <section class="bg-light-bg pt-10 md:pt-14 pb-20 md:pb-28 px-6">
     <div class="max-w-5xl mx-auto">
-      <h2 class="font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
-        How I Work
+      <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold text-center mb-14 tracking-tight">
+        What to Expect
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Always Available -->
-        <div class="bg-white rounded-lg p-8 shadow-sm">
-          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">Always Available</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="space-y-4">
+          <div class="w-10 h-0.5 bg-gold"></div>
+          <h3 class="font-heading text-navy text-lg font-bold">We Work Together</h3>
           <p class="text-body-text leading-relaxed">
-            I believe in responsive communication. When you're going through a difficult time, waiting days for a callback isn't acceptable. I make myself available, even on short notice, because your matter is urgent to you, and that makes it urgent to me.
+            Your legal matter is a partnership, not a handoff. Prince works directly with every client to understand their situation, explore options together, and build a strategy that reflects their priorities.
           </p>
         </div>
-        <!-- Fearless Advocacy -->
-        <div class="bg-white rounded-lg p-8 shadow-sm">
-          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">Fearless Advocacy</h3>
+        <div class="space-y-4">
+          <div class="w-10 h-0.5 bg-gold"></div>
+          <h3 class="font-heading text-navy text-lg font-bold">Calm, Clear, and Honest</h3>
           <p class="text-body-text leading-relaxed">
-            Every client's matter deserves full commitment, regardless of its size or complexity. I prepare thoroughly, advocate vigorously, and never shy away from the difficult conversations or positions that serve your interests.
+            Legal issues can be stressful. Prince creates a space where clients feel comfortable enough to ask questions and speak openly. You will always know where your matter stands and what your options are.
           </p>
         </div>
-        <!-- A Lawyer Who Listens -->
-        <div class="bg-white rounded-lg p-8 shadow-sm">
-          <h3 class="font-heading text-navy text-lg md:text-xl font-bold mb-4">A Lawyer Who Listens</h3>
+        <div class="space-y-4">
+          <div class="w-10 h-0.5 bg-gold"></div>
+          <h3 class="font-heading text-navy text-lg font-bold">Capable Hands, Full Attention</h3>
           <p class="text-body-text leading-relaxed">
-            Before I can advise, I need to understand. I take the time to listen, truly listen, to what you're going through. The best legal strategy starts with understanding not just the facts, but the person behind them.
+            Every file receives thorough preparation and genuine care. Prince pursues negotiated outcomes where they serve your interests and litigates with conviction when they do not.
           </p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Section 5: CTA Banner -->
-  <CTABanner
-    heading="Ready to discuss your situation?"
-    body="Book a consultation: in person, by phone, or by video."
-    buttonText="Schedule a Consultation"
-    buttonHref="/contact"
-  />
 </BaseLayout>

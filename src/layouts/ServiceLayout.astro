@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 import CTABanner from '../components/CTABanner.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import type { ImageMetadata } from 'astro';
 
 interface Props {
   title: string;
@@ -16,7 +17,7 @@ interface Props {
   relatedServices: Array<{ name: string; slug: string; shortDesc: string }>;
   ctaText: string;
   metaTitle: string;
-  heroImage?: string;
+  heroImage?: ImageMetadata;
 }
 
 const {
@@ -35,6 +36,7 @@ const {
 ---
 
 <BaseLayout title={metaTitle} description={description}>
+  <slot name="head" slot="head" />
   <Hero title={title} backgroundImage={heroImage} />
 
   <!-- Full Description -->

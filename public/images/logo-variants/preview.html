@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABOH LegaL - Logo Variants</title>
+<style>
+  :root {
+    --navy: #0C2233;
+    --gold: #C49A4A;
+    --bg-light: #F7F5F0;
+    --bg-dark: #0A0A14;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: var(--bg-light);
+    color: var(--navy);
+    padding: 48px 32px;
+  }
+  h1 {
+    font-family: Sora, Epilogue, system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 32px;
+    margin: 0 0 8px;
+  }
+  .sub {
+    opacity: 0.65;
+    margin: 0 0 40px;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    gap: 24px;
+    max-width: 1280px;
+  }
+  .card {
+    background: white;
+    border: 1px solid rgba(12, 34, 51, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .card .label {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(12, 34, 51, 0.08);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--navy);
+    opacity: 0.8;
+  }
+  .panel {
+    padding: 40px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+  }
+  .panel.light { background: var(--bg-light); }
+  .panel.dark { background: var(--bg-dark); }
+  .panel img { max-width: 100%; height: auto; max-height: 160px; }
+  .mark-card .panel img { max-height: 200px; }
+</style>
+</head>
+<body>
+  <h1>ABOH LegaL</h1>
+  <p class="sub">Logo placement options</p>
+
+  <div class="grid">
+
+    <div class="card mark-card">
+      <div class="label">Mark only &mdash; A in gold ring</div>
+      <div class="panel light"><img src="mark-ring.svg" alt="ABOH LegaL mark"></div>
+      <div class="panel dark"><img src="mark-ring.svg" alt="ABOH LegaL mark on dark"></div>
+    </div>
+
+    <div class="card">
+      <div class="label">01 &middot; Horizontal &mdash; mark left</div>
+      <div class="panel light"><img src="01-horizontal-mark-left.svg" alt="Variant 1"></div>
+      <div class="panel dark"><img src="01-horizontal-mark-left-dark.svg" alt="Variant 1 dark"></div>
+    </div>
+
+    <div class="card">
+      <div class="label">02 &middot; Horizontal &mdash; mark right</div>
+      <div class="panel light"><img src="02-horizontal-mark-right.svg" alt="Variant 2"></div>
+      <div class="panel dark"><img src="02-horizontal-mark-right-dark.svg" alt="Variant 2 dark"></div>
+    </div>
+
+    <div class="card">
+      <div class="label">03 &middot; Stacked &mdash; mark on top</div>
+      <div class="panel light"><img src="03-stacked-mark-top.svg" alt="Variant 3"></div>
+      <div class="panel dark"><img src="03-stacked-mark-top-dark.svg" alt="Variant 3 dark"></div>
+    </div>
+
+    <div class="card">
+      <div class="label">04 &middot; Stacked &mdash; wordmark on top</div>
+      <div class="panel light"><img src="04-stacked-mark-bottom.svg" alt="Variant 4"></div>
+      <div class="panel dark"><img src="04-stacked-mark-bottom-dark.svg" alt="Variant 4 dark"></div>
+    </div>
+
+    <div class="card">
+      <div class="label">05 &middot; Horizontal with tagline</div>
+      <div class="panel light"><img src="05-horizontal-with-tagline.svg" alt="Variant 5"></div>
+      <div class="panel dark"><img src="05-horizontal-with-tagline-dark.svg" alt="Variant 5 dark"></div>
+    </div>
+
+  </div>
+</body>
+</html>

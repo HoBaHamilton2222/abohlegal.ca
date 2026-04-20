@@ -4,5 +4,10 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://www.abohlegal.ca',
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      lastmod: new Date(),
+    }),
+  ],
 });

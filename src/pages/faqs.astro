@@ -4,6 +4,31 @@ import Hero from '../components/Hero.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTABanner from '../components/CTABanner.astro';
 import { faqsByCategory } from '../data/faqs';
+import ladyJustice from '../assets/stock/lady-justice.jpg';
+
+// Build FAQPage schema from all FAQs
+const allFaqs = Object.values(faqsByCategory).flat();
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": allFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "FAQs" }
+  ]
+});
 
 const categoryTitles: Record<string, string> = {
   'family-law': 'Family Law',
@@ -21,7 +46,10 @@ const categoryTitles: Record<string, string> = {
   title="Frequently Asked Questions | ABOH LEGAL"
   description="Common questions about family law, wills, estates, employment law, and more. Answers from ABOH LEGAL in St. Paul, Alberta."
 >
-  <Hero title="Frequently Asked Questions" backgroundImage="/images/stock/lady-justice.jpg" />
+  <script slot="head" type="application/ld+json" set:html={faqSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <Hero title="Frequently Asked Questions" backgroundImage={ladyJustice} />
 
   <section class="bg-white py-16 md:py-20 px-6">
     <div class="max-w-3xl mx-auto space-y-14">

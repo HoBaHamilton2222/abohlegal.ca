@@ -22,6 +22,47 @@ const relatedServices = service.relatedSlugs
   .map((relSlug) => serviceDetails.find((s) => s.slug === relSlug))
   .filter((s): s is NonNullable<typeof s> => s !== undefined)
   .map((s) => ({ name: s.name, slug: s.slug, shortDesc: s.shortDesc }));
+
+// Build LegalService + FAQPage schema
+const serviceSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": `https://www.abohlegal.ca/services/${service.slug}#service`,
+  "name": service.name,
+  "description": service.metaDescription,
+  "url": `https://www.abohlegal.ca/services/${service.slug}`,
+  "provider": { "@id": "https://www.abohlegal.ca/#organization" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Alberta" },
+  "serviceType": service.name,
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": `${service.name} Services`,
+    "itemListElement": service.whatWeHandle.map(item => ({
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": item }
+    }))
+  }
+});
+
+const faqSchemaData = faqs.length > 0 ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+  }))
+}) : null;
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.abohlegal.ca/services" },
+    { "@type": "ListItem", "position": 3, "name": service.name }
+  ]
+});
 ---
 
 <ServiceLayout
@@ -36,4 +77,8 @@ const relatedServices = service.relatedSlugs
   ctaText={service.ctaText}
   metaTitle={service.metaTitle}
   heroImage={service.heroImage}
-/>
+>
+  <script slot="head" type="application/ld+json" set:html={serviceSchema} />
+  {faqSchemaData && <script slot="head" type="application/ld+json" set:html={faqSchemaData} />}
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+</ServiceLayout>

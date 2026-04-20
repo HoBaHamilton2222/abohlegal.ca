@@ -4,7 +4,12 @@ import CTABanner from '../../components/CTABanner.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const now = new Date();
+  const posts = await getCollection('blog', ({ data }) => {
+    if (data.draft) return false;
+    const effective = data.publishDate ?? data.date;
+    return effective.valueOf() <= now.valueOf();
+  });
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -19,12 +24,47 @@ const formattedDate = post.data.date.toLocaleDateString('en-CA', {
   month: 'long',
   day: 'numeric',
 });
+
+const isoDate = post.data.date.toISOString().split('T')[0];
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.excerpt,
+  "datePublished": isoDate,
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.abohlegal.ca/about#person",
+    "name": "Prince Aboh"
+  },
+  "publisher": {
+    "@id": "https://www.abohlegal.ca/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.abohlegal.ca/resources/${post.id}`
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.abohlegal.ca/resources" },
+    { "@type": "ListItem", "position": 3, "name": post.data.title }
+  ]
+});
 ---
 
 <BaseLayout
   title={`${post.data.title} | ABOH LEGAL`}
   description={post.data.excerpt}
 >
+  <script slot="head" type="application/ld+json" set:html={articleSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+
   <section class="py-16 md:py-20 px-6">
     <div class="max-w-3xl mx-auto">
       <!-- Category Tag -->
@@ -39,7 +79,7 @@ const formattedDate = post.data.date.toLocaleDateString('en-CA', {
 
       <!-- Meta -->
       <p class="text-muted-text text-sm mb-10">
-        {formattedDate} &middot; {post.data.author}
+        <time datetime={isoDate}>{formattedDate}</time> &middot; {post.data.author}<span class="text-muted-text/70">, LL.B., B.L.</span>
       </p>
 
       <!-- Article Content -->
@@ -51,7 +91,7 @@ const formattedDate = post.data.date.toLocaleDateString('en-CA', {
 
   <CTABanner
     heading="Need Legal Advice?"
-    body="If you have questions about your legal matter, our team is here to help. Contact us for a consultation."
+    body="If you have questions about your legal matter, reach out. We'd be glad to help."
     buttonText="Contact Us"
     buttonHref="/contact"
   />

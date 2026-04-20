@@ -6,7 +6,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'Do I need a lawyer for a custody dispute?',
-      answer: 'While you are not legally required to have a lawyer, custody disputes involve important decisions about your children\'s future. A family lawyer can help you understand your rights under the Family Law Act and Divorce Act, prepare your evidence, and present your case effectively in court or mediation.',
+      answer: 'While you are not legally required to have a lawyer, custody disputes involve important decisions about your children\'s future. A <a href="/services/family-law" class="text-gold hover:underline">family lawyer</a> can help you understand your rights under the Family Law Act and Divorce Act, prepare your evidence, and present your case effectively in court or mediation.',
     },
     {
       question: 'How is child support calculated in Alberta?',
@@ -24,7 +24,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'wills-estates': [
     {
       question: 'Do I really need a will?',
-      answer: 'Yes. If you die without a will in Alberta, the Wills and Succession Act dictates how your estate is distributed, and the result may not match your wishes. A will lets you choose your beneficiaries, name a guardian for minor children, and appoint a personal representative you trust to manage your estate.',
+      answer: 'Yes. If you die without a will in Alberta, the Wills and Succession Act dictates how your estate is distributed, and the result may not match your wishes. A <a href="/services/wills-estates" class="text-gold hover:underline">properly drafted will</a> lets you choose your beneficiaries, name a guardian for minor children, and appoint a personal representative you trust to manage your estate.',
     },
     {
       question: 'What is an enduring power of attorney?',
@@ -42,7 +42,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'estate-litigation': [
     {
       question: 'Can I challenge a will in Alberta?',
-      answer: 'Yes, a will can be challenged on several grounds, including lack of testamentary capacity, undue influence, fraud, or failure to meet formal requirements under the Wills and Succession Act. Time limits apply, so it is important to seek legal advice promptly if you believe a will is invalid.',
+      answer: 'Yes, a will can be challenged on several grounds, including lack of testamentary capacity, undue influence, fraud, or failure to meet formal requirements under the Wills and Succession Act. See our guide on <a href="/resources/challenging-a-will-in-alberta" class="text-gold hover:underline">challenging a will in Alberta</a> for the full picture. Time limits apply, so seek advice promptly if you believe a will is invalid.',
     },
     {
       question: 'What is a dependant\'s relief claim?',
@@ -60,7 +60,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'employment-law': [
     {
       question: 'What is wrongful dismissal?',
-      answer: 'Wrongful dismissal occurs when an employer terminates an employee without providing adequate notice or pay in lieu of notice as required by common law or the employment contract. In Alberta, the Employment Standards Code sets minimum notice periods, but common law entitlements are often significantly higher based on factors like age, length of service, and position.',
+      answer: 'Wrongful dismissal occurs when an employer terminates an employee without providing adequate notice or pay in lieu of notice as required by common law or the employment contract. In Alberta, the Employment Standards Code sets minimum notice periods, but common law entitlements are often significantly higher based on factors like age, length of service, and position. Learn more about <a href="/services/employment-law" class="text-gold hover:underline">employment law services</a>.',
     },
     {
       question: 'Am I entitled to severance pay?',
@@ -78,7 +78,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'business-commercial': [
     {
       question: 'Should I incorporate my business?',
-      answer: 'Incorporation creates a separate legal entity that can limit your personal liability, offer tax planning opportunities, and make it easier to raise capital or transfer ownership. Whether incorporation is right for you depends on your business type, revenue, risk level, and long-term goals. A lawyer can help you weigh the pros and cons for your situation.',
+      answer: 'Incorporation creates a separate legal entity that can limit your personal liability, offer tax planning opportunities, and make it easier to raise capital or transfer ownership. Whether incorporation is right for you depends on your business type, revenue, risk level, and long-term goals. Our <a href="/services/business-commercial" class="text-gold hover:underline">business and commercial law</a> practice can help you weigh the pros and cons for your situation.',
     },
     {
       question: 'What should a shareholder agreement cover?',
@@ -96,7 +96,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'civil-litigation': [
     {
       question: 'How long do I have to file a lawsuit in Alberta?',
-      answer: 'In Alberta, the Limitations Act generally gives you two years from the date you knew or ought to have known about the claim to file a lawsuit. There is also an ultimate limitation period of ten years. Missing these deadlines can permanently bar your claim, so it is important to seek legal advice early.',
+      answer: 'In Alberta, the Limitations Act generally gives you two years from the date you knew or ought to have known about the claim to file a lawsuit. There is also an ultimate limitation period of ten years. Missing these deadlines can permanently bar your claim, so it is important to seek <a href="/services/civil-litigation" class="text-gold hover:underline">legal advice on your civil claim</a> early.',
     },
     {
       question: 'What does litigation cost?',
@@ -126,7 +126,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'Do I have to pay upfront for a personal injury lawyer?',
-      answer: 'Many personal injury claims are handled on a contingency fee basis, meaning you pay legal fees only if your case is successful. The fee is typically a percentage of the settlement or judgment. We discuss fee arrangements openly at your initial consultation so there are no surprises.',
+      answer: 'Many <a href="/services/personal-injury" class="text-gold hover:underline">personal injury</a> claims are handled on a contingency fee basis, meaning you pay legal fees only if your case is successful. The fee is typically a percentage of the settlement or judgment. We discuss fee arrangements openly at your initial consultation so there are no surprises.',
     },
   ],
   'immigration': [
@@ -136,7 +136,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'Can I sponsor my spouse to come to Canada?',
-      answer: 'Yes, Canadian citizens and permanent residents can sponsor their spouse or common-law partner for permanent residence. You must demonstrate that the relationship is genuine and that you meet income and other eligibility requirements. If your spouse is already in Canada, they may be eligible to apply from within the country.',
+      answer: 'Yes, Canadian citizens and permanent residents can sponsor their spouse or common-law partner for permanent residence. You must demonstrate that the relationship is genuine and that you meet income and other eligibility requirements. If your spouse is already in Canada, they may be eligible to apply from within the country. Learn more about our <a href="/services/immigration" class="text-gold hover:underline">immigration services</a>.',
     },
     {
       question: 'What is an LMIA?',

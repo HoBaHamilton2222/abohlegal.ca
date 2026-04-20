@@ -3,23 +3,44 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import BlogCard from '../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
+import lawLibrary from '../../assets/stock/law-library.jpg';
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const now = new Date();
+const allPosts = await getCollection('blog', ({ data }) => {
+  if (data.draft) return false;
+  const effective = data.publishDate ?? data.date;
+  return effective.valueOf() <= now.valueOf();
+});
+const posts = allPosts.sort((a, b) => {
+  const aDate = a.data.publishDate ?? a.data.date;
+  const bDate = b.data.publishDate ?? b.data.date;
+  return bDate.valueOf() - aDate.valueOf();
+});
 
 const categories = [
   'All', 'Family Law', 'Wills & Estates', 'Estate Litigation',
   'Employment Law', 'Business & Commercial', 'Civil Litigation',
   'Personal Injury', 'Immigration', 'General',
 ];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "Resources" }
+  ]
+});
 ---
 
 <BaseLayout
   title="Legal Updates & Resources | ABOH LEGAL"
   description="Legal updates, guides, and resources for Alberta families. Family law, estates, employment, and more from ABOH LEGAL in St. Paul."
 >
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+
   <!-- Hero -->
-  <Hero title="Legal Updates & Resources" backgroundImage="/images/stock/law-library.jpg" />
+  <Hero title="Legal Updates & Resources" backgroundImage={lawLibrary} />
 
   <!-- Category Filter + Posts -->
   <section class="py-16 md:py-20 px-6">

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABOH LEGAL | Barrister &amp; Solicitor | St. Paul, Alberta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#e1e3e4",
+              "surface-container-low": "#f3f4f5",
+              "on-secondary-fixed-variant": "#5e4200",
+              "surface-container": "#edeeef",
+              "tertiary-fixed": "#e5e2e1",
+              "on-surface-variant": "#43474c",
+              "secondary-fixed-dim": "#edc06b",
+              "surface-container-high": "#e7e8e9",
+              "primary-fixed": "#cfe5fc",
+              "on-background": "#191c1d",
+              "on-error-container": "#93000a",
+              "on-primary-fixed": "#061d2e",
+              "primary-fixed-dim": "#b4c9df",
+              "tertiary": "#080808",
+              "outline": "#74777d",
+              "tertiary-container": "#202020",
+              "on-secondary-fixed": "#271900",
+              "inverse-surface": "#2e3132",
+              "surface": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "surface-bright": "#f8f9fa",
+              "on-error": "#ffffff",
+              "primary": "#000a15",
+              "inverse-on-surface": "#f0f1f2",
+              "on-tertiary-fixed": "#1c1b1b",
+              "on-tertiary-container": "#898787",
+              "background": "#f8f9fa",
+              "on-secondary-container": "#775607",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#474746",
+              "surface-tint": "#4c6074",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffdea7",
+              "inverse-primary": "#b4c9df",
+              "secondary": "#7b580b",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-surface": "#191c1d",
+              "outline-variant": "#c3c7cc",
+              "on-primary-fixed-variant": "#35495b",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#e1e3e4",
+              "secondary-container": "#fccd78",
+              "primary-container": "#0c2233",
+              "on-primary-container": "#758a9f"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .reveal-header {
+            animation: reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #7b580b 0%, #fccd78 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #7b580b 0%, #fccd78 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-[#000a15] bg-opacity-95 backdrop-blur-xl shadow-[0_40px_60px_rgba(0,10,21,0.05)]">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-6 max-w-none mx-auto">
+<a class="text-2xl font-headline font-bold tracking-tighter text-white uppercase transition-transform duration-400 ease-out hover:scale-105" href="#">
+                ABOH LEGAL
+            </a>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#fccd78] font-semibold border-b-2 border-[#7b580b] pb-1 font-body tracking-tight" href="#">Home</a>
+<a class="text-white/80 hover:text-white transition-colors duration-400 font-body tracking-tight" href="#about">About</a>
+<a class="text-white/80 hover:text-white transition-colors duration-400 font-body tracking-tight" href="#services">Services</a>
+<a class="text-white/80 hover:text-white transition-colors duration-400 font-body tracking-tight" href="#resources">Resources</a>
+<a class="text-white/80 hover:text-white transition-colors duration-400 font-body tracking-tight" href="#contact">Contact</a>
+</div>
+<button class="hidden md:block gold-gradient px-8 py-3 rounded-lg text-on-secondary-fixed font-bold tracking-tight hover:scale-105 transition-transform duration-400 ease-out">
+                Book a Consultation
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.3] scale-105 transition-transform duration-[10s] ease-out hover:scale-100" data-alt="Cinematic shot of a grand courthouse interior with vaulted ceilings, mahogany furniture, and warm morning sunlight streaming through tall windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6TbwZzO5VmwM8O1FklphcTeDMg4WHsO97iLfmtDbG1hwtPBQbFi5yxXZ0CkzE0Ra6xWq7W22X3lY8s2HK7yZJbUwlzb8sattGFCSTvv-au1Bytw4FR_IFkt13xYYf_3w-LEvx3kkNf3ZcPnyvBI2iGozSUQl82LPD0iVGR3HDVFtDay57YwQQAwGy6sZWu3jr_GMUln8UG56rkQM_R6oDFJ-N54EMav2FZEnnvESqPxbWehRB-3dDCA7ydBgQvfBnz6mN8T3FUfE"/>
+</div>
+<div class="relative z-10 w-full px-6 md:px-12 max-w-7xl mx-auto reveal-header">
+<p class="text-secondary-container font-body tracking-[0.2em] uppercase text-sm mb-4">BARRISTER &amp; SOLICITOR | ST. PAUL, ALBERTA</p>
+<h1 class="font-headline text-5xl md:text-8xl text-white font-bold leading-[0.9] tracking-tighter mb-8 max-w-4xl">
+                Your Matter.<br/>Our Focus.
+            </h1>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="gold-gradient px-10 py-5 rounded-lg text-on-secondary-fixed font-bold text-lg hover:scale-105 transition-transform duration-400">
+                    Get Started
+                </button>
+<button class="border border-white/20 backdrop-blur-md px-10 py-5 rounded-lg text-white font-bold text-lg hover:bg-white/10 transition-colors duration-400">
+                    View Services
+                </button>
+</div>
+</div>
+</header>
+<!-- Trust Bar -->
+<section class="bg-primary text-white py-12">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-wrap justify-between items-center gap-8">
+<div class="flex items-center space-x-4 opacity-80">
+<span class="material-symbols-outlined text-secondary-container">gavel</span>
+<span class="font-body text-sm tracking-widest uppercase">Legal Aid Accepted</span>
+</div>
+<div class="flex items-center space-x-4 opacity-80">
+<span class="material-symbols-outlined text-secondary-container">map</span>
+<span class="font-body text-sm tracking-widest uppercase">Serving Alberta Province-Wide</span>
+</div>
+<div class="flex items-center space-x-4 opacity-80">
+<span class="material-symbols-outlined text-secondary-container">video_call</span>
+<span class="font-body text-sm tracking-widest uppercase">In-Person, Phone &amp; Video</span>
+</div>
+</div>
+</section>
+<!-- Tagline Section (Asymmetric) -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 md:px-12 asymmetric-grid gap-12">
+<div class="col-span-12 md:col-span-5">
+<h2 class="font-headline text-4xl md:text-5xl text-primary leading-tight font-bold italic">
+                    Clear advice. Steady advocacy. Alberta-wide.
+                </h2>
+</div>
+<div class="col-span-12 md:col-start-7 md:col-span-6 flex flex-col justify-end">
+<p class="text-on-surface-variant text-xl md:text-2xl leading-relaxed font-body">
+                    Client-centred legal counsel for families, homeowners, newcomers, and small businesses navigating life's most important decisions.
+                </p>
+</div>
+</div>
+</section>
+<!-- Practice Areas (Bento/Gallery) -->
+<section class="py-24 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-6 md:px-12 mb-20">
+<span class="text-secondary font-bold tracking-widest text-sm uppercase">Expertise</span>
+<h2 class="font-headline text-5xl text-primary mt-4">Practice Areas</h2>
+</div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<!-- Family Law -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] md:col-span-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A young family walking through a golden Alberta prairie field during sunset, soft focus and warm emotional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC57XiP7kmuG5YEbb4iae1fYiIfuUQRrOBIhNhyQmiKR_deby_dFJMtkCtJ_l9bafY06ynwhSlIKO0PZhz2EMGTwxYtGyV2YLR9bveKXDxUw6coQ28k44nl3AbbA-aJR2fRbEe0jm1YYn5BRooxPU1kVgm6XVOOhOlNKrwcl1YnH6LERGWAna78-0hoVdKs8YwZzJ-lfT3G2lGbxzergX3uTdu6Plo_Y9E_1uvpz1zTkwnHRFkst5krJXZq4xOuKEzs7rHW5rE9rzg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-3xl text-white mb-2">Family Law</h3>
+<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-md">
+                        Divorce, custody, child support, spousal support, property division, and guardianship matters.
+                    </p>
+</div>
+</div>
+<!-- Wills & Estates -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of elegant fountain pen resting on official legal documents with professional depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB3rnA3sCoLSKyxwDgCEbpoOU23lBx5g0R2w-sul6j-EIc-BxQs55AoJjyg3gBDV-yaBYVShm2cDUl36cGEyW3i-jXXqc7omA440ZbvSs8pA6csuf_vUn1p1UanKo7J6Cje8Xt57j4icgJxskLmkKO0WZKj7PDYu7BE6QlzL5ER64g5fMmMz3k8duKOakV5h1Ir51oVNYrOBIOKBPyRMyv9brCTGvPA_a0WC0wGo9mNHlELyPmg23WJCw64uGG49KIvkmy9GzW_JI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl text-white mb-2">Wills &amp; Estates</h3>
+<p class="text-white/70 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Wills, powers of attorney, personal directives, and estate planning.
+                    </p>
+</div>
+</div>
+<!-- Business & Commercial -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern glass-walled boardroom in a corporate office, reflecting city lights at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF3Qk7Ksxn30T2bXoKPV5wY9Fu5So7hCpfPQamnii4BG8ZfJVuDPJyW5mMowxUUiRxv_fHFcM2gXQqOk1wLT83pQ7MUWyu-PHjhPCOwOwwcqzNOQI74dvgPpLVhVzrPk2o48SBwMdKpOf8f_XEcT7jO4cvMOX0n18nBsvXfnOcx56wR0pFu4nokPERqvCh435afC6kXehlG2JdsU7_aPAxCqcZIx_GGi4FXAW1xHoT3Lo9nkdZL2g6Y44wTZ6lzPP5ub7jG_SzYYU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl text-white mb-2">Business</h3>
+<p class="text-white/70 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Incorporations, shareholder agreements, and commercial leases.
+                    </p>
+</div>
+</div>
+<!-- Immigration -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a Canadian passport on a wooden table with soft focused globe in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvP25kuJHny2PItp6YpW-plA9Kzl08tFtf-0A1m1JYS3P3D6oZXbmhv58951dAqMs20f_D3RoMx01aJieKVria9GSMBexri_ZGszfeNmZzyz1U81ctFmpsK3yQc3FKCKb0SA7KIUTY08UakqGmCqLXeUOyQPmhn_zc79aQNFIxdqX28cgXz2z-CXwZrziAjxNTPoAF87WMdlND_qgeIeuU90rbyuLaL--RXTHSWaqet2Kn2IK_BJoU33GUTcHCA-yQmF84yzIYb5o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl text-white mb-2">Immigration</h3>
+<p class="text-white/70 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Permanent residence, family sponsorship, and citizenship.
+                    </p>
+</div>
+</div>
+<!-- Employment Law -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] md:col-span-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Two professionals in suits shaking hands firmly across a mahogany desk in a bright office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWAF_rqo5YIzvAWreyGjFPazeQc3LWmkFw5GO2VMvgU9Ayfun8xuXfRd-xDi2n_uQ5YUoaftIi9lL1YHljP75leeBW4J9FJBO6rrD3PASC28l1-J8e8I5G4J18_B055_UE1aFC3j4UDQBq1IhiYnA-xQwLAzHpKaTAjulQ6AIl4cHQ6w9da6nemOV_l2maC-kZu-anE1vRyvyVzCwutLOMn6mzDJn7z9d5kEy-JFzfAObc-kHXoFvVdBZ3-UHxV_6QMVJzLazKIz0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-3xl text-white mb-2">Employment Law</h3>
+<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Wrongful dismissal, contracts, and workplace disputes.
+                    </p>
+</div>
+</div>
+<!-- Personal Injury -->
+<div class="group relative overflow-hidden rounded-xl bg-white aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern medical setting with a focus on a professional interaction between doctor and patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN3f2jFEFeOp3Ggj9jtvS-NYIKEbWnGtAMXEqVBduaksaKJZ02zwczTKZoa2TI88PJms7HQT3WKLolwscvQeB7cQmXzQ3BglKxWL7JwP4F2CcIWDKiBS5Bsf8KeYI2o6vChJjqBh8_5pUNZpdg9DFta5Bw1TbCgGFH7wW5ZtOsYTCqumNQx6Nwb00uMRoZyVUqz49yb7iuKeTSwoZ-1nxlsni3qJCIuAsfxJxmFAzH0jZlDRxz441Pe_wx6VUZBIrEZTp9csfpJyk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl text-white mb-2">Personal Injury</h3>
+<p class="text-white/70 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Motor vehicle accidents and insurance claims.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Landscape Break -->
+<section class="relative h-[614px] overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" data-alt="Dramatic Alberta sky over a vast, golden wheat field at sunset, representing the province-wide reach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVxXPszsk3m7WGUow8lWZKiV35fxsnTGTDwhpp_wrX14OdRuQDsF9WwTVIearV-_Z5G05sdilalBBgNrVzRcxLtjFRAVR7L3CDtNy_N99sWvfi-3oPkVRsCUDxPlYaqJ93aX1uJh8q3P-xx9jpwrLcUb-qq1e8fWIrsdLvfH3mZSr-r0BtKDxw_Qn4YoYODxKEGfj-E0zwjYDgduPkC1t7mh7Qi_WoRVY6LGYqzbGnQTHNXPK4ztbbKzNtG3G4vNIrIPylXraLx04"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-grayscale-[0.2]"></div>
+</section>
+<!-- About Section -->
+<section class="py-32 bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-6 md:px-12 asymmetric-grid gap-16">
+<div class="col-span-12 md:col-span-5 relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Prince, a male lawyer in a sharp navy suit, standing in a modern office with a confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA96yy1zOKkGY3V_PTcl1D9-2zB28znkU5-Is2k9uUbzY8LZcU-4iEwMkydmndfMhOjTAj3sV8BLqN8YfBnqUdBqrZqLL5hXdAYwcAl-iRssqJFRb6-NJ8i1njQKKDVY9Qv1gL_E2V0PSHnUwT4ZRU7fmYdu6_XbyWZpuCAIva1a4IkJe7ZACuS-nRsGssxuSYm4ERkbptilZYwtminGHZeQDKAK0Trfl4vaQar10q0ad3VkCr_tfDthdQxKO7zibx_XcJvXucwSVY"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary-container p-8 hidden md:block rounded-lg shadow-xl">
+<span class="font-headline text-primary text-2xl font-bold italic">Prince Aboh</span>
+<p class="text-on-secondary-container text-xs tracking-widest uppercase mt-1">Founding Partner</p>
+</div>
+</div>
+<div class="col-span-12 md:col-start-7 md:col-span-6 flex flex-col justify-center">
+<span class="text-secondary font-bold tracking-[0.2em] text-sm uppercase mb-6">ABOUT THE FIRM</span>
+<h2 class="font-headline text-5xl md:text-6xl text-primary font-bold leading-[1.1] mb-8">
+                    A litigator who listens first
+                </h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed font-body">
+<p>
+                        Trained in Lagos. Licensed in Alberta. Rooted in St. Paul. Prince brings a global perspective and a personal touch to every file, from complex custody disputes to straightforward estate planning.
+                    </p>
+<p>
+                        Our firm was founded on the belief that premium legal representation should be accessible beyond big-city towers. We combine technical rigor with authentic local presence.
+                    </p>
+</div>
+<a class="mt-12 flex items-center text-primary font-bold tracking-tight text-lg group" href="#">
+                    Learn more
+                    <span class="material-symbols-outlined ml-2 transition-transform duration-400 group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Values Section (Architectural) -->
+<section class="py-24 bg-primary text-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="border-l border-white/10 pl-8 transition-all duration-400 hover:border-secondary-container">
+<h4 class="font-headline text-3xl mb-4 italic">Always Available</h4>
+<p class="text-white/60 font-body leading-relaxed">
+                        Responsive communication, even on short notice. Your calls and emails are returned promptly.
+                    </p>
+</div>
+<div class="border-l border-white/10 pl-8 transition-all duration-400 hover:border-secondary-container">
+<h4 class="font-headline text-3xl mb-4 italic">Fearless Advocacy</h4>
+<p class="text-white/60 font-body leading-relaxed">
+                        Your matter is taken seriously, regardless of size. Every case gets full commitment.
+                    </p>
+</div>
+<div class="border-l border-white/10 pl-8 transition-all duration-400 hover:border-secondary-container">
+<h4 class="font-headline text-3xl mb-4 italic">A Lawyer Who Listens</h4>
+<p class="text-white/60 font-body leading-relaxed">
+                        Understanding your situation fully before advising. Your story matters.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-32 bg-surface-container-lowest text-center" id="contact">
+<div class="max-w-3xl mx-auto px-6 reveal-header">
+<h2 class="font-headline text-5xl md:text-6xl text-primary font-bold mb-6">Ready to discuss your situation?</h2>
+<p class="text-xl text-on-surface-variant mb-12">Book a consultation: in person, by phone, or by video.</p>
+<button class="gold-gradient px-12 py-6 rounded-lg text-on-secondary-fixed font-bold text-xl shadow-xl hover:scale-105 transition-transform duration-400">
+                Schedule Now
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#000a15] text-white pt-24 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-20 px-12 py-24 w-full max-w-7xl mx-auto">
+<div class="space-y-8">
+<span class="text-3xl font-headline text-white mb-8 block font-bold tracking-tighter">ABOH LEGAL</span>
+<p class="text-white/40 text-sm leading-loose uppercase tracking-widest max-w-xs">
+                    Providing steady advocacy for Albertans through excellence and empathy.
+                </p>
+</div>
+<div class="space-y-6">
+<h5 class="font-body text-sm tracking-[0.2em] text-[#fccd78] uppercase font-bold">Contact Details</h5>
+<ul class="space-y-4 font-body text-white/60 uppercase tracking-widest text-xs">
+<li><a class="hover:text-[#fccd78] transition-colors duration-300" href="tel:8254610107">(825) 461-0107</a></li>
+<li><a class="hover:text-[#fccd78] transition-colors duration-300" href="mailto:info@abohlegal.ca">info@abohlegal.ca</a></li>
+<li class="leading-relaxed">4437 53 Avenue,<br/>St. Paul, AB T0A 3A2</li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-body text-sm tracking-[0.2em] text-[#fccd78] uppercase font-bold">Quick Links</h5>
+<ul class="space-y-4 font-body text-white/60 uppercase tracking-widest text-xs">
+<li><a class="hover:text-[#fccd78] transition-colors duration-300" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-[#fccd78] transition-colors duration-300" href="#">Disclaimer</a></li>
+<li><a class="hover:text-[#fccd78] transition-colors duration-300" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pt-12 border-t border-white/5">
+<p class="text-white/20 text-xs font-body tracking-widest uppercase text-center md:text-left">
+                © 2024 ABOH LEGAL. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

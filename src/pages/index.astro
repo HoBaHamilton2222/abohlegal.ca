@@ -1,43 +1,61 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import TrustBar from '../components/TrustBar.astro';
-import ServiceCard from '../components/ServiceCard.astro';
-import ValuesSection from '../components/ValuesSection.astro';
-import BlogPreview from '../components/BlogPreview.astro';
-import CTABanner from '../components/CTABanner.astro';
+import { Image, getImage } from 'astro:assets';
 import { services } from '../data/services';
-import { siteConfig } from '../data/siteConfig';
+
+import courthouseColumns from '../assets/stock/courthouse-columns.jpg';
+import familyGoldenField from '../assets/stock/family-golden-field.jpg';
+import documentSigning from '../assets/stock/document-signing.jpg';
+import businessMeetingOverhead from '../assets/stock/business-meeting-overhead.jpg';
+import canadianPassports from '../assets/stock/canadian-passports.jpg';
+import prairieRoad from '../assets/stock/prairie-road.jpg';
+import conferenceRoom from '../assets/stock/conference-room.jpg';
+
+const prairieRoadOptimized = await getImage({ src: prairieRoad, format: 'webp', quality: 80, width: 1920 });
+
+const websiteSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.abohlegal.ca/#website",
+  "name": "ABOH LEGAL",
+  "url": "https://www.abohlegal.ca",
+  "publisher": { "@id": "https://www.abohlegal.ca/#organization" }
+});
 ---
 
 <BaseLayout
   title="ABOH LEGAL | Family Law, Estates & More | St. Paul, Alberta"
   description="Client-centred legal counsel for families, homeowners, newcomers, and small businesses across Alberta. Book a consultation with Prince Aboh."
 >
-  <!-- Section 1: Full-Width Hero Image -->
-  <section class="relative min-h-[500px] flex items-center px-6 overflow-hidden">
-    <img
-      src="/images/stock/courthouse-columns.jpg"
-      alt=""
+  <script slot="head" type="application/ld+json" set:html={websiteSchema} />
+
+  <!-- HERO: Full-width courthouse columns with text overlay -->
+  <section class="relative min-h-[550px] md:min-h-[600px] flex items-center px-6 overflow-hidden">
+    <Image
+      src={courthouseColumns}
+      alt="Courthouse columns representing legal services"
       class="absolute inset-0 w-full h-full object-cover object-center"
       aria-hidden="true"
+      widths={[640, 960, 1920]}
+      sizes="100vw"
+      format="webp"
+      quality={80}
+      loading="eager"
+      fetchpriority="high"
     />
-    <!-- Mobile: darker full overlay; Desktop: left-to-right gradient -->
+    <!-- Mobile: darker full overlay -->
     <div class="absolute inset-0 bg-navy/85 md:hidden"></div>
+    <!-- Desktop: left-to-right gradient -->
     <div class="absolute inset-0 hidden md:block bg-gradient-to-r from-navy/90 via-navy/70 to-navy/40"></div>
+
     <div class="relative max-w-7xl mx-auto w-full py-16 md:py-24">
       <div class="max-w-2xl md:text-left text-center mx-auto md:mx-0">
-        <p class="text-gold text-xs font-bold uppercase tracking-[0.2em] mb-6">
-          Barrister &amp; Solicitor &middot; St. Paul, Alberta
-        </p>
         <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           <span class="text-white">Clear advice.</span><br />
           <span class="text-white">Steady advocacy.</span><br />
           <span class="text-gold">Alberta-wide.</span>
         </h1>
-        <p class="text-white/70 text-lg md:text-xl leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-          Client-centred legal counsel for families, homeowners, newcomers, and small businesses navigating life's most important decisions.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
           <a
             href="/contact"
             class="inline-block bg-gold text-navy font-bold px-8 py-3 rounded text-center hover:bg-[#d4aa5a] transition-colors text-sm uppercase tracking-wider"
@@ -45,73 +63,194 @@ import { siteConfig } from '../data/siteConfig';
             Schedule a Consultation
           </a>
           <a
-            href={siteConfig.phoneHref}
+            href="tel:+18254610107"
             class="inline-block border-2 border-white text-white font-bold px-8 py-3 rounded text-center hover:bg-white/10 transition-colors text-sm uppercase tracking-wider"
           >
-            &#9742; {siteConfig.phone}
+            &#9742; (825) 461-0107
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 2: Trust Bar -->
-  <TrustBar />
-
-  <!-- Section 3: Practice Areas -->
-  <section class="bg-white py-16 md:py-20 px-6">
-    <div class="max-w-6xl mx-auto">
-      <p class="animate-on-scroll text-gold text-xs font-bold uppercase tracking-widest mb-2 text-center">Practice Areas</p>
-      <h2 class="animate-on-scroll font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
-        How We Can Help
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {services.map((service) => (
-          <ServiceCard name={service.name} slug={service.slug} description={service.shortDesc} />
-        ))}
-      </div>
+  <!-- TRUST BAR -->
+  <section class="bg-gold py-4 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+      <span class="text-navy font-bold text-sm md:text-base whitespace-nowrap">&#10003; We Work With Legal Aid Clients</span>
+      <span class="text-navy font-bold text-sm md:text-base whitespace-nowrap">&#10003; Serving Clients Across Alberta</span>
+      <span class="text-navy font-bold text-sm md:text-base whitespace-nowrap">&#10003; Consultations by Phone, Video, or In Person</span>
     </div>
   </section>
 
-  <!-- Section 4: About Preview -->
-  <section class="bg-light-bg py-16 md:py-20 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <!-- Left: Image -->
-      <div class="flex justify-center">
-        <img
-          src="/images/stock/family-golden-field.jpg"
+  <!-- FIRM INTRO (SEO content block) -->
+  <section class="bg-white py-14 md:py-18 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-body-text text-base md:text-lg leading-relaxed">
+        At ABOH LEGAL, we offer versatile legal solutions tailored to the needs of Albertans. Our practice spans multiple areas of law. Whether in the Court of King's Bench or the Alberta Court of Justice, we provide dedicated advocacy in St. Paul and the surrounding areas, including Bonnyville, Cold Lake, Vermilion, Lloydminster, Fort Saskatchewan, Lac La Biche, and Edmonton.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS: Alternating half-page splits -->
+  <section class="bg-white">
+    <!-- Row 1: Text left, Image right -->
+    <div class="flex flex-col lg:flex-row min-h-[500px]">
+      <div class="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+        <span class="text-gold text-sm md:text-xs font-bold tracking-[0.3em] mb-4 uppercase">Practice Areas</span>
+        <h2 class="animate-on-scroll font-heading text-3xl md:text-4xl font-bold mb-12 tracking-tight">How We Can Help</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <a href="/services/family-law" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Family Law</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Divorce, custody, child support, spousal support, property division, and guardianship matters.</p>
+          </a>
+          <a href="/services/wills-estates" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Wills & Estates</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Wills, powers of attorney, personal directives, and estate planning for peace of mind.</p>
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative min-h-[400px] overflow-hidden group">
+        <Image
+          src={familyGoldenField}
           alt="Family looking toward the future"
-          class="rounded-lg w-full max-w-md object-cover"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          widths={[640, 960, 1920]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          format="webp"
+          quality={80}
+          loading="lazy"
         />
       </div>
-      <!-- Right: Text -->
-      <div>
-        <p class="animate-on-scroll text-gold text-xs font-bold uppercase tracking-widest mb-2">About the Firm</p>
-        <h2 class="animate-on-scroll animate-delay-1 font-heading text-navy text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-          A litigator who listens first
-        </h2>
-        <p class="animate-on-scroll animate-delay-2 text-body-text text-base md:text-lg leading-relaxed mb-6">
-          Trained in Lagos. Licensed in Alberta. Rooted in St. Paul. Prince brings a global perspective and a personal touch to every file, from complex custody disputes to straightforward estate planning.
-        </p>
-        <a href="/about" class="text-gold font-bold hover:underline">
-          Read more &rarr;
-        </a>
+    </div>
+
+    <!-- Row 2: Image left, Text right -->
+    <div class="flex flex-col lg:flex-row-reverse min-h-[500px]">
+      <div class="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <a href="/services/estate-litigation" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Estate Litigation</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Will challenges, dependant relief claims, and estate disputes resolved with care.</p>
+          </a>
+          <a href="/services/employment-law" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Employment Law</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Wrongful dismissal, employment contracts, workplace disputes, and severance negotiations.</p>
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative min-h-[400px] overflow-hidden group">
+        <Image
+          src={documentSigning}
+          alt="Legal document signing"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          widths={[640, 960, 1920]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          format="webp"
+          quality={80}
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Row 3: Text left, Image right -->
+    <div class="flex flex-col lg:flex-row min-h-[500px]">
+      <div class="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <a href="/services/business-commercial" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Business & Commercial</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Incorporations, shareholder agreements, commercial leases, and business contracts.</p>
+          </a>
+          <a href="/services/civil-litigation" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Civil Litigation</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Contract disputes, debt recovery, property disputes, and negligence claims.</p>
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative min-h-[400px] overflow-hidden group">
+        <Image
+          src={businessMeetingOverhead}
+          alt="Business meeting overhead view"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          widths={[640, 960, 1920]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          format="webp"
+          quality={80}
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Row 4: Image left, Text right -->
+    <div class="flex flex-col lg:flex-row-reverse min-h-[500px]">
+      <div class="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <a href="/services/personal-injury" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Personal Injury</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Motor vehicle accidents, slip and fall injuries, and insurance claims.</p>
+          </a>
+          <a href="/services/immigration" class="space-y-3 group">
+            <div class="w-8 h-[2px] bg-gold"></div>
+            <h3 class="text-lg font-bold text-navy group-hover:text-gold transition-colors">Immigration</h3>
+            <p class="text-body-text text-sm leading-relaxed text-left">Permanent residence, family sponsorship, work permits, and citizenship applications.</p>
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative min-h-[400px] overflow-hidden group">
+        <Image
+          src={canadianPassports}
+          alt="Canadian passports"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          widths={[640, 960, 1920]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          format="webp"
+          quality={80}
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
 
-  <!-- Section 5: Values -->
-  <ValuesSection />
+  <!-- FULL-WIDTH PARALLAX LANDSCAPE BREAK -->
+  <section class="relative h-[500px] w-full overflow-hidden">
+    <div
+      class="absolute inset-0 bg-fixed bg-cover bg-center"
+      style={`background-image: url('${prairieRoadOptimized.src}');`}
+      aria-hidden="true"
+    ></div>
+    <div class="absolute inset-0 bg-navy/20"></div>
+  </section>
 
-  <!-- Section 6: Blog Preview (renders nothing until posts exist) -->
-  <BlogPreview />
-
-  <!-- Section 7: CTA Banner -->
-  <CTABanner
-    heading="Ready to discuss your situation?"
-    body="Book a consultation: in person, by phone, or by video."
-    buttonText="Schedule Now"
-    buttonHref="/contact"
-    backgroundImage="/images/stock/conference-room.jpg"
-  />
+  <!-- CTA with background image -->
+  <section class="relative py-32 md:py-40 flex items-center justify-center overflow-hidden">
+    <Image
+      src={conferenceRoom}
+      alt="Conference room"
+      class="absolute inset-0 w-full h-full object-cover"
+      aria-hidden="true"
+      widths={[640, 960, 1920]}
+      sizes="100vw"
+      format="webp"
+      quality={80}
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-navy/85"></div>
+    <div class="relative z-10 max-w-[1200px] mx-auto px-8 text-center text-white">
+      <h2 class="font-heading text-4xl md:text-5xl font-bold mb-8 tracking-tight">Every matter starts with a conversation.</h2>
+      <p class="text-white/70 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light">
+        Ready to discuss yours?
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-gold text-white px-12 py-5 text-sm font-bold tracking-[0.2em] uppercase hover:brightness-110 transition-all shadow-xl"
+      >
+        Schedule Now
+      </a>
+    </div>
+  </section>
 </BaseLayout>

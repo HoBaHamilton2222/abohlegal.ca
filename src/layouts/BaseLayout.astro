@@ -10,17 +10,20 @@ interface Props {
   schemaData?: string;
 }
 
-const { title, description, ogImage = '/images/og-image.svg', schemaData } = Astro.props;
+const { title, description, ogImage = '/images/og-image.png', schemaData } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const defaultSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Attorney"],
+  "@id": "https://www.abohlegal.ca/#organization",
   "name": "ABOH LEGAL",
   "description": "Client-centred legal counsel for families, homeowners, newcomers, and small businesses across Alberta.",
   "url": "https://www.abohlegal.ca",
   "telephone": "+18254610107",
   "email": "info@abohlegal.ca",
+  "image": "https://www.abohlegal.ca/images/logo-fc.png",
+  "logo": "https://www.abohlegal.ca/images/logo-fc.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "4437 53 Avenue",
@@ -29,17 +32,32 @@ const defaultSchema = JSON.stringify({
     "postalCode": "T0A 3A2",
     "addressCountry": "CA"
   },
-  "openingHours": "Mo-Fr 08:00-17:00",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.9933,
+    "longitude": -111.3017
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
   "founder": {
     "@type": "Person",
-    "name": "Prince O. Aboh",
+    "@id": "https://www.abohlegal.ca/about#person",
+    "name": "Prince Aboh",
     "jobTitle": "Barrister & Solicitor"
   },
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "Alberta"
   },
-  "priceRange": "$$"
+  "sameAs": [
+    "https://www.facebook.com/abohlegal",
+    "https://www.instagram.com/abohlegal",
+    "https://www.linkedin.com/in/princeaboh"
+  ]
 });
 
 const schemaJson = schemaData || defaultSchema;
@@ -55,9 +73,19 @@ const schemaJson = schemaData || defaultSchema;
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
 
-    <!-- Google Fonts preconnect -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Epilogue:wght@400;700;800&family=Manrope:wght@400;500;600&display=swap" />
+
+    <!-- Indexing directives -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -69,11 +97,14 @@ const schemaJson = schemaData || defaultSchema;
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={schemaJson} />
 
+    <!-- Page-specific head content -->
+    <slot name="head" />
+
     <!-- Plausible Analytics (uncomment when account is set up)
     <script defer data-domain="abohlegal.ca" src="https://plausible.io/js/script.js"></script>
     -->
   </head>
-  <body class="bg-light-bg font-body text-body-text">
+  <body class="bg-white font-body text-body-text">
     <Header />
     <main>
       <slot />

@@ -3,19 +3,39 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import ServiceCard from '../../components/ServiceCard.astro';
 import { serviceDetails } from '../../data/serviceDetails';
+import documentSigning from '../../assets/stock/document-signing.jpg';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.abohlegal.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "Services" }
+  ]
+});
 ---
 
 <BaseLayout
-  title="Our Services | ABOH LEGAL"
-  description="ABOH LEGAL offers family law, wills & estates, employment law, civil litigation, and more. Serving Alberta from St. Paul."
+  title="Legal Services | Family Law, Estates, Litigation | ABOH LEGAL St. Paul Alberta"
+  description="ABOH LEGAL offers family law, wills and estates, employment law, civil litigation, immigration, and more. Serving clients across Alberta from St. Paul."
 >
-  <Hero title="Legal Services" backgroundImage="/images/stock/document-signing.jpg" />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <Hero title="Legal Services" backgroundImage={documentSigning} />
 
   <section class="bg-white py-12 md:py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <p class="text-body-text text-base md:text-lg leading-relaxed text-center mb-12 max-w-2xl mx-auto">
-        Aboh Legal provides a broad range of legal services to individuals, families, and businesses across northeastern Alberta. Select a practice area below to learn more about how we can help.
-      </p>
+      <div class="text-body-text text-base md:text-lg leading-relaxed text-center mb-12 max-w-2xl mx-auto space-y-4">
+        <p>
+          ABOH LEGAL provides a broad range of legal services to individuals, families, and businesses across Alberta. Whether you are navigating a family dispute, planning your estate, dealing with a workplace issue, or pursuing a civil claim, we are here to help you understand your rights and move forward with confidence.
+        </p>
+        <p>
+          Prince Aboh brings experience in both litigation and solicitor work, combining foreign legal training with Canadian legal credentials. The firm accepts Legal Aid certificates and offers consultations by phone, video, or in person. ABOH LEGAL appears regularly before the Court of King's Bench and the Alberta Court of Justice at court locations across northeastern Alberta, including St. Paul, Vermilion, Lloydminster, Cold Lake, Wainwright, and Bonnyville.
+        </p>
+        <p>
+          Select a practice area below to learn more about how we can help.
+        </p>
+      </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {serviceDetails.map((service) => (
           <ServiceCard

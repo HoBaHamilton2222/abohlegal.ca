@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABOH LEGAL | Alberta Barrister &amp; Solicitor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: "#C49A4A",
+                            dark: "#0A0A14",
+                            surface: "#1A1A2E",
+                            muted: "#8E8E93"
+                        }
+                    },
+                    fontFamily: {
+                        "headline": ["Sora", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            @apply bg-brand-dark text-white antialiased selection:bg-brand-gold selection:text-brand-dark;
+            font-family: 'Inter', sans-serif;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom, #C49A4A, transparent) 1;
+        }
+        .modular-panel {
+            @apply border border-white/5 bg-brand-surface/40 backdrop-blur-sm transition-all duration-300;
+        }
+        .modular-panel:hover {
+            @apply border-brand-gold/30 bg-brand-surface/60;
+        }.practice-tab-input:checked + .practice-tab-content {
+            display: block;
+        }
+        .practice-tab-input:checked ~ .practice-tab-label {
+            @apply text-brand-gold border-brand-gold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<nav class="fixed top-0 w-full z-[100] bg-brand-dark/95 backdrop-blur-xl border-b border-white/5">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center h-20">
+<div class="text-xl font-extrabold tracking-widest text-white uppercase font-headline">
+            ABOH LEGAL
+        </div>
+<div class="hidden lg:flex items-center gap-x-12">
+<a class="text-brand-gold text-xs font-bold uppercase tracking-widest border-b-2 border-brand-gold pb-1" href="#services">Services</a>
+<a class="text-stone-400 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest" href="#about">About</a>
+<a class="text-stone-400 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest" href="#values">Values</a>
+<a class="text-stone-400 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest" href="#contact">Contact</a>
+</div>
+<button class="bg-brand-gold text-brand-dark px-8 py-3 font-bold text-xs tracking-widest uppercase transition-all hover:bg-white active:scale-95">
+            Book Appointment
+        </button>
+</div>
+</nav>
+<section class="relative min-h-screen pt-20 flex flex-col lg:flex-row border-b border-white/5">
+<div class="w-full lg:w-3/5 relative flex items-center px-6 md:px-12 py-20 lg:py-0 overflow-hidden bg-brand-dark">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img alt="Premium Legal Office" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl5RLVlegx2lC5LCD8oK12JHioKAiWWSx-Fg099rDLkrTUPchVGeifJbQvHLjdRBK8v9F2jB8sJfWQoM_ub7qiVC5QJ3xMArzboBMNPVmaTJfTzZByDnX0jvXkfkg0VVYuKb3yf5y-nKXCCBmnsMDNimpGw5ZFxX5owcMWa_v3AjZoIPpAghMCej3bu0aZTEUiGETukeLleba8fZfX4pSCv0hJWgL-vmzV_jW8SQAKxfW48gi1-K0k57HO_yeaTdbc0gL9ATUD3E"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block text-brand-gold font-bold tracking-[0.4em] text-[10px] uppercase mb-8 py-1 border-b border-brand-gold/30">
+                BARRISTER &amp; SOLICITOR | ST. PAUL, AB
+            </span>
+<h1 class="font-headline font-bold text-6xl md:text-8xl text-white leading-[1.05] tracking-tighter mb-8">
+                Clear advice.<br/>
+                Steady <span class="text-brand-gold italic">advocacy.</span><br/>
+                Alberta-wide.
+            </h1>
+<p class="text-brand-muted text-lg font-body mb-12 leading-relaxed border-l border-brand-gold/20 pl-6">
+                Sophisticated representation for the result-oriented client. A boutique solo practice delivering global legal experience to the heart of Alberta.
+            </p>
+<div class="flex items-center gap-12 text-sm">
+<div class="flex flex-col">
+<span class="text-brand-gold font-bold mb-1 uppercase tracking-tighter">Phone</span>
+<span class="text-white text-lg font-headline">(825) 461-0107</span>
+</div>
+<div class="flex flex-col">
+<span class="text-brand-gold font-bold mb-1 uppercase tracking-tighter">Availability</span>
+<span class="text-white text-lg font-headline">24 / 7 Support</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/5 bg-brand-surface border-l border-white/5 flex items-center justify-center p-6 md:p-12 lg:p-16">
+<div class="w-full max-w-md bg-brand-dark p-10 border border-brand-gold/20 relative">
+<div class="absolute -top-px -left-px w-12 h-12 border-t-2 border-l-2 border-brand-gold"></div>
+<h2 class="font-headline font-bold text-2xl text-white mb-2">How can we help?</h2>
+<p class="text-brand-muted text-sm mb-8">Select a service to start your inquiry.</p>
+<form class="space-y-6">
+<div class="space-y-4">
+<label class="block">
+<span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-2 block">Service Required</span>
+<select class="w-full bg-brand-surface border-white/10 text-white rounded-none py-4 px-4 focus:ring-brand-gold focus:border-brand-gold transition-all">
+<option>Family Law &amp; Divorce</option>
+<option>Wills &amp; Estate Planning</option>
+<option>Civil &amp; Estate Litigation</option>
+<option>Employment Law</option>
+<option>Business &amp; Commercial</option>
+<option>Immigration</option>
+<option>Other Legal Inquiry</option>
+</select>
+</label>
+<label class="block">
+<span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-2 block">Full Name</span>
+<input class="w-full bg-brand-surface border-white/10 text-white rounded-none py-4 px-4 focus:ring-brand-gold focus:border-brand-gold" placeholder="John Doe" type="text"/>
+</label>
+<label class="block">
+<span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-2 block">Preferred Contact</span>
+<input class="w-full bg-brand-surface border-white/10 text-white rounded-none py-4 px-4 focus:ring-brand-gold focus:border-brand-gold" placeholder="email@address.com" type="email"/>
+</label>
+</div>
+<button class="w-full bg-brand-gold text-brand-dark font-bold py-5 uppercase tracking-widest hover:bg-white transition-colors duration-300" type="submit">
+                    Request Call Back
+                </button>
+<p class="text-[10px] text-center text-brand-muted uppercase tracking-wider">Confidentiality Assured • Alberta Province-Wide</p>
+</form>
+</div>
+</div>
+</section>
+<section class="bg-brand-dark border-b border-white/5 py-8">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex items-center gap-6 p-6 border-l border-brand-gold/30">
+<span class="material-symbols-outlined text-brand-gold text-3xl">verified_user</span>
+<div>
+<h4 class="text-white font-bold text-xs uppercase tracking-widest">Legal Aid Accepted</h4>
+<p class="text-brand-muted text-[10px] uppercase tracking-wider mt-1">Access to justice for all</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-6 border-l border-brand-gold/30">
+<span class="material-symbols-outlined text-brand-gold text-3xl">travel_explore</span>
+<div>
+<h4 class="text-white font-bold text-xs uppercase tracking-widest">Serving Alberta</h4>
+<p class="text-brand-muted text-[10px] uppercase tracking-wider mt-1">Edmonton to Calgary &amp; Beyond</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-6 border-l border-brand-gold/30">
+<span class="material-symbols-outlined text-brand-gold text-3xl">video_chat</span>
+<div>
+<h4 class="text-white font-bold text-xs uppercase tracking-widest">Digital-First Firm</h4>
+<p class="text-brand-muted text-[10px] uppercase tracking-wider mt-1">Virtual &amp; Phone Consultations</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-brand-dark" id="services">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<span class="text-brand-gold font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">PRACTICE AREAS</span>
+<h2 class="font-headline font-bold text-5xl text-white mb-8 leading-tight">Expertise for<br/>Complex Needs.</h2>
+<p class="text-brand-muted text-lg mb-10 leading-relaxed">
+                    Choose an area of practice to learn more about how we protect your interests through precise legal strategy.
+                </p>
+<div class="space-y-4">
+<button class="w-full text-left p-6 border border-brand-gold/30 bg-brand-surface flex justify-between items-center group">
+<span class="font-headline font-bold text-white uppercase tracking-widest group-hover:text-brand-gold transition-colors">Family Law</span>
+<span class="material-symbols-outlined text-brand-gold">arrow_forward_ios</span>
+</button>
+<button class="w-full text-left p-6 border border-white/10 hover:border-brand-gold/30 transition-colors flex justify-between items-center group">
+<span class="font-headline font-bold text-white/40 uppercase tracking-widest group-hover:text-white transition-colors">Wills &amp; Estates</span>
+<span class="material-symbols-outlined text-white/20">chevron_right</span>
+</button>
+<button class="w-full text-left p-6 border border-white/10 hover:border-brand-gold/30 transition-colors flex justify-between items-center group">
+<span class="font-headline font-bold text-white/40 uppercase tracking-widest group-hover:text-white transition-colors">Civil Litigation</span>
+<span class="material-symbols-outlined text-white/20">chevron_right</span>
+</button>
+<button class="w-full text-left p-6 border border-white/10 hover:border-brand-gold/30 transition-colors flex justify-between items-center group">
+<span class="font-headline font-bold text-white/40 uppercase tracking-widest group-hover:text-white transition-colors">Employment Law</span>
+<span class="material-symbols-outlined text-white/20">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="grid md:grid-cols-2 gap-1 bg-white/5 border border-white/5">
+<div class="bg-brand-surface/40 p-12 hover:bg-brand-surface transition-all group">
+<span class="material-symbols-outlined text-4xl text-brand-gold mb-6 block" data-icon="diversity_3">diversity_3</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Family Law</h3>
+<p class="text-brand-muted text-sm leading-relaxed mb-6">Navigating divorce, custody, and support with empathy and tactical precision. We focus on fair outcomes while protecting your future.</p>
+<ul class="text-[10px] uppercase tracking-[0.2em] text-brand-gold space-y-2 font-bold">
+<li>• Divorce &amp; Separation</li>
+<li>• Child Custody</li>
+<li>• Spousal Support</li>
+</ul>
+</div>
+<div class="bg-brand-surface/40 p-12 hover:bg-brand-surface transition-all group">
+<span class="material-symbols-outlined text-4xl text-brand-gold mb-6 block" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Wills &amp; Estates</h3>
+<p class="text-brand-muted text-sm leading-relaxed mb-6">Protecting your legacy through meticulous estate planning and documentation. Strategic advice for complex family dynamics.</p>
+<ul class="text-[10px] uppercase tracking-[0.2em] text-brand-gold space-y-2 font-bold">
+<li>• Will Preparation</li>
+<li>• Power of Attorney</li>
+<li>• Personal Directives</li>
+</ul>
+</div>
+<div class="bg-brand-surface/40 p-12 hover:bg-brand-surface transition-all group">
+<span class="material-symbols-outlined text-4xl text-brand-gold mb-6 block" data-icon="gavel">gavel</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Civil Litigation</h3>
+<p class="text-brand-muted text-sm leading-relaxed mb-6">Effective dispute resolution through negotiation and court advocacy. From breach of contract to tort claims.</p>
+<ul class="text-[10px] uppercase tracking-[0.2em] text-brand-gold space-y-2 font-bold">
+<li>• Contract Disputes</li>
+<li>• Property Claims</li>
+<li>• Debt Recovery</li>
+</ul>
+</div>
+<div class="bg-brand-surface/40 p-12 hover:bg-brand-surface transition-all group">
+<span class="material-symbols-outlined text-4xl text-brand-gold mb-6 block" data-icon="work_history">work_history</span>
+<h3 class="font-headline font-bold text-2xl text-white mb-4">Business Law</h3>
+<p class="text-brand-muted text-sm leading-relaxed mb-6">Comprehensive legal support for Alberta businesses and entrepreneurs. Protecting your commercial interests daily.</p>
+<ul class="text-[10px] uppercase tracking-[0.2em] text-brand-gold space-y-2 font-bold">
+<li>• Incorporation</li>
+<li>• Master Agreements</li>
+<li>• Partner Buyouts</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-brand-dark py-32 border-y border-white/5 overflow-hidden" id="about">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="flex flex-col lg:flex-row gap-24 items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 border border-brand-gold/20 scale-95 group-hover:scale-100 transition-transform duration-700"></div>
+<div class="relative bg-brand-surface aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
+<img alt="Lead Counsel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMXd9e_nhbwOO6Eeqyl454IQgQ22CppWoHahe3N6w1NafhB9K0zmXubD6A0njU4_9tKtuf3Cn1BXlsxtp8o3bM21uvGqlSjyTdw5meVE--DzZuw1zTsf0fZj7ZIJfkQ-0IjK0PEEPS6ueuK9-9biUJALTePz5CzSRiEf5w_fxbDVyFxczsAlkdrJbBo3nyw3wmaTCdSRUnZ8lr8WlXd2l07gh7DC6PViBft0vgIzPdjkqgS2A7nS-whr_rulg0Wf4DfsbRQ_mJdqs"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-dark to-transparent">
+<span class="text-brand-gold font-bold text-xs tracking-widest uppercase">Principal Lawyer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="text-brand-gold font-bold tracking-[0.4em] text-[10px] uppercase mb-8 block">THE FIRM PHILOSOPHY</span>
+<h2 class="font-headline font-bold text-5xl text-white mb-10 leading-tight">Sophisticated Advocacy.<br/><span class="text-brand-gold italic">Local Roots.</span></h2>
+<div class="space-y-8 text-brand-muted text-lg leading-relaxed">
+<p>With a legal journey spanning from the vibrant courts of Lagos to the vast landscapes of Alberta, ABOH LEGAL brings a unique, global perspective to local advocacy.</p>
+<p>We believe in <span class="text-white border-b border-brand-gold">Clarity through precision.</span> We cut through the legalese to provide you with a straightforward path forward, ensuring you are never left in the dark about your own case.</p>
+<p>As a boutique practice, we prioritize quality over volume. When you hire us, you work directly with your lawyer—ensuring consistency, confidentiality, and deep strategic alignment.</p>
+</div>
+<div class="mt-12 flex gap-12 border-t border-white/5 pt-12">
+<div class="flex flex-col">
+<span class="text-white font-headline font-bold text-3xl">15+</span>
+<span class="text-brand-gold text-[10px] uppercase font-bold tracking-widest mt-1">Years Experience</span>
+</div>
+<div class="flex flex-col">
+<span class="text-white font-headline font-bold text-3xl">100%</span>
+<span class="text-brand-gold text-[10px] uppercase font-bold tracking-widest mt-1">Direct Access</span>
+</div>
+<div class="flex flex-col">
+<span class="text-white font-headline font-bold text-3xl">Alberta</span>
+<span class="text-brand-gold text-[10px] uppercase font-bold tracking-widest mt-1">Wide Representation</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-brand-surface/30" id="values">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="mb-20 text-center">
+<span class="text-brand-gold font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">WHY CHOOSE US</span>
+<h2 class="font-headline font-bold text-4xl text-white tracking-tight">Built on Foundational Values</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="modular-panel p-16 text-center border-brand-gold/10">
+<span class="material-symbols-outlined text-brand-gold text-5xl mb-10">history_toggle_off</span>
+<h3 class="font-headline font-bold text-xl text-white mb-6 uppercase tracking-widest">Always Available</h3>
+<p class="text-brand-muted text-sm leading-relaxed">Legal emergencies don't stick to a 9-to-5 schedule. We offer flexible availability including evenings and weekends to ensure support when it matters.</p>
+</div>
+<div class="modular-panel p-16 text-center border-brand-gold/10">
+<span class="material-symbols-outlined text-brand-gold text-5xl mb-10">shield_with_heart</span>
+<h3 class="font-headline font-bold text-xl text-white mb-6 uppercase tracking-widest">Fearless Advocacy</h3>
+<p class="text-brand-muted text-sm leading-relaxed">Whether in negotiation or the courtroom, we represent your interests with unwavering determination and professional poise.</p>
+</div>
+<div class="modular-panel p-16 text-center border-brand-gold/10">
+<span class="material-symbols-outlined text-brand-gold text-5xl mb-10">hearing</span>
+<h3 class="font-headline font-bold text-xl text-white mb-6 uppercase tracking-widest">Counsel Who Listens</h3>
+<p class="text-brand-muted text-sm leading-relaxed">Every case involves a human story. We take the time to hear your concerns, understand your goals, and tailor our strategy to your needs.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="relative py-40 overflow-hidden bg-brand-dark border-y border-brand-gold/10" id="contact">
+<div class="absolute inset-0 bg-brand-dark/95 z-10"></div>
+<img alt="Conference Room" class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ9OcnfY7QvlPCrjfMF9RfgZZL84yoBgjwFCUlH_qIBa19_rcscWlcl9yF9sVbV4LHczcdS6rOq14srl7NUmrjYyEi4337bFtBFctMa9JJZaTKGcCdXb37hlquqiqi5fYGayG-gKvMuj5-V-x4KaF1lCCc824Bp8BqkCZBrQb04wSB4iQvBrYC8_hiiuTs5U4l_ne-wFIIWR1W-cByy250eTW_TR9WWSLo8-O8CE6u3AtNf48AYhA8bf6trGVw1nlFW9W0kvZFBuM"/>
+<div class="relative z-20 max-w-4xl mx-auto px-12 text-center">
+<h2 class="font-headline font-bold text-5xl md:text-6xl text-white mb-8 tracking-tighter">Secure your <span class="text-brand-gold">consultation</span> today.</h2>
+<p class="text-brand-muted text-xl mb-16 leading-relaxed max-w-2xl mx-auto">
+            Take the first step toward legal resolution. Contact our St. Paul office or book a digital appointment to discuss your situation.
+        </p>
+<div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
+<button class="w-full sm:w-auto bg-brand-gold text-brand-dark font-bold px-12 py-6 rounded-none uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                Schedule Appointment
+            </button>
+<a class="w-full sm:w-auto border border-white/20 text-white font-bold px-12 py-6 rounded-none uppercase tracking-widest hover:bg-white/5 transition-all text-center" href="tel:8254610107">
+                Call (825) 461-0107
+            </a>
+</div>
+</div>
+</section>
+<footer class="bg-brand-dark pt-24 pb-12 border-t border-white/5">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
+<div class="md:col-span-4">
+<div class="text-2xl font-extrabold text-white tracking-widest uppercase mb-8 font-headline">
+                    ABOH LEGAL
+                </div>
+<p class="text-sm text-brand-muted leading-relaxed max-w-sm mb-12">
+                    Professionalism with a personal touch. Dedicated advocacy for individuals and businesses across Alberta.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-brand-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-brand-gold transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="text-brand-gold font-bold mb-8 uppercase tracking-widest text-[10px]">Services</h4>
+<ul class="space-y-4 text-sm text-brand-muted uppercase tracking-tighter font-medium">
+<li><a class="hover:text-white transition-colors" href="#">Family Law</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Wills &amp; Estates</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Litigation</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Immigration</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-brand-gold font-bold mb-8 uppercase tracking-widest text-[10px]">Location</h4>
+<div class="text-sm text-brand-muted space-y-4 font-medium leading-relaxed">
+<p class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold text-lg shrink-0">location_on</span>
+                        4801 50 Ave, St. Paul,<br/>Alberta T0A 3A0
+                    </p>
+<p class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold text-lg shrink-0">call</span>
+                        (825) 461-0107
+                    </p>
+</div>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-brand-gold font-bold mb-8 uppercase tracking-widest text-[10px]">Consultation</h4>
+<p class="text-sm text-brand-muted mb-6 leading-relaxed">
+                    Flexible appointments available including evenings and weekends.
+                </p>
+<button class="text-white font-bold text-xs uppercase tracking-widest border-b border-brand-gold pb-1 hover:text-brand-gold transition-all">
+                    Book Digital Consult
+                </button>
+</div>
+</div>
+<div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-[10px] text-stone-600 uppercase tracking-widest font-bold">
+                © 2024 ABOH LEGAL PROFESSIONAL CORPORATION. All rights reserved.
+            </div>
+<div class="flex gap-10">
+<a class="text-stone-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Privacy</a>
+<a class="text-stone-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Terms</a>
+<a class="text-stone-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Disclaimer</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

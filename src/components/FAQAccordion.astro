@@ -30,8 +30,7 @@ const id = `faq-${Math.random().toString(36).slice(2, 9)}`;
     id={id}
     class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out"
   >
-    <p class="text-body-text text-sm md:text-base leading-relaxed pb-4 pr-8">
-      {answer}
+    <p class="text-body-text text-sm md:text-base leading-relaxed pb-4 pr-8" set:html={answer}>
     </p>
   </div>
 </div>

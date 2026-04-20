@@ -6,13 +6,14 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    publishDate: z.coerce.date().optional(),
     category: z.enum([
       'Family Law', 'Wills & Estates', 'Estate Litigation',
       'Employment Law', 'Business & Commercial', 'Civil Litigation',
       'Personal Injury', 'Immigration', 'General',
     ]),
     excerpt: z.string().max(160),
-    author: z.string().default('Prince O. Aboh'),
+    author: z.string().default('Prince Aboh'),
     image: z.string().optional(),
     draft: z.boolean().default(false),
   }),

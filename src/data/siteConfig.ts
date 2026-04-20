@@ -12,6 +12,6 @@ export const siteConfig = {
     full: '4437 53 Avenue, St. Paul, AB T0A 3A2',
   },
   hours: '8:00 AM – 5:00 PM, Monday – Friday',
-  formspreeEndpoint: import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || '',
+  formspreeEndpoint: import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xjgjbdjy',
   cosmoLexUrl: '',
 };
