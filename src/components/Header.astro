@@ -1,7 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import logo from '../assets/logo-fc.png';
-
 const currentPath = Astro.url.pathname;
 
 const services = [
@@ -37,7 +34,7 @@ function isServicesActive(): boolean {
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
     <!-- Logo -->
     <a href="/" class="flex items-center">
-      <Image src={logo} alt="ABOH LEGAL logo" class="h-[60px] md:h-[80px] w-auto" width={152} height={80} format="webp" quality={90} loading="eager" />
+      <img src="/images/logo-fc.svg" alt="ABOH LEGAL logo" class="h-[60px] md:h-[80px] w-auto" width="152" height="80" loading="eager" />
     </a>
 
     <!-- Desktop Nav -->
