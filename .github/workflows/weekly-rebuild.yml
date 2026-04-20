@@ -1,0 +1,25 @@
+name: Weekly Drip Rebuild
+
+# Triggers a Vercel redeploy every Monday at 08:00 Mountain Time (14:00 UTC).
+# The redeploy re-evaluates the publishDate filter on every blog post, so any
+# article whose publishDate has passed becomes visible automatically.
+#
+# You can also run this manually from the Actions tab via "Run workflow".
+
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Vercel deploy hook
+        run: |
+          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
+            echo "VERCEL_DEPLOY_HOOK secret is not set. See .github/workflows/README.md for setup."
+            exit 1
+          fi
+          curl -fsSL -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+          echo "Deploy hook triggered."
