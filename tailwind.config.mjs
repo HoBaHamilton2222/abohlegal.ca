@@ -10,9 +10,9 @@ export default {
         'muted-text': '#74777D',
       },
       fontFamily: {
-        heading: ['Epilogue', 'system-ui', 'sans-serif'],
-        body: ['Manrope', 'system-ui', 'sans-serif'],
-        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        heading: ['"Adobe Garamond Pro"', '"Adobe Garamond Pro Bold"', 'Georgia', 'serif'],
+        body: ['Lato', 'system-ui', 'sans-serif'],
+        display: ['"Adobe Garamond Pro"', '"Adobe Garamond Pro Bold"', 'Georgia', 'serif'],
       },
     },
   },
