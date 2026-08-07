@@ -1,6 +1,11 @@
 {
   "redirects": [
-    { "source": "/services/real-estate", "destination": "/services", "permanent": true }
+    { "source": "/services/real-estate", "destination": "/services", "permanent": true },
+    {
+      "source": "/book",
+      "destination": "https://outlook.office.com/bookwithme/user/ed9d3fdc3c7c4ac7a1812bdfbdcbbdc4@abohlegal.ca/meetingtype/NrgsBbW8T0qzr5rOsxrWHw2?anonymous&ismsaljsauthenabled&ep=mlink",
+      "permanent": false
+    }
   ],
   "headers": [
     {
