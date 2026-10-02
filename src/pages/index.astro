@@ -5,7 +5,6 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import { siteConfig } from '../data/siteConfig';
 
-import prairieRoad from '../assets/stock/prairie-road.jpg';
 import headshot from '../assets/headshot.jpg';
 
 const websiteSchema = JSON.stringify({
@@ -49,28 +48,17 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
 >
   <script slot="head" type="application/ld+json" set:html={websiteSchema} />
 
-  <!-- HERO -->
-  <section class="relative flex items-center overflow-hidden px-6 min-h-[460px] md:min-h-[520px]">
-    <Image
-      src={prairieRoad}
-      alt=""
-      class="absolute inset-0 h-full w-full object-cover object-center"
-      widths={[640, 960, 1600]}
-      sizes="100vw"
-      format="webp"
-      quality={78}
-      loading="eager"
-      fetchpriority="high"
-    />
-    <div class="absolute inset-0 bg-navy/75 md:bg-gradient-to-r md:from-navy/95 md:via-navy/70 md:to-navy/10"></div>
-    <div class="relative mx-auto w-full max-w-7xl py-16 md:py-20">
-      <div class="mx-auto max-w-2xl text-center md:mx-0 md:text-left">
-        <h1 class="font-heading text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+  <!-- HERO: headline left, Prince right -->
+  <section class="bg-navy px-6 text-white">
+    <div class="mx-auto grid max-w-7xl items-center gap-10 py-14 md:grid-cols-[1.15fr_1fr] md:gap-16 md:py-0">
+      <div class="text-center md:py-20 md:text-left">
+        <p class="text-xs font-bold uppercase tracking-[0.3em] text-gold-bright">St. Paul, Alberta</p>
+        <h1 class="mt-4 font-heading text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
           Clear legal advice.<br />
           <span class="text-gold-bright">Across Alberta.</span>
         </h1>
         <p class="mt-5 text-lg text-white/85 md:text-xl">
-          A law firm in St. Paul for family law, estates, and more. Legal Aid accepted for family cases.
+          Family law, child protection, wills, and estate disputes. Legal Aid accepted for family cases.
         </p>
         <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
           <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer"
@@ -82,6 +70,20 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
             Call {siteConfig.phone}
           </a>
         </div>
+        <p class="mt-6 text-sm text-white/70">Serving St. Paul, Bonnyville, Cold Lake, Vermilion, Lloydminster, Lac La Biche, Fort Saskatchewan, and Edmonton.</p>
+      </div>
+      <div class="mx-auto w-full max-w-xs md:max-w-md md:self-end">
+        <Image
+          src={headshot}
+          alt="Prince Aboh, lawyer, ABOH LEGAL"
+          class="mx-auto h-auto w-full rounded-lg md:rounded-b-none"
+          widths={[320, 640, 900]}
+          sizes="(max-width: 768px) 320px, 40vw"
+          format="webp"
+          quality={82}
+          loading="eager"
+          fetchpriority="high"
+        />
       </div>
     </div>
   </section>
@@ -95,29 +97,19 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
     </div>
   </section>
 
-  <!-- MEET PRINCE -->
+  <!-- WELCOME NOTE -->
   <section class="bg-white px-6 py-16 md:py-20">
-    <div class="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-[280px_1fr]">
-      <Image
-        src={headshot}
-        alt="Prince Aboh, lawyer"
-        class="mx-auto h-auto w-56 rounded-lg shadow-md md:w-full"
-        widths={[280, 560]}
-        sizes="280px"
-        format="webp"
-        quality={80}
-        loading="lazy"
-      />
-      <div>
-        <h2 class="font-heading text-3xl font-bold text-navy md:text-4xl">Meet Prince Aboh</h2>
-        <p class="mt-4 text-base leading-relaxed text-body-text md:text-lg">
-          Prince is a lawyer in St. Paul and a member of the Law Society of Alberta, called to the bar in 2024. His practice focuses on family law, including child protection, and estate litigation. He handles your file himself.
-        </p>
-        <p class="mt-4 text-base leading-relaxed text-body-text md:text-lg">
-          ABOH LEGAL acts for clients in the Court of King's Bench and the Alberta Court of Justice, in St. Paul and across the region, including Bonnyville, Cold Lake, Vermilion, Lloydminster, Fort Saskatchewan, Lac La Biche, and Edmonton.
-        </p>
-        <a href="/about" class="mt-6 inline-block font-bold text-gold underline hover:no-underline">More about Prince</a>
-      </div>
+    <div class="mx-auto max-w-3xl">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-gold">A note from Prince</p>
+      <h2 class="mt-3 font-heading text-3xl font-bold text-navy md:text-4xl">You deal with me, not a team you never meet.</h2>
+      <p class="mt-5 text-base leading-relaxed text-body-text md:text-lg">
+        I am a lawyer in St. Paul and a member of the Law Society of Alberta. Most of my work is family law, child protection, and estate disputes. I handle every file myself, I explain your options in plain language, and I tell you what to expect before each step.
+      </p>
+      <p class="mt-4 text-base leading-relaxed text-body-text md:text-lg">
+        I appear in the Court of King&rsquo;s Bench and the Alberta Court of Justice across northeastern Alberta. If you are not sure whether I can help, call or book a time and ask.
+      </p>
+      <p class="mt-6 font-heading text-2xl text-navy">Prince Aboh</p>
+      <a href="/about" class="mt-2 inline-block font-bold text-gold underline hover:no-underline">More about Prince</a>
     </div>
   </section>
 
