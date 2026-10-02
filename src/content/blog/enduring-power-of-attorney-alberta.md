@@ -4,83 +4,80 @@ date: 2026-04-19
 publishDate: 2026-05-11
 updated: 2026-10-01
 category: "Wills & Estates"
-excerpt: "An EPOA is not about future you. It is protection against a stroke, accident, or fall tomorrow. Here is how to get it right under Alberta law."
+excerpt: "An EPOA protects you if a stroke, accident, or fall takes your capacity tomorrow. Here is how to make one that works under Alberta law."
 author: "Prince Aboh"
 draft: false
 ---
 
-An enduring power of attorney is not really about future you. It is protection against a stroke on a Tuesday, a car accident on the way home, or a fall in the driveway that takes your capacity to sign anything. Tomorrow, not decades from now.
-
-Without one, your spouse or adult child cannot walk into the bank and pay your mortgage, sell the truck to cover your care, or deal with the CRA. To do any of that, they have to apply to the Court of King's Bench to be appointed your trustee under a different statute. That takes months and costs thousands. A clean enduring power of attorney, signed while you still have capacity, avoids all of it.
+An enduring power of attorney (EPOA) names someone you trust to handle your money and legal affairs. Without one, a stroke or a fall could leave your family unable to pay your mortgage or deal with the CRA (Canada's tax agency). They would first need an order from the Court of King's Bench, which takes months and costs thousands. A properly made EPOA, signed while you still have capacity, avoids all of that.
 
 ## What an EPOA Actually Does
 
-Under Alberta's *Powers of Attorney Act*, RSA 2000, c P-20, an enduring power of attorney lets you name someone to handle your financial and legal affairs: banking, bill payment, pensions, selling or mortgaging property, taxes, running a business. The person you name is your attorney. You are the donor.
+Under Alberta's *Powers of Attorney Act*, RSA 2000, c P-20, the person you name is your attorney, and you are the donor. An EPOA can cover banking, bills, pensions, selling or mortgaging property, taxes, and running a business.
 
-The word "enduring" matters. An ordinary power of attorney ends the moment you lose mental capacity, which is the opposite of what you want. An enduring power of attorney keeps working after you lose capacity, provided the document says so expressly. The Act requires a statement that the authority continues despite later mental incapacity, or that it comes into effect on incapacity.
+An ordinary power of attorney ends the moment you lose mental capacity (your ability to make your own decisions). An enduring one keeps working after that, but only if the document says so expressly.
 
-An attorney cannot make a will for you and cannot make personal or health care decisions. Those are handled by a personal directive under the *Personal Directives Act*, RSA 2000, c P-6. An attorney can only use your property for you and for the maintenance of your spouse, adult interdependent partner, and dependent children, unless the document says otherwise.
+Your attorney cannot make a will for you. They also cannot make personal or health care decisions, which are handled by a personal directive under the *Personal Directives Act*, RSA 2000, c P-6. Unless the document says otherwise, your attorney can use your property only for you and for the maintenance of certain family members. Those are your spouse, adult interdependent partner (similar to a common-law partner), and dependent children.
 
 ## Springing or Immediate: Which to Choose
 
-Two design choices. An immediate EPOA takes effect when you sign it and continues through any later incapacity. A springing EPOA takes effect only on a triggering event, almost always a written declaration that you have lost capacity.
+An immediate EPOA is simpler. It takes effect when you sign it and continues through any later incapacity, but you give someone legal authority while you still run your own life.
 
-Immediate EPOAs are simpler. No triggering event to argue about, no medical declaration to track down in a crisis. The trade-off is real: you are handing legal authority to someone while you still run your own life.
+A springing EPOA takes effect only on a triggering event, almost always a written declaration that you have lost capacity. The document must set out who declares that you have lost capacity, and how. If the document is silent, the Act defaults to written declarations from two medical practitioners, which can cause delay in a crisis.
 
-Springing EPOAs only activate when you need them. The document must set out who declares that you have lost capacity and how. If the document is silent, the Act defaults to written declarations from two medical practitioners, which can cause delay in a crisis.
-
-For most donors, a well-drafted springing EPOA is the right choice. The triggering event, the people authorized to declare incapacity, and the format of the declaration all need to be spelled out. A vague trigger is how families end up stuck at the bank.
+For most donors, a well-drafted springing EPOA is the right choice.
 
 ## Choosing an Attorney
 
-An attorney under an EPOA is a fiduciary. They must act honestly, in good faith, and prefer your interests over their own. They must keep accurate records, not mix your money with theirs, and be ready to account to the court if a concerned family member asks.
+Your attorney is a fiduciary (a person in a position of trust). They must act honestly and in good faith, put your interests ahead of their own, keep accurate records, and not mix your money with theirs. If a concerned family member asks, they must be ready to account to the court (show how they used your money).
 
-When you pick someone, think about:
+Pick someone you trust fully who can read a bank statement. Six years of receipts, statements, and a running log is a reasonable minimum for their records.
 
-- **Trust.** Full stop. This person will have access to your money.
-- **Financial literacy.** Someone who can read a bank statement and knows when to call a professional.
-- **Availability and proximity.** Banks, tenants, and contractors often want to deal with the attorney in person. An attorney who lives overseas and never answers email is a problem.
-- **Record-keeping discipline.** Six years of receipts, statements, and a running log is a reasonable baseline.
-
-You can name more than one attorney. Joint appointments require both signatures and create built-in oversight. Joint and several appointments let either act alone and are faster. You can also name an alternate who steps in if your first choice dies, loses capacity, or declines. For most families, one primary attorney plus one alternate is the cleanest structure.
+You can name joint attorneys, who must both sign, or joint and several attorneys, who can each act alone. You can also name an alternate (a backup attorney) who steps in if your first choice dies, loses capacity, or declines. One attorney plus one alternate suits most families.
 
 ## The Formalities That Matter
 
-The Act imposes strict execution requirements. Miss any of them and the document is not valid.
+Under the Act, the document is not valid if you miss any of these requirements:
 
 - **In writing and dated.**
 - **Signed by the donor in the presence of a witness** (or signed by another person at the donor's direction, in the donor's presence and the witness's presence, if the donor cannot physically sign).
 - **Signed by the witness in the presence of the donor.**
 - **A clear statement that the authority continues during any later mental incapacity, or that it only comes into effect on incapacity.**
 
-The witness rules are where DIY EPOAs most often fail. The witness cannot be the attorney, the attorney's spouse or adult interdependent partner, or the donor's spouse or adult interdependent partner. A common mistake is having your spouse witness an EPOA where your adult child is the attorney. That does not work.
+Home-made EPOAs most often fail on the witness rules. The witness cannot be the attorney, the attorney's spouse or adult interdependent partner, or the donor's spouse or adult interdependent partner. So your spouse cannot witness an EPOA that names your adult child as attorney.
 
-Your attorney must be an adult at the time you sign. You can appoint a financial institution where that makes sense. The Public Trustee cannot act as your attorney under an EPOA.
-
-Template EPOAs pulled off the internet fail for predictable reasons: wrong witness, no enduring clause, no triggering event language, no clarity on joint versus several authority, no successor provision.
+Your attorney must be an adult at the time you sign. You can also appoint a financial institution where that makes sense, but the Public Trustee (a government office) cannot act as your attorney under an EPOA.
 
 ## What Happens Without One
 
-Without an EPOA, your family applies under the *Adult Guardianship and Trusteeship Act*, SA 2008, c A-4.2, to be appointed your trustee. That means:
+Without an EPOA, your family has to apply under the *Adult Guardianship and Trusteeship Act*, SA 2008, c A-4.2, to be appointed your trustee (a court-appointed money manager). That means:
 
 - A formal capacity assessment: up to $500 for trusteeship alone or $700 combined with guardianship.
-- $300 court filing fee at the Court of King's Bench.
-- Consents, affidavits, a trusteeship plan, an asset inventory, and background checks.
-- Service on the Office of the Public Guardian and Trustee at least 30 days before hearing.
+- A $300 court filing fee at the Court of King's Bench.
+- Consents, affidavits (sworn written statements), a trusteeship plan, a list of assets, and background checks.
+- Service (formal delivery of court papers) on the Office of the Public Guardian and Trustee at least 30 days before the hearing.
 - Ongoing court supervision, including periodic approval of accounts ($100 per application).
 
-Government fees alone land in the $800 to $1,000 range; legal fees add more. A straightforward trusteeship runs several thousand dollars; a contested one much more. Timing is the other problem: weeks to months between application and order, during which your family may have no legal authority to pay your mortgage or handle your business.
+Government fees alone are in the $800 to $1,000 range. With legal fees, a simple trusteeship costs several thousand dollars, and a contested one much more. Expect weeks to months between application and order.
 
 ## Revocation and Termination
 
-While you have capacity, you can revoke your EPOA at any time. The revocation should be in writing, signed, and delivered to your attorney and any institution relying on the document. A new EPOA can expressly revoke the old one, which is the cleanest approach when updating.
+While you have capacity, you can revoke your EPOA (cancel it formally) at any time. The revocation should be in writing, signed, and delivered to your attorney and to any institution relying on the document. To update, the cleanest approach is a new EPOA that expressly revokes the old one.
 
-Under section 13 of the Act, an EPOA terminates on your death or your attorney's death, or when a court grants a trusteeship order for you or for your attorney. It also ends if you revoke it in writing while you are mentally capable of understanding what the revocation means, if a court grants a termination order, or if your attorney renounces the appointment and gives you notice. Once your attorney has taken on the role and you can no longer make reasonable judgments about your affairs, renouncing needs the court's permission. If you named joint and several attorneys, or alternates, the events that relate to the attorney end the EPOA only when they happen to the last remaining attorney. The bankruptcy of your attorney creates serious practical problems, which is why alternates matter. If you named joint attorneys and one dies, the document's wording controls whether the survivor can continue. Any interested person can apply to the court for that termination order, and the court can grant it if ending the EPOA is in your best interests.
+Under section 13 of the Act, an EPOA ends when any of these things happens:
+
+- You die, or your attorney dies
+- A court grants a trusteeship order for you or for your attorney
+- You revoke it in writing while you are mentally capable of understanding what the revocation means
+- A court grants a termination order
+- Your attorney renounces (formally gives up) the appointment and gives you notice
+
+Once your attorney has taken on the role and you can no longer make reasonable judgments about your affairs, renouncing needs the court's permission. Any interested person can apply to the court for a termination order, and the court can grant it if ending the EPOA is in your best interests.
+
+If you named joint and several attorneys, or alternates, the events that relate to the attorney end the EPOA only when they happen to the last remaining attorney. If you named joint attorneys and one dies, the document's wording controls whether the survivor can continue. Your attorney's bankruptcy creates serious practical problems, which is why alternates matter.
 
 ## EPOA vs Personal Directive
 
-These two documents do different jobs. An EPOA covers financial and legal affairs. A personal directive covers health care, residence, and day-to-day personal matters. Most Albertans over 18 need both. Read the companion piece in [Why Every Albertan Needs a Personal Directive](/resources/why-every-albertan-needs-personal-directive).
+An EPOA covers financial and legal affairs, while a personal directive covers health care, where you live, and day-to-day personal matters. Most Albertans over 18 need both. Read more in [Why Every Albertan Needs a Personal Directive](/resources/why-every-albertan-needs-personal-directive).
 
-A will is a third document, dealing with your estate after you die. An EPOA ends at death; the executor named in your will takes over. Good estate planning treats all three as one package.
-
-If you do not yet have an enduring power of attorney, [contact my office](/contact) or read about my [wills and estates services](/services/wills-estates). One afternoon of work now against months of court applications and thousands in legal fees later. The math is not close.
+An EPOA ends at death, when the executor named in your will (the person who settles your estate) takes over. If you do not have an EPOA yet, [contact my office](/contact) or read about my [wills and estates services](/services/wills-estates).
