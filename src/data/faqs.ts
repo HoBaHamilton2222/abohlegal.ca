@@ -42,7 +42,7 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'estate-litigation': [
     {
       question: 'Can I challenge a will in Alberta?',
-      answer: 'Sometimes. A will is not invalid just because it seems unfair. Common grounds are lack of mental capacity, undue influence (pressure on the person making the will), fraud, or failure to follow the formal rules in the Wills and Succession Act. If you depended on the person who died, you may also have a dependants\' relief claim. Our guide on <a href="/resources/challenging-a-will-in-alberta" class="text-gold hover:underline">challenging a will in Alberta</a> explains more. Time limits apply, so get advice early.',
+      answer: 'Sometimes. A will is not invalid just because it seems unfair. Common grounds are lack of mental capacity, undue influence (pressure so strong that the will is not really the person\'s own choice), fraud, or failure to follow the formal rules in the Wills and Succession Act. If you were the spouse, partner, or child of the person who died and depended on them, you may also have a dependants\' relief claim. Our guide on <a href="/resources/challenging-a-will-in-alberta" class="text-gold hover:underline">challenging a will in Alberta</a> explains more. Time limits apply, so get advice early.',
     },
     {
       question: 'What is a dependants\' relief claim?',
