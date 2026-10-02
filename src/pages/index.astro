@@ -22,15 +22,16 @@ const latestPosts = (await getCollection('blog', ({ data }) => !data.draft && (d
   .sort((a, b) => (b.data.publishDate ?? b.data.date).valueOf() - (a.data.publishDate ?? a.data.date).valueOf())
   .slice(0, 3);
 
-const areas = [
-  { name: 'Family Law', href: '/services/family-law', desc: 'Divorce, parenting and custody, support, property, and protection orders.' },
+const coreAreas = [
+  { name: 'Family Law', href: '/services/family-law', desc: 'Divorce, parenting and custody, support, property, protection orders, and child protection. Legal Aid accepted.' },
+  { name: 'Estate Litigation', href: '/services/estate-litigation', desc: "Will challenges, dependants' relief claims, executor disputes, and adult guardianship." },
   { name: 'Wills & Estates', href: '/services/wills-estates', desc: 'Wills, powers of attorney, and personal directives.' },
-  { name: 'Estate Litigation', href: '/services/estate-litigation', desc: "Will challenges, dependants' relief claims, and executor disputes." },
+];
+const otherAreas = [
   { name: 'Employment Law', href: '/services/employment-law', desc: 'Wrongful dismissal, severance, and workplace disputes.' },
   { name: 'Business & Commercial', href: '/services/business-commercial', desc: 'Incorporations, shareholder agreements, contracts, and leases.' },
   { name: 'Civil Litigation', href: '/services/civil-litigation', desc: 'Contract, debt, and negligence claims.' },
-  { name: 'Immigration', href: '/services/immigration', desc: 'Permanent residence, sponsorship, and work and study permits.' },
-  { name: 'Not Sure Which Area Fits?', href: '/contact', desc: 'Tell us about your legal problem in a few words. We will tell you if we can help.' },
+  { name: 'Immigration', href: '/services/immigration', desc: 'Permanent residence, sponsorship, and permits. Clients inside and outside Canada.' },
 ];
 
 const steps = [
@@ -61,7 +62,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
       loading="eager"
       fetchpriority="high"
     />
-    <div class="absolute inset-0 bg-navy/80 md:bg-gradient-to-r md:from-navy md:via-navy/85 md:to-navy/30"></div>
+    <div class="absolute inset-0 bg-navy/75 md:bg-gradient-to-r md:from-navy/95 md:via-navy/70 md:to-navy/10"></div>
     <div class="relative mx-auto w-full max-w-7xl py-16 md:py-20">
       <div class="mx-auto max-w-2xl text-center md:mx-0 md:text-left">
         <h1 class="font-heading text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
@@ -110,7 +111,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
       <div>
         <h2 class="font-heading text-3xl font-bold text-navy md:text-4xl">Meet Prince Aboh</h2>
         <p class="mt-4 text-base leading-relaxed text-body-text md:text-lg">
-          Prince is a lawyer in St. Paul, called to the Alberta bar in 2024. His practice focuses on family law, including child protection, and estate litigation. He handles your file himself.
+          Prince is a lawyer in St. Paul and a member of the Law Society of Alberta, called to the bar in 2024. His practice focuses on family law, including child protection, and estate litigation. He handles your file himself.
         </p>
         <p class="mt-4 text-base leading-relaxed text-body-text md:text-lg">
           ABOH LEGAL acts for clients in the Court of King's Bench and the Alberta Court of Justice, in St. Paul and across the region, including Bonnyville, Cold Lake, Vermilion, Lloydminster, Fort Saskatchewan, Lac La Biche, and Edmonton.
@@ -124,15 +125,33 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
   <section class="bg-light-bg px-6 py-16 md:py-20">
     <div class="mx-auto max-w-7xl">
       <h2 class="text-center font-heading text-3xl font-bold text-navy md:text-4xl">How We Can Help</h2>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {areas.map((a) => (
-          <a href={a.href} class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md">
-            <div class="mb-4 h-[3px] w-10 bg-gold"></div>
-            <h3 class="font-heading text-xl font-bold text-navy group-hover:text-gold">{a.name}</h3>
-            <p class="mt-2 flex-1 text-sm leading-relaxed text-body-text">{a.desc}</p>
-            <span class="mt-4 text-sm font-bold text-gold">Learn more &rarr;</span>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {coreAreas.map((a) => (
+          <a href={a.href} class="group flex flex-col rounded-lg border-t-4 border-gold bg-white p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+            <h3 class="font-heading text-2xl font-bold text-navy group-hover:text-gold">{a.name}</h3>
+            <p class="mt-3 flex-1 text-base leading-relaxed text-body-text">{a.desc}</p>
+            <span class="mt-5 text-sm font-bold text-gold">Learn more &rarr;</span>
           </a>
         ))}
+      </div>
+      <div class="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {otherAreas.map((a) => (
+          <a href={a.href} class="group flex flex-col rounded-lg border border-gray-200 bg-white p-5 transition hover:border-gold hover:shadow-md">
+            <h3 class="font-heading text-lg font-bold text-navy group-hover:text-gold">{a.name}</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-body-text">{a.desc}</p>
+            <span class="mt-3 text-sm font-bold text-gold">Learn more &rarr;</span>
+          </a>
+        ))}
+      </div>
+      <div class="mt-8 flex flex-col items-center justify-between gap-4 rounded-lg bg-navy px-7 py-6 text-center md:flex-row md:text-left">
+        <div>
+          <p class="font-heading text-xl font-bold text-white">Not sure which area fits?</p>
+          <p class="mt-1 text-white/80">Tell us about your legal problem in a few words. We will tell you if we can help.</p>
+        </div>
+        <div class="flex shrink-0 gap-3">
+          <a href={siteConfig.phoneHref} class="rounded border-2 border-white px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-white hover:bg-white/10">Call</a>
+          <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="rounded bg-gold px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-navy hover:brightness-110">Book a Time</a>
+        </div>
       </div>
     </div>
   </section>
@@ -179,7 +198,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
   <!-- CLOSING CALL TO ACTION -->
   <section class="bg-navy px-6 py-16 text-center md:py-20">
     <h2 class="font-heading text-3xl font-bold text-white md:text-4xl">Have a legal problem?</h2>
-    <p class="mt-4 text-lg text-white/80">Call {siteConfig.phone} or book a time online.</p>
+    <p class="mt-4 text-lg text-white/80">Call <a href={siteConfig.phoneHref} class="font-bold text-white underline">{siteConfig.phone}</a> or book a time online.</p>
     <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
       <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer"
          class="rounded bg-gold px-10 py-4 text-sm font-bold uppercase tracking-wider text-navy transition hover:brightness-110">
