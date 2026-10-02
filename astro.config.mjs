@@ -6,8 +6,6 @@ export default defineConfig({
   site: 'https://www.abohlegal.ca',
   integrations: [
     tailwind(),
-    sitemap({
-      lastmod: new Date(),
-    }),
+    sitemap(),
   ],
 });

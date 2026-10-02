@@ -12,7 +12,7 @@
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4 {
-    font-family: 'Adobe Garamond Pro', 'Adobe Garamond Pro Bold', Georgia, serif;
+    font-family: 'EB Garamond', Garamond, Georgia, serif;
     color: #0C2233;
   }
   p {
@@ -25,5 +25,25 @@
   p.text-right,
   p.text-left {
     text-align: revert;
+  }
+}
+
+/* Respect visitors who ask their device for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .animate-on-scroll,
+  .hero-text-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 }

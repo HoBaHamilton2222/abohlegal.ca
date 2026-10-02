@@ -40,7 +40,7 @@ function isServicesActive(): boolean {
     <div class="hidden items-center gap-8 md:flex">
       {navLinks.map((link) => (
         link.hasDropdown ? (
-          <div class="group relative">
+          <div class="group relative" data-services-menu>
             <button
               class:list={[
                 'flex items-center gap-1 font-heading text-base font-bold uppercase tracking-wider text-navy transition-colors',
@@ -58,7 +58,7 @@ function isServicesActive(): boolean {
               <span class="absolute -bottom-1 left-0 h-0.5 w-full bg-gold"></span>
             )}
             <!-- Dropdown -->
-            <div class="invisible absolute left-0 top-full z-50 min-w-[220px] rounded-b-md bg-white pt-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
+            <div class="invisible absolute left-0 top-full z-50 min-w-[220px] rounded-b-md bg-white pt-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               {services.map((s) => (
                 <a
                   href={s.href}
@@ -206,6 +206,22 @@ function isServicesActive(): boolean {
         closeIcon.classList.add('hidden');
         menuBtn.setAttribute('aria-expanded', 'false');
       });
+    });
+  });
+</script>
+
+<script>
+  // Keep aria-expanded on the desktop Services button in step with the menu,
+  // which opens on hover and on keyboard focus.
+  document.querySelectorAll('[data-services-menu]').forEach((menu) => {
+    const button = menu.querySelector('button');
+    if (!button) return;
+    const set = (open: boolean) => button.setAttribute('aria-expanded', String(open));
+    menu.addEventListener('mouseenter', () => set(true));
+    menu.addEventListener('mouseleave', () => set(menu.contains(document.activeElement)));
+    menu.addEventListener('focusin', () => set(true));
+    menu.addEventListener('focusout', (e) => {
+      if (!menu.contains((e as FocusEvent).relatedTarget as Node)) set(false);
     });
   });
 </script>

@@ -61,6 +61,15 @@ const defaultSchema = JSON.stringify({
 });
 
 const schemaJson = schemaData || defaultSchema;
+// Self-hosted, open-licence fonts (SIL OFL 1.1)
+import '@fontsource/eb-garamond/400.css';
+import '@fontsource/eb-garamond/400-italic.css';
+import '@fontsource/eb-garamond/600.css';
+import '@fontsource/eb-garamond/700.css';
+import '@fontsource/lato/300.css';
+import '@fontsource/lato/400.css';
+import '@fontsource/lato/700.css';
+import '@fontsource/lato/900.css';
 ---
 
 <!DOCTYPE html>
@@ -76,13 +85,6 @@ const schemaJson = schemaData || defaultSchema;
     <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
     <link rel="canonical" href={canonicalURL} />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" />
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-2" />
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-bold" />
 
     <!-- Indexing directives -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -106,13 +108,13 @@ const schemaJson = schemaData || defaultSchema;
     <!-- Page-specific head content -->
     <slot name="head" />
 
-    <!-- Plausible Analytics (uncomment when account is set up)
-    <script defer data-domain="abohlegal.ca" src="https://plausible.io/js/script.js"></script>
-    -->
+    <!-- Vercel Web Analytics: cookie-free visit counts (enable in the Vercel dashboard) -->
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body class="bg-white font-body text-body-text">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-navy focus:px-4 focus:py-2 focus:text-white">Skip to main content</a>
     <Header />
-    <main>
+    <main id="main">
       <slot />
     </main>
     <Footer />
