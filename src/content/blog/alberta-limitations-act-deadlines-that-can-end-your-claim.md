@@ -2,6 +2,7 @@
 title: "Alberta Limitations Act: Deadlines That Can End Your Claim"
 date: 2026-04-19
 publishDate: 2026-06-08
+updated: 2026-10-01
 category: "Civil Litigation"
 excerpt: "Miss the deadline in Alberta's Limitations Act and your claim dies. Two years from discovery, ten years absolute. Here is what you need to know."
 author: "Prince Aboh"
@@ -38,9 +39,9 @@ The phrase "ought to have known" is doing real work here. Courts look at what a 
 
 The Act carves out specific categories where the usual two-year and ten-year rules bend or disappear.
 
-**Minors and persons under disability.** Under s. 5, the limitation clock is suspended while a claimant is a minor or a person under disability. If a child is injured today, the two-year clock does not start running until the child turns 18. For an adult lacking mental capacity, the clock is suspended during the period of incapacity.
+**Minors and persons under disability.** Under s. 5.1, the limitation clock is suspended while a claimant is a minor, and under s. 5 it is suspended while a claimant is a person under disability. If a child is injured today, the two-year clock generally does not start running until the child turns 18. The exception is that a potential defendant can start the clock running against a minor sooner by delivering a notice to proceed to the child's guardian and the Public Trustee and paying the prescribed fee (s. 5.1(3) and (4)). For an adult lacking mental capacity, the clock is suspended during the period of incapacity.
 
-**Sexual assault and misconduct of a sexual nature.** Under s. 3.1, there is no limitation period for a claim relating to sexual assault or battery, or any misconduct of a sexual nature. This was added by the legislature in 2017 through *An Act to Remove Barriers for Survivors of Sexual and Domestic Violence*, SA 2017, c 7. A survivor can bring a civil claim at any time, regardless of how many decades have passed.
+**Sexual assault and misconduct of a sexual nature.** Under s. 3.1, there is no limitation period for a claim relating to a sexual assault or battery. For other misconduct of a sexual nature, there is no limitation period only if, at the time of the misconduct, the person with the claim was a minor, was in an intimate relationship with the person who committed it, was dependent on that person (financially, emotionally, physically or otherwise), or was a person under disability. This was added by the legislature in 2017 through *An Act to Remove Barriers for Survivors of Sexual and Domestic Violence*, SA 2017, c 7. In these cases, a survivor can bring a civil claim at any time, regardless of how many decades have passed.
 
 **Fraudulent concealment.** Under s. 4, where the defendant fraudulently conceals the fact that an injury has occurred, the ten-year ultimate limit is suspended for the period of the concealment. You do not lose your claim because the wrongdoer successfully hid the wrongdoing.
 
@@ -58,13 +59,13 @@ The two-year rule captures most civil claims, but the trigger date shifts depend
 
 **Enforcement of judgments.** Under s. 11, if you have already obtained a judgment and the debtor has not paid, you have ten years from the date the claim arose to seek a remedial order. Write this down if you have a judgment sitting in your file. Old judgments expire, and you lose the ability to enforce. This is separate from the two-year rule because the claim has already been decided. What you are enforcing is the judgment itself.
 
-**Contribution claims between defendants.** If you are sued and want to claim contribution from another party, the *Limitations Act* sets its own discoverability rule for contribution. The two-year period runs from when you were served with the claim that triggers the contribution demand.
+**Contribution claims between defendants.** If you are sued and want to claim contribution from another party, the *Limitations Act* sets its own discoverability rule for contribution. For contribution between wrongdoers under the *Tort-feasors Act*, the two-year period runs from the later of the date you were served with the claim against you and the date you knew, or ought to have known, that the other party was (or would have been) liable for the injury (s. 3(1.1)(a)).
 
 ## What You Actually Do About It
 
-Here is the part that trips people up. Nothing short of commencing a court proceeding stops the limitation clock.
+Here is the part that trips people up. Apart from a few narrow statutory exceptions, nothing short of commencing a court proceeding stops the limitation clock. The exceptions are a signed written agreement that expressly extends the limitation period (ss. 7 and 9), a written acknowledgement or part payment of a debt (s. 8), and the suspensions described above for minors, persons under disability and concealment (ss. 4, 5 and 5.1).
 
-Writing a demand letter does not stop the clock. Sending emails to the other side does not stop the clock. Starting settlement discussions does not stop the clock. Complaining to a regulator does not stop the clock. Filing a claim in a different forum does not stop the clock. The only thing that stops it is filing a Statement of Claim with the court, or the equivalent originating document, within the limitation period.
+Writing a demand letter does not stop the clock. Sending emails to the other side does not stop the clock. Starting settlement discussions does not stop the clock. Complaining to a regulator does not stop the clock. Filing a claim in a different forum does not stop the clock. Unless one of those exceptions applies, the only thing that stops it is filing a Statement of Claim with the court, or the equivalent originating document, within the limitation period.
 
 If the other side is dragging out negotiations while your deadline approaches, do not wait for the handshake. File the claim. You can always settle after. Once the deadline has passed, you have no leverage left, because you have no claim.
 

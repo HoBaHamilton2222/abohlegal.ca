@@ -2,6 +2,7 @@
 title: "Separation vs Divorce in Alberta: What the Difference Actually Means"
 date: 2026-04-19
 publishDate: 2026-05-04
+updated: 2026-10-01
 category: "Family Law"
 excerpt: "Separation and divorce are not the same thing in Alberta law. The difference changes what you can do about property, support, and remarriage."
 author: "Prince Aboh"
@@ -38,7 +39,7 @@ Under s. 8 of the *Divorce Act*, a court grants a divorce only if the marriage h
 
 The one-year separation ground carries almost every divorce in Alberta. It is no-fault and requires no allegations against the other spouse. Adultery and cruelty remain available but require evidence, increase conflict, and do not change what you get.
 
-You or your spouse must also have been ordinarily resident in Alberta for at least one year immediately before filing. Without that, Alberta has no jurisdiction to grant you a divorce.
+You or your spouse must also have been habitually resident in Alberta for at least one year immediately before filing. Without that, Alberta has no jurisdiction to grant you a divorce.
 
 ## If You Are Not Married
 
@@ -54,7 +55,7 @@ A relationship of interdependence is not limited to romantic or sexual relations
 
 Until 2020, unmarried partners in Alberta had no statutory regime for dividing property. That changed when the *Matrimonial Property Act* was renamed the *Family Property Act* effective January 1, 2020, through Bill 28, the *Family Statutes Amendment Act, 2018*. The Act now applies to both married spouses and AIPs who separated on or after that date, and treats them similarly for property division. Separations before January 1, 2020 still fall under the old common-law principles, including unjust enrichment, which are harder to run and less predictable.
 
-Parenting for unmarried parents is governed by Alberta's *Family Law Act*, SA 2003, c F-4.5. That Act also covers child support, partner support for former AIPs, guardianship, parentage, and protection orders. For married spouses who separate without divorcing, the *Family Law Act* applies to child support and parenting until a *Divorce Act* proceeding is started. See [/services/family-law](/services/family-law) for how these pieces fit together.
+Parenting for unmarried parents is governed by Alberta's *Family Law Act*, SA 2003, c F-4.5. That Act also covers child support, partner support for former AIPs, guardianship, and parentage. Protection orders come from a separate statute, the *Protection Against Family Violence Act*, RSA 2000, c P-27. For married spouses who separate without divorcing, the *Family Law Act* applies to child support and parenting until a *Divorce Act* proceeding is started. See [/services/family-law](/services/family-law) for how these pieces fit together.
 
 ## What a Separation Agreement Can and Cannot Do
 

@@ -1,6 +1,7 @@
 ---
 title: "Challenging a Will in Alberta: What to Do When Something Feels Off"
 date: 2026-04-19
+updated: 2026-10-01
 category: "Estate Litigation"
 excerpt: "The law leaves room for that unsettled feeling when a will doesn't line up with who your loved one really was. Here's what a challenge looks like."
 author: "Prince Aboh"
@@ -17,7 +18,7 @@ Here is what that looks like in practice.
 
 ## The Will Has to Be Properly Made in the First Place
 
-Before you get to any of the more dramatic grounds of challenge, a will has to clear the basic threshold of being properly executed. Section 14 of the *Wills and Succession Act* requires the will to be in writing and signed by the testator. Section 15 requires two witnesses to be present together, to see the testator sign, and to sign it themselves afterward. Section 20 says those witnesses need the mental capacity to understand what they are doing and cannot be beneficiaries or their spouses.
+Before you get to any of the more dramatic grounds of challenge, a will has to clear the basic threshold of being properly executed. Section 14 of the *Wills and Succession Act* requires the will to be in writing and signed by the testator. Section 15 requires two witnesses to be present together, to see the testator sign, and to sign it themselves afterward. Section 20 says those witnesses need the mental capacity to understand what they are doing. A beneficiary, or a beneficiary's spouse or adult interdependent partner, is not disqualified from acting as a witness. But under section 21, a gift in the will to a witness, or to a witness's spouse or adult interdependent partner, is void unless an exception applies, for example where at least two other people also witnessed the signature. Under section 40, a court can save the gift if it is satisfied that the testator meant to make it despite knowing the person's role, and that there was no improper or undue influence. That application has to be made within six months after the grant of probate or administration unless the court extends the time.
 
 There is an important escape hatch. Under section 37 of the Act, a court can still validate a will that missed one of these formalities if the document plainly reflects the testator's intention. The Alberta Law Reform Institute calls this "substantial compliance," and it is a common sense response to the reality that perfectly executed wills are rarer than we like to admit. The flip side is just as true. If the execution was sloppy and the intent cannot be clearly shown, the court can refuse to validate the document at all.
 
@@ -47,9 +48,9 @@ That shift is often the entire case. In Alberta estate litigation, a well-pleade
 
 ## How You Actually Challenge a Will
 
-The formal mechanism in Alberta starts with a caveat. The Surrogate Rules, Alta Reg 130/1995, govern the probate process, and a caveat is a written notice filed with the Surrogate Court (a division of the Court of King's Bench) telling the court that you oppose the grant of probate. Caveats still have to be filed on paper, even though the rest of probate has moved onto the Surrogate Digital Service platform. That is a quirk of the current system.
+The formal mechanism in Alberta starts with a caveat. The Surrogate Rules, Alta Reg 130/1995, govern the probate process, and a caveat is a written notice filed with the Court of King's Bench telling the court that you oppose the grant of probate. Caveats still have to be filed on paper, even though the rest of probate has moved onto the Surrogate Digital Service platform. That is a quirk of the current system.
 
-Once a caveat is in, the probate application is halted. You then have twenty days from receiving notice to serve and file a notice of objection setting out your grounds. Miss that window and the caveat is discharged, and the application resumes as if nothing happened. File it in time and the matter becomes contentious, which in plain terms means a full lawsuit is now underway.
+Once a caveat is in, the probate application is halted. A caveat stays in force for three months from the date it is filed unless the court orders otherwise, under section 47 of the *Estate Administration Act*, SA 2014, c E-12.5. The person applying for probate can also serve you with a warning (Form C4). Once you are served with that warning, you have only 10 days to file a notice of objection (Form C9) setting out your grounds and serve it on the applicant. You can apply to the court to extend that time. Miss that window and the caveat is discharged, and the application resumes as if nothing happened. File it in time and the matter becomes contentious, which in plain terms means a full lawsuit is now underway.
 
 From there, it is a regular Court of King's Bench action: pleadings, disclosure, questioning, affidavit evidence, expert reports where relevant, and, rarely, a trial. Most estate cases settle long before trial because the costs add up fast and the emotional toll is heavy.
 

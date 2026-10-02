@@ -7,6 +7,7 @@ const blog = defineCollection({
     title: z.string(),
     date: z.coerce.date(),
     publishDate: z.coerce.date().optional(),
+    updated: z.coerce.date().optional(),
     category: z.enum([
       'Family Law', 'Wills & Estates', 'Estate Litigation',
       'Employment Law', 'Business & Commercial', 'Civil Litigation',

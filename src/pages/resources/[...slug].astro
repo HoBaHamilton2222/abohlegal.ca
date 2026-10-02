@@ -19,13 +19,18 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-const formattedDate = post.data.date.toLocaleDateString('en-CA', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+// Show the date the post actually went live, and the date it was last reviewed.
+const publishedOn = post.data.publishDate ?? post.data.date;
+const updatedOn = post.data.updated;
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
-const isoDate = post.data.date.toISOString().split('T')[0];
+const formattedDate = fmt(publishedOn);
+const formattedUpdated = updatedOn ? fmt(updatedOn) : null;
+const asOfDate = formattedUpdated ?? formattedDate;
+
+const isoDate = publishedOn.toISOString().split('T')[0];
+const isoUpdated = updatedOn ? updatedOn.toISOString().split('T')[0] : isoDate;
 
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -33,6 +38,7 @@ const articleSchema = JSON.stringify({
   "headline": post.data.title,
   "description": post.data.excerpt,
   "datePublished": isoDate,
+  "dateModified": isoUpdated,
   "author": {
     "@type": "Person",
     "@id": "https://www.abohlegal.ca/about#person",
@@ -79,13 +85,20 @@ const breadcrumbSchema = JSON.stringify({
 
       <!-- Meta -->
       <p class="text-muted-text text-sm mb-10">
-        <time datetime={isoDate}>{formattedDate}</time> &middot; {post.data.author}<span class="text-muted-text/70">, LL.B., B.L.</span>
+        <time datetime={isoDate}>{formattedDate}</time>
+        {formattedUpdated && (<> &middot; Updated <time datetime={isoUpdated}>{formattedUpdated}</time></>)}
+        &middot; {post.data.author}<span class="text-muted-text/70">, LL.B., B.L.</span>
       </p>
 
       <!-- Article Content -->
       <article class="prose prose-lg max-w-none prose-headings:text-navy prose-a:text-gold">
         <Content />
       </article>
+
+      <!-- General information notice -->
+      <p class="mt-12 border-t border-gray-200 pt-6 text-body-text text-sm">
+        This article is general information about the law as of {asOfDate}. It is not legal advice. The law changes and every situation is different, so speak with a lawyer about your own facts. Reading this article or contacting us does not make you our client.
+      </p>
     </div>
   </section>
 

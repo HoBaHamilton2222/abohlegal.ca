@@ -2,6 +2,7 @@
 title: "Study Permit to Permanent Residence: Your Canadian PR Pathways in 2026"
 date: 2026-04-19
 publishDate: 2026-06-29
+updated: 2026-10-01
 category: "Immigration"
 excerpt: "From PGWP to Express Entry to AAIP, here are the doors open to international students planning for Canadian PR in 2026."
 author: "Prince Aboh"
@@ -16,7 +17,7 @@ The PR route is not automatic. Rules have tightened since late 2024. But the pat
 
 The Post-Graduation Work Permit (PGWP) is an open work permit that lets you work for almost any Canadian employer after you graduate. It is the bridge between your study permit and the Canadian work experience you need for most PR programs.
 
-Rules shifted on November 1, 2024, and they matter. If you applied for your study permit on or after that date and completed a non-degree program (a college diploma or certificate), your program must be in an eligible field of study tied to long-term labour shortages. IRCC uses Classification of Instructional Programs (CIP) codes. As of the July 4, 2025 update, 920 codes are eligible. Verify yours on the IRCC site before committing.
+Rules shifted on November 1, 2024, and they matter. If you applied for your study permit on or after that date and completed a non-degree program (a college diploma or certificate, or a non-degree university program), your program must be in an eligible field of study tied to long-term labour shortages. IRCC uses Classification of Instructional Programs (CIP) codes, and your program's code must be on the list of currently eligible codes when you apply for your study permit or your PGWP. IRCC has said it will not add or remove any eligible fields of study in 2026. Verify yours on the IRCC site before committing.
 
 Graduates of bachelor's, master's, and doctoral programs at public designated learning institutions are not subject to the CIP field-of-study requirement.
 

@@ -2,6 +2,7 @@
 title: "Reviewing a Commercial Lease in Alberta: 8 Clauses That Matter More Than Rent"
 date: 2026-04-19
 publishDate: 2026-06-22
+updated: 2026-10-01
 category: "Business & Commercial"
 excerpt: "The rent number is what tenants focus on. The other clauses are where landlords make their real money, and where signed leases quietly hurt you."
 author: "Prince Aboh"
@@ -16,7 +17,7 @@ The rent number is what people focus on. The other clauses are where landlords m
 
 ## This Is a Mostly Unregulated Area
 
-Alberta does not have a general commercial tenancy statute. There is no equivalent to the *Residential Tenancies Act*, RSA 2000, c R-17.1, setting minimum standards, capping deposits, or regulating how a commercial lease ends. The *Commercial Tenancies Protection Act*, RSA 2000, c C-19, is a narrow piece of legislation dealing mainly with distress. It does not create anything like the framework the *RTA* gives residential tenants. Distress itself, the landlord's self-help remedy of seizing a tenant's goods for unpaid rent, is also governed by the *Civil Enforcement Act*, RSA 2000, c C-15.
+Alberta does not have a general commercial tenancy statute. There is no equivalent to the *Residential Tenancies Act*, SA 2004, c R-17.1, setting minimum standards, capping deposits, or regulating how a commercial lease ends. The *Commercial Tenancies Protection Act* that Alberta passed in 2020 was a temporary COVID-19 measure. It limited landlords' remedies, including distress, for pandemic-related unpaid rent between March 17 and August 31, 2020, and it does not apply to a lease you sign today. It never created anything like the framework the *RTA* gives residential tenants. Distress itself, the landlord's self-help remedy of seizing a tenant's goods for unpaid rent, is regulated by Part 12 (s. 104) of the *Civil Enforcement Act*, RSA 2000, c C-15.
 
 What governs your lease is the lease itself, plus general contract and property law. If a right is in the document, it binds you. If a right is not, the common law fills the gap, and the common law defaults often favour the landlord. Commercial tenants and commercial landlords are treated by the courts as sophisticated parties who can look after themselves. You get exactly what you negotiate. That is the single most important thing to understand before you read the document.
 

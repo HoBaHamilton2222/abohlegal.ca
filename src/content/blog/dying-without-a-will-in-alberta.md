@@ -2,6 +2,7 @@
 title: "Dying Without a Will in Alberta: Who Actually Inherits"
 date: 2026-04-19
 publishDate: 2026-05-18
+updated: 2026-10-01
 category: "Wills & Estates"
 excerpt: "The belief that your spouse automatically inherits everything is sometimes true and sometimes not. The difference can be six figures."
 author: "Prince Aboh"
@@ -14,7 +15,7 @@ Alberta has a statute that decides what happens to your property when you die wi
 
 ## What Intestacy Actually Means
 
-If you die without a will, or if you leave a will that fails (improperly signed, revoked, or no longer capable of distributing your estate), you are said to have died intestate. Part 3 of the *Wills and Succession Act*, SA 2010, c W-12.2 takes over and directs how your property is distributed. Sections 58 through 71 contain the rules.
+If you die without a will, or if you leave a will that fails (improperly signed, revoked, or no longer capable of distributing your estate), you are said to have died intestate. Part 3 of the *Wills and Succession Act*, SA 2010, c W-12.2 takes over and directs how your property is distributed. Sections 58 through 70 contain the rules.
 
 Your estate goes to your family in a statutorily fixed order. But the order shifts depending on whether you have a surviving spouse, a surviving adult interdependent partner, descendants from that relationship, descendants from outside it, or no immediate family at all. Each combination produces a different result.
 
@@ -36,9 +37,9 @@ This happens more often than you might expect. Under Alberta's *Adult Interdepen
 
 Section 62 of the *Wills and Succession Act* covers this. The preferential share is split equally between the spouse and the adult interdependent partner, and the rest of the estate moves down the line as usual. If there are no descendants, the estate is divided equally: one-half to the spouse, one-half to the adult interdependent partner.
 
-If this describes your situation and you do not have a will, you are leaving a former spouse, perhaps one you have not spoken to in years, with a statutory claim to half your estate. A will can address this directly. The intestacy rules cannot.
+If this describes your situation and you do not have a will, a spouse you have been living apart from for two years or less, with nothing formal in place, can still take a statutory share of your estate alongside your partner. A will can address this directly. The intestacy rules cannot.
 
-Section 63 does disinherit a spouse who has been separated from the deceased for at least two years, or where there is a declaration of irreconcilability, a court order, or an agreement finalizing the marital affairs. If you have been separated for less than two years and nothing formal is in place, your spouse remains a beneficiary.
+Section 63 does disinherit a spouse who had been living separate and apart from the deceased for more than two years at the time of death, or where there is a declaration of irreconcilability, a court order, or an agreement finalizing the marital affairs. If you have been separated for two years or less and nothing formal is in place, your spouse remains a beneficiary.
 
 ## No Spouse, No AIP, No Kids: What Then?
 

@@ -2,6 +2,7 @@
 title: "Child Support in Alberta: How It Is Calculated"
 date: 2026-04-19
 publishDate: 2026-04-27
+updated: 2026-10-01
 category: "Family Law"
 excerpt: "A plain-language walkthrough of how child support is calculated in Alberta, with a worked example under the updated 2025 Federal Child Support Tables."
 author: "Prince Aboh"
@@ -16,7 +17,7 @@ Child support in Alberta is governed by two statutes and two sets of guidelines,
 
 If you are married and going through a divorce, your child support falls under the federal *Divorce Act*, RSC 1985, c 3 (2nd Supp). The amount is set by the *Federal Child Support Guidelines*, SOR/97-175, a regulation made under section 26.1 of the *Divorce Act*.
 
-If you are unmarried, or separated but not divorcing, you fall under Alberta's *Family Law Act*, SA 2003, c F-4.5. Section 49 of the *Family Law Act* directs the court to apply either the *Alberta Child Support Guidelines*, Alta Reg 147/2005, or the *Federal Child Support Guidelines*. The two sets of guidelines mirror each other on the core calculation, so the answer ends up largely the same either way.
+If you are unmarried, or separated but not divorcing, you fall under Alberta's *Family Law Act*, SA 2003, c F-4.5. Section 51 of the *Family Law Act* directs the court to make a child support order in accordance with the prescribed guidelines, which are the *Alberta Child Support Guidelines*, Alta Reg 147/2005. The two sets of guidelines mirror each other on the core calculation, so the answer ends up largely the same either way.
 
 The central idea behind both is simple. The paying parent's income, the number of children, and the province of residence drive a table amount. That is the starting point for what the other parent receives each month.
 
@@ -73,7 +74,7 @@ Under section 9, the court considers the table amount each parent would owe if t
 
 In practice, the starting point is a "set-off." You calculate what each parent's table amount would be, and you subtract the lower from the higher. The higher-earning parent pays the difference.
 
-If Jordan and Sam shared time equally, Jordan's table amount at $80,000 is $1,166. Sam's table amount at $35,000 is about $530. The set-off is $636 per month payable by Jordan to Sam.
+If Jordan and Sam shared time equally, Jordan's table amount at $80,000 is $1,166. Sam's table amount at $35,000 is $499. The set-off is $667 per month payable by Jordan to Sam.
 
 Set-off is only the starting point. The Supreme Court of Canada confirmed in *Contino v. Leonelli-Contino*, 2005 SCC 63, that a judge in a shared parenting case has broad discretion to depart from the set-off figure to ensure the children enjoy a comparable standard of living in each home.
 

@@ -1,6 +1,7 @@
 ---
 title: "Small Claims or King's Bench? Choosing the Right Alberta Court"
 date: 2026-04-19
+updated: 2026-10-01
 category: "Civil Litigation"
 excerpt: "Picking the wrong Alberta court for your civil claim costs you months and money. Here is how to decide between Court of Justice and King's Bench."
 author: "Prince Aboh"
@@ -49,7 +50,7 @@ What makes it different:
 
 **Schedule C costs.** Cost awards follow Schedule C of the Rules of Court, which sets tariff amounts for every major step in the litigation. A losing party in King's Bench typically pays party-and-party costs at Schedule C rates, which can run into the tens of thousands on a contested trial. This is a real financial risk and should factor into any settlement decision.
 
-**Streamlined Trial option.** Since January 1, 2024, King's Bench has offered a Streamlined Trial process under Part 8, Division 5 of the Rules of Court (Rules 8.25 and 8.26). It is built for cases that can be resolved in a day or two of evidence, where full questioning and trial preparation would be disproportionate to what is at stake. It is a real middle path for claims that outgrow the Court of Justice but do not need a full trial.
+**Streamlined Trial option.** Since January 1, 2024, King's Bench has offered a Streamlined Trial process under Part 8, Division 5 of the Rules of Court (Rules 8.25 to 8.31). It is built for cases that can be resolved in a day or two of evidence, where full questioning and trial preparation would be disproportionate to what is at stake. It is a real middle path for claims that outgrow the Court of Justice but do not need a full trial.
 
 **Filing fees.** King's Bench fees are higher. A Statement of Claim commencement fee, setting a matter for trial, and daily trial fees all add up. Check alberta.ca/court-fees for the current schedule before filing.
 
@@ -79,7 +80,7 @@ A few of the common ones I see:
 
 **Filing in the wrong court and losing the filing fee.** Filing fees are not refunded when you refile. A claim filed in King's Bench that should have gone to the Court of Justice (or the reverse) means paying twice. If you are near a limitation deadline, the time lost on the wrong filing can be fatal.
 
-**Not knowing about Streamlined Trial.** A $150,000 construction dispute does not automatically need a two-week King's Bench trial. Streamlined Trial under Rule 8.25 can resolve it in a day or two. Litigants who do not ask about it end up spending far more on procedure than the case warrants.
+**Not knowing about Streamlined Trial.** A $150,000 construction dispute does not automatically need a two-week King's Bench trial. Streamlined Trial under Rules 8.25 to 8.31 can resolve it in a day or two. Litigants who do not ask about it end up spending far more on procedure than the case warrants.
 
 **Treating the RTDRS as optional.** For residential tenancy matters, the RTDRS is usually faster and cheaper than either court. Going straight to the Court of Justice on a rent arrears claim, without considering the RTDRS, often costs unnecessary time and money.
 

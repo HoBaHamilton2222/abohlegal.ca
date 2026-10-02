@@ -1,6 +1,7 @@
 ---
 title: "Why Every Alberta Business Needs a Shareholder Agreement"
 date: 2026-04-19
+updated: 2026-10-01
 category: "Business & Commercial"
 excerpt: "Three short stories about how Alberta businesses fall apart, and the one document that quietly prevents almost all of it."
 author: "Prince Aboh"
@@ -15,11 +16,11 @@ Here is what that crisis tends to look like.
 
 ## Three Ways It Goes Wrong Without One
 
-**The Edmonton trades company.** Three friends build a plumbing business over six years. One of them wants out, wants to move to BC, and asks to be bought out. He thinks his third is worth $800,000. The other two think it is worth $250,000. There is nothing in writing: no valuation method, no formula, no buyout mechanism. He threatens to sue. They threaten to fire him and cut off his dividends. The business grinds to a halt for eighteen months while lawyers argue.
+**The Edmonton trades company (a hypothetical example).** Three friends build a plumbing business over six years. One of them wants out, wants to move to BC, and asks to be bought out. He thinks his third is worth $800,000. The other two think it is worth $250,000. There is nothing in writing: no valuation method, no formula, no buyout mechanism. He threatens to sue. They threaten to fire him and cut off his dividends. The business grinds to a halt for eighteen months while lawyers argue.
 
-**The St. Paul consulting firm.** Two partners, fifty-fifty shares, no agreement. One of them dies unexpectedly at fifty-two. His will leaves everything to his spouse. Under the default rules of the *Business Corporations Act*, RSA 2000, c B-9 (the ABCA), her executor steps into the deceased partner's shoes and can vote those shares. The surviving partner is suddenly in a fifty-fifty governance relationship with a grieving spouse who wants liquidity. There is no mechanism to force a sale and no agreed price.
+**The St. Paul consulting firm (a hypothetical example).** Two partners, fifty-fifty shares, no agreement. One of them dies unexpectedly at fifty-two. His will leaves everything to his spouse. Under the default rules of the *Business Corporations Act*, RSA 2000, c B-9 (the ABCA), her executor steps into the deceased partner's shoes and can vote those shares. The surviving partner is suddenly in a fifty-fifty governance relationship with a grieving spouse who wants liquidity. There is no mechanism to force a sale and no agreed price.
 
-**The family corporation in Red Deer.** Four siblings own equal shares in a holding company that owns a commercial rental property. Three of them manage tenants, handle repairs, and do the work. The fourth has been "too busy" for three years, but still receives a quarter of the dividends and votes on every major decision. No vesting schedule, no "leaver" provision, no performance obligation tied to the shares. The three working siblings are carrying a free rider who legally cannot be removed.
+**The family corporation in Red Deer (a hypothetical example).** Four siblings own equal shares in a holding company that owns a commercial rental property. Three of them manage tenants, handle repairs, and do the work. The fourth has been "too busy" for three years, but still receives a quarter of the dividends and votes on every major decision. No vesting schedule, no "leaver" provision, no performance obligation tied to the shares. The three working siblings are carrying a free rider who legally cannot be removed.
 
 None of these situations are rare. All of them are preventable.
 
@@ -49,7 +50,7 @@ A shareholder agreement that actually earns its fee does a few specific things.
 
 **It handles the leavers.** Not every shareholder leaves the same way. The person who works for ten years and retires is not the same as the one who quits in year two to join a competitor. A good agreement distinguishes "good leavers" from "bad leavers" and treats their shares differently. Vesting schedules, which release shares over time based on continued service, make sure nobody walks away with a full equity stake on day two.
 
-**It addresses the spouse problem.** If a shareholder is married, their shares can be drawn into a matrimonial property dispute, and if they die, the shares usually pass to the spouse. Spousal consent clauses, paired with a mandatory buyout on death or marital breakdown, keep the shares inside the intended ownership group. This is not hostile to families. It is the cleanest way to protect everyone, including the spouse, from a governance mess they did not sign up for.
+**It addresses the spouse problem.** If a shareholder is married, their shares can be drawn into a family property dispute under Alberta's *Family Property Act*, and if they die, the shares usually pass to the spouse. Spousal consent clauses, paired with a mandatory buyout on death or marital breakdown, keep the shares inside the intended ownership group. This is not hostile to families. It is the cleanest way to protect everyone, including the spouse, from a governance mess they did not sign up for.
 
 **It stops departing shareholders from competing.** A non-compete and non-solicitation clause, drafted narrowly enough to be enforceable, stops a departing shareholder from taking the client list, the team, and the know-how across the street. Alberta courts enforce these only where they are reasonable in scope, geography, and duration. Overreach and a court will strike the whole clause.
 

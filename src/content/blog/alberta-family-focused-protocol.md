@@ -1,6 +1,7 @@
 ---
 title: "Alberta's Family Focused Protocol: What It Means for Your Case"
 date: 2026-03-15
+updated: 2026-10-01
 category: "Family Law"
 excerpt: "The new Family Focused Protocol changes how Alberta family law cases begin. Here's what you need to know."
 author: "Prince Aboh"
@@ -11,7 +12,7 @@ On January 2, 2026, Alberta introduced the Family Focused Protocol (FFP), a sign
 
 The FFP replaced the former Family Docket Court process in Edmonton and Calgary, which held its final sittings on December 19, 2025. It applies at all judicial centres across the province, meaning families in St. Paul, Vermilion, Cold Lake, Lloydminster, and everywhere else in Alberta are subject to the same requirements.
 
-The official source is Notice to the Profession and Public NPP#2025-04, originally issued December 10, 2025 and revised March 12, 2026, available on the Alberta Courts website.
+The official source is Notice to the Profession and Public NPP#2025-04, originally issued December 10, 2025 and revised August 10, 2026, available on the Alberta Courts website.
 
 ## What Is the Family Focused Protocol?
 
@@ -31,7 +32,7 @@ Every family law case filed under the FFP is routed into one of three streams:
 
 ## The Four Mandatory Pre-Court Requirements
 
-Before you can access the Regular Family Process, you must complete four steps. These are not optional. If you have not completed them, your matter will not be scheduled for a hearing.
+Before you can access the Regular Family Process, you must complete four steps. They are mandatory unless your matter is urgent or the court has waived or deferred a requirement. A waiver or deferral must be requested by desk application, using the process in Appendix B of the Notice. If you have not completed the steps, or obtained a waiver or deferral, your matter will not be scheduled for a hearing.
 
 ### 1. Parenting After Separation Course
 
@@ -59,7 +60,7 @@ This requirement applies to self-represented litigants in Edmonton, Calgary, and
 
 ## What Happens at the Mandatory Intake Triage Conference
 
-Once the mandatory pre-court requirements are satisfied and a claim is filed, your first court appearance will be a Mandatory Intake Triage (MIT) Conference. This is a one-hour session before a Family Roster Justice.
+Once the mandatory pre-court requirements are satisfied and a claim is filed, your first court appearance will be a Mandatory Intake Triage (MIT) Conference. This is a one-hour hearing before the MIT Justice assigned to your family, held in a courtroom and on the record.
 
 The MIT Conference is not a trial. It is a structured first appearance where the justice assesses your case and decides how it should proceed. At the MIT, the justice may:
 
@@ -67,7 +68,7 @@ The MIT Conference is not a trial. It is a structured first appearance where the
 - Assess whether there are special circumstances that need to be addressed, such as domestic violence considerations, security concerns, cultural accommodations, or whether a child's perspective should be included through a judicial interview
 - Set the path forward toward a Settlement Conference
 
-One important structural feature of the FFP is the assigned justice model. The MIT Justice is assigned to your family and oversees all interim needs and case conferences through to final determination. This provides consistent judicial oversight throughout your case. The only exception is the Settlement Conference, which uses a separate justice to preserve neutrality in case the matter goes to trial.
+One important structural feature of the FFP is the assigned justice model. The MIT Justice is assigned to your family and oversees all interim needs and case conferences through to final determination. This provides consistent judicial oversight throughout your case. The only exception is the Settlement Conference, which normally uses a different justice to preserve neutrality in case the matter goes to trial (the MIT Justice can conduct it only if the parties consent and the Justice agrees).
 
 ## Exceptions for Urgent Matters
 

@@ -1,6 +1,7 @@
 ---
 title: "Why Every Albertan Needs a Personal Directive"
 date: 2026-03-01
+updated: 2026-10-01
 category: "Wills & Estates"
 excerpt: "A personal directive ensures your wishes are followed if you can't speak for yourself. Here's why it matters."
 author: "Prince Aboh"
@@ -79,7 +80,7 @@ One recent and important development: Alberta has permanently adopted remote exe
 
 Yes. As long as you still have mental capacity, you can revoke or amend your personal directive at any time. Under section 8 of the Act, you can revoke it by:
 
-- Creating a new personal directive (which automatically revokes the earlier one)
+- Creating a new personal directive that says it revokes the earlier one. A new directive that does not say so revokes the earlier one only to the extent the two contradict each other, because the Act allows you to have more than one directive
 - Signing a written revocation statement
 - Physically destroying the original directive
 - Including a date or triggering event in the directive itself that ends it

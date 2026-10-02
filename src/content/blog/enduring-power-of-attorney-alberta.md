@@ -2,6 +2,7 @@
 title: "Enduring Power of Attorney in Alberta: A Practical Decision Guide"
 date: 2026-04-19
 publishDate: 2026-05-11
+updated: 2026-10-01
 category: "Wills & Estates"
 excerpt: "An EPOA is not about future you. It is protection against a stroke, accident, or fall tomorrow. Here is how to get it right under Alberta law."
 author: "Prince Aboh"
@@ -74,7 +75,7 @@ Government fees alone land in the $800 to $1,000 range; legal fees add more. A s
 
 While you have capacity, you can revoke your EPOA at any time. The revocation should be in writing, signed, and delivered to your attorney and any institution relying on the document. A new EPOA can expressly revoke the old one, which is the cleanest approach when updating.
 
-An EPOA terminates automatically on your death or the incapacity of your attorney. The bankruptcy of your attorney creates serious practical problems, which is why alternates matter. If you named joint attorneys and one dies, the document's wording controls whether the survivor can continue. A court can also vary or terminate an EPOA on application.
+Under section 13 of the Act, an EPOA terminates on your death or your attorney's death, or when a court grants a trusteeship order for you or for your attorney. It also ends if you revoke it in writing while you are mentally capable of understanding what the revocation means, if a court grants a termination order, or if your attorney renounces the appointment and gives you notice. Once your attorney has taken on the role and you can no longer make reasonable judgments about your affairs, renouncing needs the court's permission. If you named joint and several attorneys, or alternates, the events that relate to the attorney end the EPOA only when they happen to the last remaining attorney. The bankruptcy of your attorney creates serious practical problems, which is why alternates matter. If you named joint attorneys and one dies, the document's wording controls whether the survivor can continue. Any interested person can apply to the court for that termination order, and the court can grant it if ending the EPOA is in your best interests.
 
 ## EPOA vs Personal Directive
 

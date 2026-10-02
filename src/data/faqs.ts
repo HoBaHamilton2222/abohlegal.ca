@@ -2,11 +2,11 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
   'family-law': [
     {
       question: 'How long does a divorce take in Alberta?',
-      answer: 'An uncontested divorce in Alberta typically takes three to four months from the date the application is filed. If the divorce is contested, meaning the parties disagree on custody, support, or property division, it can take a year or longer depending on the complexity of the issues and whether the matter goes to trial.',
+      answer: 'An uncontested divorce in Alberta typically takes three to four months from the date the application is filed. If the divorce is contested, meaning the parties disagree on parenting, support, or property division, it can take a year or longer depending on the complexity of the issues and whether the matter goes to trial.',
     },
     {
-      question: 'Do I need a lawyer for a custody dispute?',
-      answer: 'While you are not legally required to have a lawyer, custody disputes involve important decisions about your children\'s future. A <a href="/services/family-law" class="text-gold hover:underline">family lawyer</a> can help you understand your rights under the Family Law Act and Divorce Act, prepare your evidence, and present your case effectively in court or mediation.',
+      question: 'Do I need a lawyer for a parenting (custody) dispute?',
+      answer: 'While you are not legally required to have a lawyer, parenting disputes involve important decisions about your children\'s future. A <a href="/services/family-law" class="text-gold hover:underline">family lawyer</a> can help you understand your rights under the Family Law Act and Divorce Act, prepare your evidence, and present your case effectively in court or mediation.',
     },
     {
       question: 'How is child support calculated in Alberta?',
@@ -14,11 +14,11 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'What is a protection order?',
-      answer: 'A protection order is a court order under Alberta\'s Protection Against Family Violence Act that restricts a family member from contacting or approaching you. Emergency protection orders can be granted within hours by a provincial court judge, even outside regular court hours. They are designed to provide immediate safety when there is a risk of family violence.',
+      answer: 'A protection order is a court order under Alberta\'s Protection Against Family Violence Act that restricts a family member from contacting or approaching you. Emergency protection orders can be granted within hours by a justice of the Alberta Court of Justice or a justice of the peace, even outside regular court hours. They are designed to provide immediate safety when there is a risk of family violence.',
     },
     {
       question: 'How is property divided in an Alberta divorce?',
-      answer: 'Under the Family Property Act, property acquired during the marriage is generally divided equally between spouses. Property owned before the marriage or received as a gift or inheritance may be exempt, though any increase in value during the marriage may be shared. The family home receives special treatment regardless of when it was acquired.',
+      answer: 'Under the Family Property Act, which applies to married spouses and adult interdependent partners, property acquired during the relationship is generally divided equally. Property owned before the relationship began or received as a gift or inheritance may be exempt, though any increase in its value during the relationship may be shared.',
     },
   ],
   'wills-estates': [
@@ -108,35 +108,17 @@ export const faqsByCategory: Record<string, Array<{question: string; answer: str
     },
     {
       question: 'What happens if someone owes me money and refuses to pay?',
-      answer: 'You can pursue a debt claim through the courts. Depending on the amount, your claim may be heard in Provincial Court (for amounts up to $100,000) or the Court of King\'s Bench. If you obtain a judgment, there are enforcement tools available including garnishment of wages or bank accounts and seizure of property.',
-    },
-  ],
-  'personal-injury': [
-    {
-      question: 'How long do I have to file a personal injury claim in Alberta?',
-      answer: 'Under the Limitations Act, you generally have two years from the date of the injury, or from when you first knew or ought to have known about the injury, to file a claim. For motor vehicle accidents, you must also notify your own insurer promptly. Delays can affect your right to compensation, so seek legal advice as soon as possible.',
-    },
-    {
-      question: 'What compensation can I receive for a personal injury?',
-      answer: 'You may be entitled to compensation for pain and suffering, lost income (past and future), medical and rehabilitation expenses, loss of household services, and out-of-pocket costs. The amount depends on the severity of your injuries, their impact on your daily life and work, and the available insurance coverage.',
-    },
-    {
-      question: 'What is the minor injury cap in Alberta?',
-      answer: 'Alberta\'s Minor Injury Regulation caps pain and suffering damages for sprains, strains, and whiplash-associated disorders that are classified as minor injuries. As of 2024, the cap is approximately $5,637 and is adjusted annually for inflation. If your injury is more serious than a minor injury, the cap does not apply, and your compensation may be significantly higher.',
-    },
-    {
-      question: 'Do I have to pay upfront for a personal injury lawyer?',
-      answer: 'Many <a href="/services/personal-injury" class="text-gold hover:underline">personal injury</a> claims are handled on a contingency fee basis, meaning you pay legal fees only if your case is successful. The fee is typically a percentage of the settlement or judgment. We discuss fee arrangements openly at your initial consultation so there are no surprises.',
+      answer: 'You can pursue a debt claim through the courts. Depending on the amount, your claim may be heard in the Alberta Court of Justice (for amounts up to $100,000) or the Court of King\'s Bench. If you obtain a judgment, there are enforcement tools available including garnishment of wages or bank accounts and seizure of property.',
     },
   ],
   'immigration': [
     {
       question: 'How long does it take to get permanent residence in Canada?',
-      answer: 'Processing times for permanent residence vary by program. Express Entry applications are often processed within six months. Family sponsorship for spouses typically takes about twelve months. Provincial nominee programs and other streams may take longer. Processing times change frequently, and having complete and accurate documentation helps avoid delays.',
+      answer: 'Processing times for permanent residence vary by program and change often. Spousal sponsorship usually takes longer than Express Entry, and provincial nominee programs and other streams may take longer still. Check the current times on IRCC\'s <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html" class="text-gold hover:underline" target="_blank" rel="noopener noreferrer">processing times page</a>. Having complete and accurate documentation helps avoid delays.',
     },
     {
       question: 'Can I sponsor my spouse to come to Canada?',
-      answer: 'Yes, Canadian citizens and permanent residents can sponsor their spouse or common-law partner for permanent residence. You must demonstrate that the relationship is genuine and that you meet income and other eligibility requirements. If your spouse is already in Canada, they may be eligible to apply from within the country. Learn more about our <a href="/services/immigration" class="text-gold hover:underline">immigration services</a>.',
+      answer: 'Yes, Canadian citizens and permanent residents can sponsor their spouse or common-law partner for permanent residence. You must demonstrate that the relationship is genuine, meet the other eligibility requirements, and sign an undertaking to support your spouse. In most cases there is no minimum income requirement to sponsor a spouse or partner. If your spouse is already in Canada, they may be eligible to apply from within the country. Learn more about our <a href="/services/immigration" class="text-gold hover:underline">immigration services</a>.',
     },
     {
       question: 'What is an LMIA?',

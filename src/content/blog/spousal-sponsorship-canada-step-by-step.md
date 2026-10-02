@@ -1,6 +1,7 @@
 ---
 title: "Spousal Sponsorship in Canada: A Step-by-Step Guide"
 date: 2026-04-19
+updated: 2026-10-01
 category: "Immigration"
 excerpt: "Sponsoring a spouse looks simple until you hit the traps. Streams, forms, SOWP changes, and where people lose their applications."
 author: "Prince Aboh"
@@ -25,13 +26,13 @@ Three consequences of the choice matter:
 
 **Appeal rights.** This is the one people miss. IRPA s. 63(1) gives a right of appeal to the Immigration Appeal Division (IAD) only for Family Class refusals. Outland applications are filed as Family Class, so an outland refusal is appealable. The inland Spouse or Common-Law Partner in Canada class is not Family Class. An inland refusal has no IAD appeal. The only recourse is leave and judicial review at the Federal Court, a narrower and more technical remedy.
 
-**Work authorization.** Inland applicants can apply for a spousal open work permit. Outland applicants cannot, unless they already hold their own work authorization.
+**Work authorization.** Inland applicants can apply for a spousal open work permit. Outland applicants who live in Canada with their sponsor can apply too, once IRCC acknowledges receipt of the permanent residence application. Outland applicants living outside Canada do not qualify.
 
 For most couples where the sponsored person is already in Canada with valid status, inland is the default. If travel is essential, or preserving appeal rights matters, consider outland.
 
 ## Who Can Sponsor
 
-Sponsor requirements are in IRPR ss. 130 and 133. You must be at least 18, a Canadian citizen or permanent resident (or a person registered under the *Indian Act*), and residing in Canada. A citizen abroad can sponsor only if they show they will return when the sponsored person becomes a permanent resident. A permanent resident living abroad cannot sponsor at all.
+Sponsor requirements are in IRPR ss. 130 and 133. You must be at least 18, a Canadian citizen or permanent resident, and residing in Canada. IRCC's eligibility page also lists a person registered in Canada under the *Indian Act* as an eligible sponsor. A citizen abroad can sponsor only if they show they will return when the sponsored person becomes a permanent resident. A permanent resident living abroad cannot sponsor at all.
 
 You cannot be on social assistance other than for disability, subject to a removal order, detained, bankrupt, or in default on a prior undertaking, support order, or Crown debt. Certain criminal convictions under s. 133(1)(e) and (f) will disqualify you.
 
@@ -60,7 +61,7 @@ Core forms include:
 - **IMM 1344**, Application to Sponsor, Sponsorship Agreement and Undertaking. Your signature binds you to the three-year undertaking.
 - **IMM 5532**, Relationship Information and Sponsorship Evaluation. Inconsistencies between this and the sponsored person's forms are among the most common reasons for refusal.
 - **IMM 0008** (Generic Application), **IMM 5669** (Schedule A Background), and **IMM 5406** (Additional Family Information).
-- Supporting documents: marriage certificate, proof of cohabitation (joint lease, joint accounts, utilities, photos over time, messages, travel records), police certificates from every country the sponsored person lived in for six months or more since age 18, an IRCC-panel medical, and the fees.
+- Supporting documents: marriage certificate, proof of cohabitation (joint lease, joint accounts, utilities, photos over time, messages, travel records), police certificates from every country other than Canada where the sponsored person spent six months or more in a row since age 18, an IRCC-panel medical once IRCC asks for it, and the fees.
 
 Build your evidence package like you are proving a fact to a skeptical reader who has never met you. A thin, generic package reads as suspicious even when the relationship is real.
 
@@ -68,11 +69,11 @@ Build your evidence package like you are proving a fact to a skeptical reader wh
 
 The spousal open work permit (SOWP) changed materially on January 21, 2025, and the rules remain in force for 2026.
 
-For **inland spousal sponsorship applicants**, the SOWP pilot is still in place. If you are the sponsored spouse or partner inside Canada with valid temporary status, you can apply for an open work permit while the permanent residence application is pending. That is one of the practical reasons many couples choose inland.
+For **sponsored spouses and partners living in Canada**, the SOWP pilot is still in place. If you are the sponsored spouse or partner, you live in Canada with your sponsor and have valid temporary status, and IRCC has acknowledged receipt of the permanent residence application, you can apply for an open work permit while that application is pending. This covers inland applicants and outland (Family Class) applicants who live here with the sponsor.
 
-For **spouses of foreign workers** (separate from sponsorship), the SOWP was restricted on January 21, 2025. Only spouses of principal workers in TEER 0 or 1, or in select TEER 2 or 3 occupations tied to labour-shortage sectors, now qualify. Applications received before that date continue under the old rules, and existing permits remain valid until expiry.
+For **spouses of foreign workers** (separate from sponsorship), the SOWP was restricted on January 21, 2025. Outside a few exceptions (for example, a worker who has already applied for permanent residence through an eligible economic program), only spouses of principal workers in TEER 0 or 1, or in select TEER 2 or 3 occupations on IRCC's list, now qualify. The worker's permit must also be valid for at least 16 months after IRCC receives the spouse's application. Applications received before that date continue under the old rules, and existing permits remain valid until expiry.
 
-For **spouses of international students**, eligibility narrowed on the same date to spouses of students in master's programs of 16 months or longer, doctoral programs, or select professional programs.
+For **spouses of international students**, eligibility narrowed on the same date to spouses of students in master's programs of 16 months or longer, doctoral programs, select professional degree programs at a university, or a short list of other designated programs.
 
 The SOWP rules have shifted more than once in the last two years. Confirm current policy on IRCC's website before relying on anything, including this article.
 
