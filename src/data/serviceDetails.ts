@@ -46,7 +46,8 @@ export const serviceDetails: ServiceDetail[] = [
     ],
     approach: `<p>We listen first. Then we explain your options and agree on a plan with you.</p>
 <p>We explain the law that applies to you in plain language, usually the <em>Divorce Act</em> and Alberta's <em>Family Law Act</em> and <em>Family Property Act</em>.</p>
-<p>Settling usually costs less and takes less time than a court fight. When a fair settlement is not possible, we take the case to court.</p>`,
+<p>Settling usually costs less and takes less time than a court fight. When a fair settlement is not possible, we take the case to court.</p>
+<p>We accept Legal Aid Alberta certificates for family cases, including protection order hearings. To apply for Legal Aid, contact <a href="https://www.legalaid.ab.ca" class="text-gold underline hover:no-underline" target="_blank" rel="noopener noreferrer">Legal Aid Alberta</a>.</p>`,
     relatedSlugs: ['wills-estates', 'estate-litigation', 'immigration'],
     ctaText: 'Going through a separation or a family dispute? Talk to us.',
     heroImage: familyHands,
@@ -192,7 +193,7 @@ export const serviceDetails: ServiceDetail[] = [
       'Refugee claims',
     ],
     approach: `<p>The <em>Immigration and Refugee Protection Act</em> and its regulations set the rules. Immigration, Refugees and Citizenship Canada (IRCC) changes its programs and forms often, so we check the current requirements before you apply.</p>
-<p>We explain each step in plain language, keep you updated, and tell you what to expect on timing.</p>`,
+<p>We work with clients inside and outside Canada, by phone or video. We explain each step in plain language, keep you updated, and tell you what to expect on timing.</p>`,
     relatedSlugs: ['family-law', 'employment-law'],
     ctaText: 'Planning a move to Canada, or a change in your status? Talk to us.',
     heroImage: canadianPassportsImg,

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'ABOH LEGAL',
-  tagline: 'Clear advice. Steady advocacy. Alberta-wide.',
+  tagline: 'Clear legal advice. Across Alberta.',
   phone: '+1 (825) 461-0107',
   phoneHref: 'tel:+18254610107',
   email: 'info@abohlegal.ca',
