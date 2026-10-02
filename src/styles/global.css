@@ -16,9 +16,7 @@
     color: #0C2233;
   }
   p {
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    text-align: left;
   }
   p.text-center,
   .text-center p,

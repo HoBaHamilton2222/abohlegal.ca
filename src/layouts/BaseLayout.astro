@@ -2,6 +2,7 @@
 import Analytics from '@vercel/analytics/astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { siteConfig } from '../data/siteConfig';
 import '../styles/global.css';
 
 interface Props {
@@ -112,13 +113,18 @@ import '@fontsource/lato/900.css';
     <!-- Vercel Web Analytics -->
     <Analytics />
   </head>
-  <body class="bg-white font-body text-body-text">
+  <body class="bg-white font-body text-body-text pb-16 md:pb-0">
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-navy focus:px-4 focus:py-2 focus:text-white">Skip to main content</a>
     <Header />
     <main id="main">
       <slot />
     </main>
     <Footer />
+    <!-- Phone-only call and book bar -->
+    <nav aria-label="Call or book" class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 border-t border-gray-200 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.08)] md:hidden">
+      <a href={siteConfig.phoneHref} class="flex items-center justify-center gap-2 py-4 text-sm font-bold uppercase tracking-wider text-navy">&#9742; Call</a>
+      <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gold py-4 text-sm font-bold uppercase tracking-wider text-navy">Book a Time</a>
+    </nav>
     <style>
       .animate-on-scroll {
         opacity: 0;
