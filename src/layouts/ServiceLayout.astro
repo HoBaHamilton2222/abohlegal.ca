@@ -5,6 +5,7 @@ import CTABanner from '../components/CTABanner.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import type { ImageMetadata } from 'astro';
+import { siteConfig } from '../data/siteConfig';
 
 interface Props {
   title: string;
@@ -90,7 +91,7 @@ const {
           ))}
         </div>
         <p class="text-body-text text-sm mt-6 text-center">
-          These answers are general information about Alberta law, not legal advice. Reading this page or contacting us does not make you our client.
+          These answers are general information about the law, not legal advice. Reading this page or contacting us does not make you our client.
         </p>
       </div>
     </section>
@@ -98,8 +99,8 @@ const {
 
   <!-- CTA Banner -->
   <CTABanner
-    heading="Let's Talk About Your Situation"
-    body={ctaText}
+    heading="Next Step"
+    body={`Call ${siteConfig.phone} or book a time online.`}
     buttonText="Book a Consultation"
     buttonHref="/contact"
   />

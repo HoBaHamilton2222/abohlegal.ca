@@ -40,7 +40,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="relative text-center px-6 py-16 md:py-24 max-w-3xl mx-auto">
       <h1 class="font-heading text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Contact Us</h1>
       <p class="text-white/70 text-lg md:text-xl leading-relaxed">
-        Get in touch. We would love to help you with your legal needs.
+        Call us, book a time online, or send a message.
       </p>
     </div>
   </section>
@@ -48,18 +48,12 @@ const breadcrumbSchema = JSON.stringify({
   <!-- Intro + Contact Info Block -->
   <section class="bg-white py-16 md:py-20 px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <p class="text-body-text text-base md:text-lg leading-relaxed mb-6">
-        At ABOH LEGAL, we believe in a straightforward approach. We take the time to understand your situation, explain your options in plain language, and only move forward once we have agreed on a clear plan together. The last thing we want is for you to feel uncertain about the process or the cost.
-      </p>
-      <p class="text-body-text text-base md:text-lg leading-relaxed mb-10">
-        Whether you are dealing with a family matter, planning your estate, navigating an employment issue, or need guidance on immigration, we are here to help make the process as stress-free as possible.
-      </p>
 
       <!-- Contact Details -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
         <div class="bg-[#f9f8f6] rounded-lg p-6">
           <p class="text-navy font-bold text-sm uppercase tracking-wider mb-2">Phone</p>
-          <a href={siteConfig.phoneHref} class="text-gold font-bold hover:underline">{siteConfig.phone}</a>
+          <a href={siteConfig.phoneHref} class="text-gold font-bold hover:underline whitespace-nowrap">{siteConfig.phone}</a>
         </div>
         <div class="bg-[#f9f8f6] rounded-lg p-6">
           <p class="text-navy font-bold text-sm uppercase tracking-wider mb-2">Email</p>
@@ -80,9 +74,9 @@ const breadcrumbSchema = JSON.stringify({
   <!-- Book a time directly -->
   <section class="bg-white pb-16 md:pb-20 px-6">
     <div class="max-w-2xl mx-auto text-center border-t border-gray-200 pt-12">
-      <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-4">Book a Time Directly</h2>
+      <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-4">Book a Time</h2>
       <p class="text-body-text text-base md:text-lg leading-relaxed mb-8">
-        Choose a time that works for you and see live availability. Appointments are available by phone, by video, or at our office.
+        See open times and book a meeting by phone, by video, or at our office.
       </p>
       <a
         href={siteConfig.bookingUrl}
@@ -93,7 +87,7 @@ const breadcrumbSchema = JSON.stringify({
         Book an Appointment
       </a>
       <p class="text-body-text text-sm mt-4">
-        No account needed. Your booking is confirmed once we complete a quick conflict check.
+        No account needed. You will get an automatic email. We then check that we do not already act for the other side, and we will contact you if we cannot meet. If someone else reads your email or calendar, please call us instead of booking online.
       </p>
     </div>
   </section>
@@ -104,7 +98,7 @@ const breadcrumbSchema = JSON.stringify({
       <div class="text-center mb-10">
         <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-4">Or Send Us a Message</h2>
         <p class="text-body-text text-base md:text-lg leading-relaxed">
-          Prefer to write first? Send us your name, the type of matter, and the other party's name. We will check for conflicts and get back to you. Please do not send details of your situation until we confirm we can act for you.
+          Send us your name, the type of legal problem, and the other party's name. We will check that we do not already act for the other side, and then reply.
         </p>
       </div>
 
@@ -114,7 +108,7 @@ const breadcrumbSchema = JSON.stringify({
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <p class="text-navy text-lg md:text-xl font-bold mb-2">Thank you!</p>
-        <p class="text-body-text text-base">We have received your message. We aim to respond within one business day.</p>
+        <p class="text-body-text text-base">We have your message and aim to reply within one business day.</p>
       </div>
 
       <!-- Error State -->
@@ -151,6 +145,7 @@ const breadcrumbSchema = JSON.stringify({
         <!-- Email -->
         <div>
           <label for="email" class="block text-navy font-bold text-sm mb-1">Email Address <span class="text-red-600">*</span></label>
+          <p class="text-muted-text text-xs mb-2">Use an email address that only you can read.</p>
           <input
             type="email"
             id="email"
@@ -177,7 +172,7 @@ const breadcrumbSchema = JSON.stringify({
         <!-- Other party -->
         <div>
           <label for="other_party" class="block text-navy font-bold text-sm mb-1">Full name of the other party <span class="text-red-600">*</span></label>
-          <p class="text-muted-text text-xs mb-2">The person on the other side of your matter. We need this to check for conflicts before we can speak with you.</p>
+          <p class="text-muted-text text-xs mb-2">The person on the other side of your case. We need this to check for conflicts before we can speak with you. Write "none" if there is no one. If there are several people, list them all.</p>
           <input
             type="text"
             id="other_party"
@@ -190,7 +185,7 @@ const breadcrumbSchema = JSON.stringify({
 
         <!-- Subject -->
         <div>
-          <label for="subject" class="block text-navy font-bold text-sm mb-1">Type of matter <span class="text-red-600">*</span></label>
+          <label for="subject" class="block text-navy font-bold text-sm mb-1">Type of legal problem <span class="text-red-600">*</span></label>
           <p class="text-muted-text text-xs mb-2">A few words, for example: separation, parenting, will dispute, employment, immigration.</p>
           <input
             type="text"
@@ -199,7 +194,7 @@ const breadcrumbSchema = JSON.stringify({
             required
             class="w-full border border-gray-300 rounded px-4 py-3 text-body-text focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-colors"
           />
-          <p class="text-red-600 text-sm mt-1 hidden" data-error="subject">Please enter the type of matter.</p>
+          <p class="text-red-600 text-sm mt-1 hidden" data-error="subject">Please enter the type of legal problem.</p>
         </div>
 
         <!-- Message -->
@@ -221,7 +216,7 @@ const breadcrumbSchema = JSON.stringify({
           <strong>If you are in danger, call 911.</strong> If it is not safe for us to email or call you, tell us a safe way and time to reach you in your message.
         </p>
         <p class="text-muted-text text-xs leading-relaxed">
-          Please do not include confidential information until we confirm we can act for you. Contacting us does not make you our client. We use service providers, some located outside Canada, to receive messages sent through this form. Our <a href="/privacy" class="underline">Privacy Policy</a> explains how we handle your information. Questions about it, including about service providers outside Canada, can go to Prince Aboh at <a href="mailto:info@abohlegal.ca" class="underline">info@abohlegal.ca</a>.
+          Contacting us does not make you our client. Some of the service providers that receive messages from this form are outside Canada. Our <a href="/privacy" class="underline">Privacy Policy</a> explains how we handle your information. For questions about it, including about service providers outside Canada, contact Prince Aboh at <a href="mailto:info@abohlegal.ca" class="underline">info@abohlegal.ca</a>.
         </p>
 
         <!-- Submit -->

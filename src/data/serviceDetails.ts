@@ -31,23 +31,24 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Family Law',
     title: 'Family Law',
     metaTitle: 'Family Law Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Family law lawyer in St. Paul, Alberta. Divorce, custody, child support, spousal support, protection orders, and separation agreements.',
-    fullDesc: 'Family matters are among the most personal and stressful legal challenges you can face. At ABOH LEGAL, we help families across northeastern Alberta navigate divorce, custody disputes, support issues, and protection orders with compassion, clear communication, and a commitment to practical solutions that protect what matters most: your children and your future.',
+    metaDescription: 'Family lawyer in St. Paul, Alberta. Divorce, parenting, child and spousal support, property division, and protection orders.',
+    fullDesc: 'Separation and family disputes are hard on everyone, and hardest on children. We help with divorce, parenting, support, property, protection orders, and child protection. If you are in danger, call 911.',
     whatWeHandle: [
       'Divorce and separation',
-      'Custody and parenting arrangements',
+      'Parenting arrangements (custody)',
       'Child support',
       'Spousal support',
       'Protection orders',
       'Separation agreements',
       'Property division',
-      'Guardianship applications',
+      'Guardianship of children',
+      'Child protection (when child welfare workers are involved)',
     ],
-    approach: `<p>We understand that every family situation is unique. Our approach begins with listening, taking the time to understand your circumstances, your priorities, and your concerns. From there, we develop a strategy tailored to your goals.</p>
-<p>Alberta family law is governed by the <em>Family Law Act</em>, the <em>Divorce Act</em>, and the <em>Family Property Act</em>. We guide you through these frameworks in plain language so you always know where you stand and what to expect.</p>
-<p>Wherever possible, we pursue negotiated resolutions that save time, money, and emotional energy. When negotiation is not possible, we are prepared to advocate firmly for you in court. Our goal is always to help you move forward with confidence and stability.</p>`,
+    approach: `<p>We listen first. Then we explain your options and agree on a plan with you.</p>
+<p>We explain the law that applies to you in plain language, usually the <em>Divorce Act</em> and Alberta's <em>Family Law Act</em> and <em>Family Property Act</em>.</p>
+<p>Settling usually costs less and takes less time than a court fight. When a fair settlement is not possible, we take the case to court.</p>`,
     relatedSlugs: ['wills-estates', 'estate-litigation', 'immigration'],
-    ctaText: 'Going through a family law matter? Let us help you find a path forward.',
+    ctaText: 'Going through a separation or a family dispute? Talk to us.',
     heroImage: familyHands,
   },
   {
@@ -57,20 +58,20 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Wills & Estates',
     title: 'Wills & Estates',
     metaTitle: 'Wills & Estates Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Wills, powers of attorney, personal directives, and estate planning in St. Paul, Alberta. Protect your family and your legacy with ABOH LEGAL.',
-    fullDesc: 'A well-prepared estate plan gives you peace of mind and protects the people who matter most. At ABOH LEGAL, we help individuals and families across northeastern Alberta create wills, powers of attorney, and personal directives that reflect their wishes and comply with Alberta law.',
+    metaDescription: 'Wills, powers of attorney, personal directives, and estate planning in St. Paul, Alberta.',
+    fullDesc: 'We prepare wills, powers of attorney, and personal directives that meet Alberta law.',
     whatWeHandle: [
       'Wills',
       'Enduring powers of attorney',
       'Personal directives',
       'Estate planning',
-      'Beneficiary designations',
+      'Beneficiary designations (who receives your retirement savings, pension, or life insurance)',
     ],
-    approach: `<p>Estate planning does not have to be complicated. We take a practical, step-by-step approach, starting with a conversation about your family, your assets, and your wishes. We then prepare documents that are clear, legally sound, and tailored to your situation.</p>
-<p>Alberta\'s <em>Wills and Succession Act</em> sets out specific requirements for valid wills and other estate documents. We ensure your documents meet these requirements and are structured to minimize the risk of future disputes or confusion.</p>
-<p>Whether you are creating your first will or updating an existing estate plan after a major life change, we make the process straightforward and accessible.</p>`,
+    approach: `<p>First, we talk about your family, what you own, and what you want to happen. Then we prepare clear documents that fit your situation.</p>
+<p>Alberta's <em>Wills and Succession Act</em> has strict rules for a valid will. We follow them closely, which lowers the risk of a dispute later.</p>
+<p>We can prepare your first will or update your plan after a marriage, a separation, a birth, or a death in the family.</p>`,
     relatedSlugs: ['estate-litigation', 'family-law'],
-    ctaText: 'Ready to protect your family\'s future? Let\'s get your estate plan in order.',
+    ctaText: 'Need a will, or need to update one? Let\'s talk.',
     heroImage: lastWillTestament,
   },
   {
@@ -80,21 +81,21 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Estate Litigation',
     title: 'Estate Litigation',
     metaTitle: 'Estate Litigation Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Estate litigation lawyer in St. Paul, Alberta. Will challenges, dependant support claims, executor disputes, and guardianship applications.',
-    fullDesc: 'When disputes arise over a will, an estate, or the care of a vulnerable adult, the stakes are high and the emotions run deep. At ABOH LEGAL, we bring clarity and decisive action to estate litigation matters, helping clients protect their rights and their loved ones\' interests.',
+    metaDescription: 'Estate litigation lawyer in St. Paul, Alberta. Will challenges, dependants\' support claims, executor disputes, and adult guardianship.',
+    fullDesc: 'Do you think a will is unfair, or that an executor is not doing the job? Can an adult in your family no longer manage their own affairs? We can explain your options.',
     whatWeHandle: [
       'Will challenges',
-      'Dependant support claims',
+      'Dependants\' relief claims (support from an estate)',
       'Executor and trustee disputes',
       'Adult guardianship applications',
       'Adult trusteeship applications',
       'Estate accounting disputes',
     ],
-    approach: `<p>Estate disputes require both legal precision and sensitivity. We begin every matter by thoroughly reviewing the relevant documents, including the will, trust instruments, financial records, and any correspondence, to build a clear picture of the facts and the legal issues at play.</p>
-<p>Alberta\'s <em>Wills and Succession Act</em> and the <em>Adult Guardianship and Trusteeship Act</em> provide the framework for these claims. We ensure our clients understand their rights and the realistic outcomes before any steps are taken.</p>
-<p>We pursue efficient resolution through negotiation and mediation where appropriate, but we do not hesitate to bring matters before the court when a fair resolution cannot be reached. Our clients can count on thorough preparation and strong advocacy.</p>`,
+    approach: `<p>First we read the will and the money records, along with any trusts, letters, or emails. They show us the facts and the legal issues.</p>
+<p>Most of these claims fall under Alberta's <em>Wills and Succession Act</em> or the <em>Adult Guardianship and Trusteeship Act</em>. We explain your rights and the likely outcome before you decide on any step.</p>
+<p>Time limits apply, so do not wait.</p>`,
     relatedSlugs: ['wills-estates', 'civil-litigation', 'family-law'],
-    ctaText: 'Dealing with an estate dispute? Contact us for clear, decisive guidance.',
+    ctaText: 'Involved in an estate dispute? Contact us early.',
     heroImage: parliamentBuilding,
   },
   {
@@ -104,22 +105,22 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Employment Law',
     title: 'Employment Law',
     metaTitle: 'Employment Law Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Employment law lawyer in St. Paul, Alberta. Wrongful dismissal, severance negotiation, employment contracts, and workplace disputes.',
-    fullDesc: 'Employment relationships are governed by a complex mix of legislation, common law, and contractual terms. Whether you are an employee who has been terminated or an employer navigating a difficult workplace situation, ABOH LEGAL provides balanced, knowledgeable advice to help you understand your rights and obligations.',
+    metaDescription: 'Employment lawyer in St. Paul, Alberta. Wrongful dismissal, severance, employment contracts, and workplace disputes.',
+    fullDesc: 'We help employees and employers, most often when a job ends.',
     whatWeHandle: [
       'Wrongful dismissal claims',
       'Employment contracts',
       'Severance negotiations',
       'Workplace disputes',
       'Termination advice',
-      'Non-compete and restrictive covenant agreements',
+      'Non-compete agreements (promises not to compete or take clients after you leave)',
       'Human rights complaints',
     ],
-    approach: `<p>We represent both employees and employers, which gives us a well-rounded perspective on workplace legal issues. This balanced experience allows us to anticipate the other side\'s position and develop strategies that are both practical and effective.</p>
-<p>Alberta employment law draws on the <em>Employment Standards Code</em>, the <em>Alberta Human Rights Act</em>, and the common law principles developed through decades of case law. We help our clients navigate these overlapping frameworks toward a workable, timely resolution.</p>
-<p>For employees, that often means negotiating a fair severance package or pursuing a wrongful dismissal claim. For employers, it means proactive advice on contracts, policies, and terminations that reduce legal risk. In all cases, we aim for practical solutions that let our clients move forward.</p>`,
+    approach: `<p>For employees, we often review a severance offer, negotiate a better package, or bring a wrongful dismissal claim. For employers, we prepare clear contracts and policies and give advice before you end someone's employment.</p>
+<p>The main laws are Alberta's <em>Employment Standards Code</em> and <em>Alberta Human Rights Act</em>, along with the common law (rules from past court decisions) on reasonable notice.</p>
+<p>If you have been offered a severance package, get advice before you sign a release (a document saying you will not sue).</p>`,
     relatedSlugs: ['civil-litigation', 'business-commercial'],
-    ctaText: 'Facing a workplace legal issue? We can help you navigate it.',
+    ctaText: 'Lost your job, or facing a problem at work? Talk to us.',
     heroImage: womenWorking,
   },
   {
@@ -129,22 +130,22 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Business & Commercial',
     title: 'Business & Commercial Law',
     metaTitle: 'Business & Commercial Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Business and commercial lawyer in St. Paul, Alberta. Incorporations, shareholder agreements, contracts, commercial leases, and business disputes.',
-    fullDesc: 'Running a business involves legal decisions at every stage, from formation and contracts to growth and disputes. At ABOH LEGAL, we provide practical, straightforward legal advice to businesses across northeastern Alberta, helping you build a solid foundation and manage risk effectively.',
+    metaDescription: 'Business lawyer in St. Paul, Alberta. Incorporations, shareholder agreements, contracts, commercial leases, and business disputes.',
+    fullDesc: 'We give businesses in northeastern Alberta practical legal advice when they set up, sign contracts, lease space, or face a dispute.',
     whatWeHandle: [
       'Incorporations',
       'Shareholder agreements',
       'Contractor agreements',
-      'Policy reviews',
+      'Workplace policy reviews',
       'Contract drafting and review',
       'Commercial leases',
       'Business disputes',
     ],
-    approach: `<p>We take a practical, business-minded approach to commercial law. We know that legal advice is only useful if it makes sense in the real-world context of your business. That means we focus on clear, enforceable agreements and proactive strategies that protect your interests without unnecessary complexity.</p>
-<p>Whether you are incorporating a new company under the <em>Alberta Business Corporations Act</em>, drafting a shareholder agreement, or reviewing a commercial lease, we ensure every document is tailored to your specific needs and compliant with Alberta law.</p>
-<p>When disputes arise, we work to resolve them efficiently through negotiation, mediation, or litigation if necessary. Our goal is always to help you protect your business and get back to what you do best.</p>`,
+    approach: `<p>We write your documents in plain words, under Alberta law, with no needless complexity.</p>
+<p>We can incorporate your company under Alberta's <em>Business Corporations Act</em>, prepare a shareholder agreement, or review a commercial lease before you sign it.</p>
+<p>If a dispute comes up, we can help you resolve it.</p>`,
     relatedSlugs: ['civil-litigation', 'employment-law'],
-    ctaText: 'Need legal support for your business? Let\'s talk about how we can help.',
+    ctaText: 'Need legal help for your business? Let\'s talk.',
     heroImage: citySkyscrapers,
   },
   {
@@ -154,21 +155,21 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Civil Litigation',
     title: 'Civil Litigation',
     metaTitle: 'Civil Litigation Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Civil litigation lawyer in St. Paul, Alberta. Contract disputes, debt claims, negligence, injunctions, and enforcement of judgments. Direct, effective advocacy in Alberta courts.',
-    fullDesc: 'When a legal dispute cannot be resolved through discussion alone, you need a litigator who is prepared, strategic, and direct. At ABOH LEGAL, we handle a wide range of civil disputes for individuals and businesses in northeastern Alberta, from contract claims to negligence actions and everything in between.',
+    metaDescription: 'Civil litigation lawyer in St. Paul, Alberta. Contract disputes, debt claims, negligence, injunctions, and enforcing judgments.',
+    fullDesc: 'If talking has not solved a dispute, we can help you take the next step. We handle civil disputes for people and businesses in northeastern Alberta, including contract, debt, and negligence claims.',
     whatWeHandle: [
       'Contract disputes',
       'Debt claims',
       'Negligence claims',
-      'Breach of fiduciary duty',
-      'Injunctions',
-      'Enforcement of judgments',
+      'Breach of fiduciary duty (when someone trusted to act for you puts their own interests first)',
+      'Injunctions (court orders to stop someone from doing something)',
+      'Enforcing judgments (collecting money a court has awarded)',
     ],
-    approach: `<p>Effective litigation starts with thorough preparation. We carefully assess the facts, the law, and the practical realities of each case before recommending a course of action. You will know the strengths and risks of your case from the outset.</p>
-<p>Alberta\'s court system includes the Alberta Court of Justice for civil claims up to $100,000 and the Court of King\'s Bench for larger or more complex matters. We work in both forums and will advise on the appropriate, cost-effective path for your dispute.</p>
-<p>We pursue settlement where it makes sense and litigate firmly when it does not. Every step we take is focused on a practical, workable result, efficiently and without unnecessary delay.</p>`,
+    approach: `<p>Before you decide anything, we look closely at the facts, the law, and the cost of going ahead. You will hear the strengths and risks of your case at the start.</p>
+<p>In Alberta, the Alberta Court of Justice hears civil claims up to $100,000. Larger or more complex cases go to the Court of King's Bench. We work in both courts and will tell you which one suits your claim.</p>
+<p>We settle when it makes sense and go to trial when it does not.</p>`,
     relatedSlugs: ['employment-law', 'business-commercial', 'estate-litigation'],
-    ctaText: 'Have a legal dispute? Contact us for a straightforward assessment of your options.',
+    ctaText: 'Have a dispute? Ask us about your options.',
     heroImage: supremeCourt,
   },
   {
@@ -178,23 +179,22 @@ export const serviceDetails: ServiceDetail[] = [
     label: 'Immigration',
     title: 'Immigration Law',
     metaTitle: 'Immigration Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Immigration lawyer in St. Paul, Alberta. Permanent residence, family sponsorship, work permits, LMIA, study permits, citizenship, and refugee claims.',
-    fullDesc: 'Canada\'s immigration system is complex and constantly evolving. Whether you are seeking permanent residence, sponsoring a family member, or navigating a work or study permit, ABOH LEGAL provides clear guidance and careful attention to detail to help you achieve your immigration goals.',
+    metaDescription: 'Immigration lawyer in St. Paul, Alberta. Permanent residence, family sponsorship, work and study permits, LMIA, citizenship, and refugee claims.',
+    fullDesc: 'Canada\'s immigration rules are detailed and change often. We help with permanent residence, family sponsorship, and work and study permits.',
     whatWeHandle: [
       'Permanent residence applications',
       'Family sponsorship',
       'Study permits',
       'Work permits',
-      'LMIA applications',
+      'LMIA applications (Labour Market Impact Assessments)',
       'Citizenship applications',
       'Temporary resident visas',
       'Refugee claims',
     ],
-    approach: `<p>Immigration matters are deeply personal. They affect your ability to live, work, and build a future in Canada with the people you love. We treat every file with the care and attention it deserves, because we understand what is at stake.</p>
-<p>Canada\'s <em>Immigration and Refugee Protection Act</em> and its regulations govern the full range of immigration programs. We stay current with policy changes, processing updates, and program requirements so that your application is complete, accurate, and positioned for success.</p>
-<p>From your initial consultation to the final decision, we keep you informed at every step. We explain the process in plain language, set realistic expectations about timelines, and respond promptly to your questions. Our goal is to make a complex process feel manageable.</p>`,
+    approach: `<p>The <em>Immigration and Refugee Protection Act</em> and its regulations set the rules. Immigration, Refugees and Citizenship Canada (IRCC) changes its programs and forms often, so we check the current requirements before you apply.</p>
+<p>We explain each step in plain language, keep you updated, and tell you what to expect on timing.</p>`,
     relatedSlugs: ['family-law', 'employment-law'],
-    ctaText: 'Looking to build your future in Canada? Let us help you navigate the path.',
+    ctaText: 'Planning a move to Canada, or a change in your status? Talk to us.',
     heroImage: canadianPassportsImg,
   },
 ];
