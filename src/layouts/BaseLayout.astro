@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
@@ -108,8 +109,8 @@ import '@fontsource/lato/900.css';
     <!-- Page-specific head content -->
     <slot name="head" />
 
-    <!-- Vercel Web Analytics: cookie-free visit counts (enable in the Vercel dashboard) -->
-    <script defer src="/_vercel/insights/script.js"></script>
+    <!-- Vercel Web Analytics -->
+    <Analytics />
   </head>
   <body class="bg-white font-body text-body-text">
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-navy focus:px-4 focus:py-2 focus:text-white">Skip to main content</a>
