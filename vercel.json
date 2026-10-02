@@ -6,7 +6,7 @@
     { "source": "/resources/what-to-do-after-motor-vehicle-collision-alberta", "destination": "/resources", "permanent": true },
     {
       "source": "/book",
-      "destination": "https://calendly.com/prince-abohlegal/initial-consultation",
+      "destination": "https://calendly.com/prince-abohlegal/consultation",
       "permanent": false
     }
   ],

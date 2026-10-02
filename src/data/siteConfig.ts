@@ -17,5 +17,5 @@ export const siteConfig = {
   // Calendly "Initial Consultation" page. Checks Prince's Outlook calendar and asks
   // for the other party's name for the conflict check. Reachable as /book.
   bookingUrl:
-    'https://calendly.com/prince-abohlegal/initial-consultation',
+    'https://calendly.com/prince-abohlegal/consultation',
 };
