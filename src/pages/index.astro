@@ -22,22 +22,22 @@ const latestPosts = (await getCollection('blog', ({ data }) => !data.draft && (d
   .slice(0, 3);
 
 const coreAreas = [
-  { name: 'Family Law', href: '/services/family-law', desc: 'Divorce, parenting, support, property, and protection orders. Legal Aid accepted.' },
-  { name: 'Child Protection', href: '/services/family-law', desc: 'When child welfare workers are involved with your family.' },
-  { name: 'Estate Litigation', href: '/services/estate-litigation', desc: "Will challenges, dependants' relief claims, and executor disputes." },
-  { name: 'Wills & Estates', href: '/services/wills-estates', desc: 'Wills, powers of attorney, and personal directives.' },
+  { name: 'Family Law', href: '/services/family-law', desc: 'Separating, or sorting out parenting, support, or property after a separation. Legal Aid accepted.' },
+  { name: 'Child Protection', href: '/services/family-law', desc: 'Child and Family Services has become involved with your family.' },
+  { name: 'Estate Litigation', href: '/services/estate-litigation', desc: 'A will that does not look right, or an executor who is not doing the job.' },
+  { name: 'Wills & Estates', href: '/services/wills-estates', desc: 'A Will, an Enduring Power of Attorney, and a Personal Directive that meet Alberta law.' },
 ];
 const otherAreas = [
-  { name: 'Immigration', href: '/services/immigration', desc: 'Permanent residence, sponsorship, and permits. Clients inside and outside Canada.' },
-  { name: 'Employment Law', href: '/services/employment-law', desc: 'Wrongful dismissal, severance, and workplace disputes.' },
-  { name: 'Business & Commercial', href: '/services/business-commercial', desc: 'Incorporations, shareholder agreements, contracts, and leases.' },
-  { name: 'Civil Litigation', href: '/services/civil-litigation', desc: 'Contract, debt, and negligence claims.' },
+  { name: 'Immigration', href: '/services/immigration', desc: 'Permanent residence, sponsorship, and permits, for clients inside and outside Canada.' },
+  { name: 'Employment Law', href: '/services/employment-law', desc: 'You have lost your job, or you have been handed a severance offer.' },
+  { name: 'Business & Commercial', href: '/services/business-commercial', desc: 'Incorporation, shareholder agreements, contracts, and leases.' },
+  { name: 'Civil Litigation', href: '/services/civil-litigation', desc: 'Someone owes you money or has broken a contract.' },
 ];
 
 const steps = [
-  { title: 'Call or book online', body: "Give us your name, the type of legal problem, and the other party's name." },
+  { title: 'Call or book a time', body: "Give us your name, the type of legal problem, and the other party's name." },
   { title: 'We check for conflicts', body: 'We make sure we do not already act for the other side.' },
-  { title: 'We meet and make a plan', body: 'By phone, by video, or at our office. We explain your options in plain language.' },
+  { title: 'A free 15-minute meeting', body: 'By phone, by video, or in St. Paul. You leave knowing your options and the likely cost.' },
 ];
 
 const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
@@ -59,7 +59,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
           <span class="text-gold-bright">Across Alberta.</span>
         </h1>
         <p class="mt-5 text-lg text-white/85 md:text-xl">
-          Family law, child protection, wills, and estate disputes. Legal Aid accepted for family cases.
+          Family law, child protection, wills, and estate disputes, from St. Paul. Legal Aid accepted for family cases.
         </p>
         <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
           <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer"
@@ -71,7 +71,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
             Call {siteConfig.phone}
           </a>
         </div>
-        <p class="mt-6 text-sm text-white/70">Serving St. Paul, Bonnyville, Cold Lake, Vermilion, Lloydminster, Lac La Biche, Fort Saskatchewan, and Edmonton.</p>
+        <p class="mt-6 text-sm text-white/70">St. Paul, Bonnyville, Cold Lake, Elk Point, Lac La Biche, Vermilion, Lloydminster, and Edmonton.</p>
       </div>
       <div class="mx-auto w-full max-w-xs md:max-w-sm">
         <Image
@@ -103,7 +103,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
     <div class="mx-auto max-w-3xl text-center">
       <h2 class="font-heading text-3xl font-bold text-navy md:text-4xl">Prince Aboh, Barrister and Solicitor</h2>
       <p class="mt-5 text-base leading-relaxed text-body-text md:text-lg">
-        Prince is a member of the Law Society of Alberta and practises from St. Paul. His work is mainly family law, child protection, and estate disputes, in the Court of King&rsquo;s Bench and the Alberta Court of Justice across northeastern Alberta. He handles each file himself.
+        ABOH LEGAL is a one-lawyer firm in St. Paul. Most of our work is family law, child protection, and estate disputes, in the Court of King&rsquo;s Bench and the Alberta Court of Justice. You meet Prince, and Prince prepares your documents and appears with you in court.
       </p>
       <a href="/about" class="mt-6 inline-block font-bold text-gold underline hover:no-underline">More about Prince</a>
     </div>
@@ -134,7 +134,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
       <div class="mt-8 flex flex-col items-center justify-between gap-4 rounded-lg bg-navy px-7 py-6 text-center md:flex-row md:text-left">
         <div>
           <p class="font-heading text-xl font-bold text-white">Not sure which area fits?</p>
-          <p class="mt-1 text-white/80">Tell us about your legal problem in a few words. We will tell you if we can help.</p>
+          <p class="mt-1 text-white/80">Tell us about your legal problem in a few words. We will tell you whether we can help.</p>
         </div>
         <div class="flex shrink-0 gap-3">
           <a href={siteConfig.phoneHref} class="rounded border-2 border-white px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-white hover:bg-white/10">Call</a>
@@ -186,7 +186,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-CA', { year: 'numeric', month:
   <!-- CLOSING CALL TO ACTION -->
   <section class="bg-navy px-6 py-16 text-center md:py-20">
     <h2 class="font-heading text-3xl font-bold text-white md:text-4xl">Have a legal problem?</h2>
-    <p class="mt-4 text-lg text-white/80">Call <a href={siteConfig.phoneHref} class="font-bold text-white underline">{siteConfig.phone}</a> or book a time online.</p>
+    <p class="mt-4 text-lg text-white/80">Call <a href={siteConfig.phoneHref} class="font-bold text-white underline">{siteConfig.phone}</a> or book a free 15-minute meeting.</p>
     <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
       <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer"
          class="rounded bg-gold px-10 py-4 text-sm font-bold uppercase tracking-wider text-navy transition hover:brightness-110">
