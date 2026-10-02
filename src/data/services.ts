@@ -36,11 +36,6 @@ export const services: Service[] = [
     shortDesc: 'Contract disputes, debt claims, negligence',
   },
   {
-    name: 'Personal Injury',
-    slug: 'personal-injury',
-    shortDesc: 'Motor vehicle collisions, injury claims',
-  },
-  {
     name: 'Immigration',
     slug: 'immigration',
     shortDesc: 'PR, sponsorship, work permits, citizenship',

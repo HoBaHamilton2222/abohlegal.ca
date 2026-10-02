@@ -4,7 +4,7 @@ date: 2026-04-19
 category: "Personal Injury"
 excerpt: "A step-by-step guide to what still matters after a collision in Alberta: reporting, insurance, medical records, the cap, and the 2-year limit."
 author: "Prince Aboh"
-draft: false
+draft: true
 ---
 
 If you are reading this a day or a week after a collision, you are past the part where the advice columns tell you to breathe and check for injuries. What matters now is what is still in your hands. A surprising amount is, even if the scene has come and gone. This guide walks you through the decisions that shape a personal injury claim in Alberta, in roughly the order they come up.

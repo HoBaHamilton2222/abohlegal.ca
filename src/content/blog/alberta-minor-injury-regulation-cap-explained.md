@@ -5,7 +5,7 @@ publishDate: 2026-06-15
 category: "Personal Injury"
 excerpt: "The minor injury cap surprises most claimants. Here is what it actually limits, the 2026 figure, and when an injury falls outside it."
 author: "Prince Aboh"
-draft: false
+draft: true
 ---
 
 The cap surprises people. You are in a collision, you go to physio for a few months, and the adjuster tells you your pain and suffering is capped because your injuries are "only soft tissue." The number is small, the explanation is short, and the offer usually follows the same day. Very few people who hear this sentence are told what the cap actually is, what it is not, and how an injury that looks minor on paper can fall outside it entirely. This is a plain explanation of how the cap works in Alberta in 2026.

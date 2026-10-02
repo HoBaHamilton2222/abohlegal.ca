@@ -5,7 +5,6 @@ import parliamentBuilding from '../assets/stock/parliament-building.jpg';
 import womenWorking from '../assets/stock/women-working.jpg';
 import citySkyscrapers from '../assets/stock/city-skyscrapers.jpg';
 import supremeCourt from '../assets/stock/supreme-court.jpg';
-import carAccident from '../assets/stock/car-accident.jpg';
 import canadianPassportsImg from '../assets/stock/canadian-passports.jpg';
 
 export interface ServiceDetail {
@@ -168,33 +167,9 @@ export const serviceDetails: ServiceDetail[] = [
     approach: `<p>Effective litigation starts with thorough preparation. We carefully assess the facts, the law, and the practical realities of each case before recommending a course of action. You will know the strengths and risks of your case from the outset.</p>
 <p>Alberta\'s court system includes the Alberta Court of Justice for civil claims up to $100,000 and the Court of King\'s Bench for larger or more complex matters. We work in both forums and will advise on the appropriate, cost-effective path for your dispute.</p>
 <p>We pursue settlement where it makes sense and litigate firmly when it does not. Every step we take is focused on a practical, workable result, efficiently and without unnecessary delay.</p>`,
-    relatedSlugs: ['employment-law', 'personal-injury', 'business-commercial'],
+    relatedSlugs: ['employment-law', 'business-commercial', 'estate-litigation'],
     ctaText: 'Have a legal dispute? Contact us for a straightforward assessment of your options.',
     heroImage: supremeCourt,
-  },
-  {
-    slug: 'personal-injury',
-    name: 'Personal Injury',
-    shortDesc: 'Motor vehicle collisions, injury claims',
-    label: 'Personal Injury',
-    title: 'Personal Injury',
-    metaTitle: 'Personal Injury Lawyer St. Paul Alberta | ABOH LEGAL',
-    metaDescription: 'Personal injury lawyer in St. Paul, Alberta. Motor vehicle accidents, slip and fall, insurance claims, and catastrophic injury representation.',
-    fullDesc: 'An unexpected injury can change your life in an instant, affecting your health, your ability to work, and your family\'s well-being. At ABOH LEGAL, we help injured Albertans pursue the compensation they need to recover and move forward, handling the legal process so you can focus on healing.',
-    whatWeHandle: [
-      'Motor vehicle collisions',
-      'Slip and fall injuries',
-      'Occupiers\' liability claims',
-      'Insurance claims',
-      'Minor injury cap disputes',
-      'Catastrophic injury claims',
-    ],
-    approach: `<p>We understand that dealing with an injury is overwhelming. Our first priority is to make sure you are getting the medical care and support you need. From there, we handle the legal process: gathering evidence, dealing with insurance companies, and building a strong case for full and fair compensation.</p>
-<p>Alberta personal injury law is shaped by the <em>Insurance Act</em>, the <em>Minor Injury Regulation</em>, and the <em>Occupiers\' Liability Act</em>, among other statutes. We know these frameworks inside and out, and we use that knowledge to pursue every dollar of compensation you are entitled to.</p>
-<p>Many of our personal injury matters are handled on a contingency fee basis, meaning you do not pay legal fees unless we recover compensation for you. We discuss all fee arrangements openly at your first consultation.</p>`,
-    relatedSlugs: ['civil-litigation', 'employment-law'],
-    ctaText: 'Injured and unsure what to do next? We are here to help.',
-    heroImage: carAccident,
   },
   {
     slug: 'immigration',

@@ -13,7 +13,7 @@ export const siteConfig = {
   },
   hours: '8:00 AM – 5:00 PM, Monday – Friday',
   formspreeEndpoint: import.meta.env.PUBLIC_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xjgjbdjy',
-  cosmoLexUrl: '',
+  intakeFormUrl: '',
   // Calendly "Initial Consultation" page. Checks Prince's Outlook calendar and asks
   // for the other party's name for the conflict check. Reachable as /book.
   bookingUrl:

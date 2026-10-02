@@ -104,7 +104,7 @@ const breadcrumbSchema = JSON.stringify({
       <div class="text-center mb-10">
         <h2 class="font-heading text-navy text-2xl md:text-3xl font-bold mb-4">Or Send Us a Message</h2>
         <p class="text-body-text text-base md:text-lg leading-relaxed">
-          Prefer to write first? Tell us a little about your situation and we will get back to you promptly. We want to make things as stress-free as possible.
+          Prefer to write first? Send us your name, the type of matter, and the other party's name. We will check for conflicts and get back to you. Please do not send details of your situation until we confirm we can act for you.
         </p>
       </div>
 
@@ -114,7 +114,7 @@ const breadcrumbSchema = JSON.stringify({
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <p class="text-navy text-lg md:text-xl font-bold mb-2">Thank you!</p>
-        <p class="text-body-text text-base">We have received your message and will respond within one business day.</p>
+        <p class="text-body-text text-base">We have received your message. We aim to respond within one business day.</p>
       </div>
 
       <!-- Error State -->
@@ -174,9 +174,24 @@ const breadcrumbSchema = JSON.stringify({
           <p class="text-red-600 text-sm mt-1 hidden" data-error="location">Please enter your location.</p>
         </div>
 
+        <!-- Other party -->
+        <div>
+          <label for="other_party" class="block text-navy font-bold text-sm mb-1">Full name of the other party <span class="text-red-600">*</span></label>
+          <p class="text-muted-text text-xs mb-2">The person on the other side of your matter. We need this to check for conflicts before we can speak with you.</p>
+          <input
+            type="text"
+            id="other_party"
+            name="other_party"
+            required
+            class="w-full border border-gray-300 rounded px-4 py-3 text-body-text focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-colors"
+          />
+          <p class="text-red-600 text-sm mt-1 hidden" data-error="other_party">Please enter the other party's name, or "none" if there is no other party.</p>
+        </div>
+
         <!-- Subject -->
         <div>
-          <label for="subject" class="block text-navy font-bold text-sm mb-1">Subject <span class="text-red-600">*</span></label>
+          <label for="subject" class="block text-navy font-bold text-sm mb-1">Type of matter <span class="text-red-600">*</span></label>
+          <p class="text-muted-text text-xs mb-2">A few words, for example: separation, parenting, will dispute, employment, immigration.</p>
           <input
             type="text"
             id="subject"
@@ -184,16 +199,17 @@ const breadcrumbSchema = JSON.stringify({
             required
             class="w-full border border-gray-300 rounded px-4 py-3 text-body-text focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-colors"
           />
-          <p class="text-red-600 text-sm mt-1 hidden" data-error="subject">Please enter a subject.</p>
+          <p class="text-red-600 text-sm mt-1 hidden" data-error="subject">Please enter the type of matter.</p>
         </div>
 
         <!-- Message -->
         <div>
           <label for="message" class="block text-navy font-bold text-sm mb-1">Message <span class="text-red-600">*</span></label>
+          <p class="text-muted-text text-xs mb-2">A short note only. Please do not include confidential details yet.</p>
           <textarea
             id="message"
             name="message"
-            rows="6"
+            rows="4"
             required
             class="w-full border border-gray-300 rounded px-4 py-3 text-body-text focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-colors resize-y"
           ></textarea>
@@ -201,8 +217,11 @@ const breadcrumbSchema = JSON.stringify({
         </div>
 
         <!-- Disclaimer -->
+        <p class="text-body-text text-sm leading-relaxed">
+          <strong>If you are in danger, call 911.</strong> If it is not safe for us to email or call you, tell us a safe way and time to reach you in your message.
+        </p>
         <p class="text-muted-text text-xs leading-relaxed">
-          Please do not leave any confidential information in this form. No solicitor-client relationship is formed until we have been formally retained.
+          Please do not include confidential information until we confirm we can act for you. Contacting us does not make you our client. This form is processed by Formspree, a service based in the United States. Our <a href="/privacy" class="underline">Privacy Policy</a> explains how we handle your information. Questions about it, including about service providers outside Canada, can go to Prince Aboh at <a href="mailto:info@abohlegal.ca" class="underline">info@abohlegal.ca</a>.
         </p>
 
         <!-- Submit -->
@@ -249,12 +268,14 @@ const breadcrumbSchema = JSON.stringify({
       const name = (document.getElementById('name') as HTMLInputElement).value.trim();
       const email = (document.getElementById('email') as HTMLInputElement).value.trim();
       const location = (document.getElementById('location') as HTMLInputElement).value.trim();
+      const otherParty = (document.getElementById('other_party') as HTMLInputElement).value.trim();
       const subject = (document.getElementById('subject') as HTMLInputElement).value.trim();
       const message = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
 
       if (!name) { showError('name'); valid = false; }
       if (!email || !validateEmail(email)) { showError('email'); valid = false; }
       if (!location) { showError('location'); valid = false; }
+      if (!otherParty) { showError('other_party'); valid = false; }
       if (!subject) { showError('subject'); valid = false; }
       if (!message) { showError('message'); valid = false; }
 

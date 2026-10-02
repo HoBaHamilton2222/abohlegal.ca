@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '../data/siteConfig';
 
-const { cosmoLexUrl } = siteConfig;
+const { intakeFormUrl } = siteConfig;
 ---
 
 <section class="bg-navy py-16 md:py-20 px-6">
@@ -12,9 +12,9 @@ const { cosmoLexUrl } = siteConfig;
     <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
       If you're ready to discuss your matter in detail, complete our intake questionnaire to help us prepare for your consultation.
     </p>
-    {cosmoLexUrl ? (
+    {intakeFormUrl ? (
       <a
-        href={cosmoLexUrl}
+        href={intakeFormUrl}
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block bg-gold text-white font-bold px-8 py-3 rounded hover:bg-opacity-90 transition-colors text-sm md:text-base uppercase tracking-wider"

@@ -22,7 +22,6 @@
 - Estate Litigation: Will challenges, dependant support claims, executor disputes, guardianship applications
 - Business and Commercial Law: Incorporations, shareholder agreements, contracts, commercial leases
 - Civil Litigation: Contract disputes, debt claims, negligence, injunctions
-- Personal Injury: Motor vehicle collisions, slip and fall, insurance claims
 
 ## About Prince Aboh
 
@@ -39,7 +38,6 @@ Prince Aboh is a barrister and solicitor admitted to the Law Society of Alberta 
 - Employment Law: https://www.abohlegal.ca/services/employment-law
 - Business and Commercial: https://www.abohlegal.ca/services/business-commercial
 - Civil Litigation: https://www.abohlegal.ca/services/civil-litigation
-- Personal Injury: https://www.abohlegal.ca/services/personal-injury
 - Immigration: https://www.abohlegal.ca/services/immigration
 - FAQs: https://www.abohlegal.ca/faqs
 - Resources: https://www.abohlegal.ca/resources
